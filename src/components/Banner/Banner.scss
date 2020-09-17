@@ -1,0 +1,53 @@
+@import "../../scss/index.scss";
+
+.banner {
+  background-color: #004dab;
+  padding-top: 35px;
+  padding-bottom: 50px;
+  position: relative !important;
+  &__container {
+  }
+  &__primary-title {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 22px !important;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  &__secondary-title {
+    font-family: "Roboto Condensed", sans-serif !important;
+    font-size: 18px !important;
+    font-weight: normal;
+    color: #ffffff !important;
+    margin: 0px;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  &__container-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    &--button-primary {
+      background-color: #dba865 !important;
+      border-radius: 4px !important;
+      color: #141414 !important;
+      padding: 8px 30px !important;
+      min-width: 100px !important;
+    }
+    &--button-secondary {
+      background-color: transparent !important;
+      border-radius: 4px !important;
+      border: 2px solid #dba865 !important;
+      color: #dba865 !important;
+      padding: 8px 30px !important;
+      min-width: 100px !important;
+    }
+  }
+  &__optional-image {
+    position: absolute !important;
+    left: 25% !important;
+    bottom: -80px !important;
+  }
+}

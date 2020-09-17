@@ -1,0 +1,32 @@
+@import "../../../src/scss/index.scss";
+
+.header {
+  height: 75px;
+  &__container {
+    height: 100%;
+  }
+  &__grid {
+    height: 100%;
+  }
+  &__row {
+    display: flex;
+    align-items: center !important;
+    padding-bottom: 0px !important;
+  }
+  &__column {
+    display: flex !important;
+    align-items: center;
+    &--center {
+      justify-content: center !important;
+    }
+  }
+  &__title-site {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    color: #4071be;
+    span {
+      color: #fba734;
+      font-weight: 300;
+    }
+  }
+}
