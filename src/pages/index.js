@@ -5,6 +5,7 @@ import Banner from "../components/Banner/Banner"
 import Advantages from "../components/Advantages/Advantages"
 import ServiceFeatures from "../components/ServiceFeatures/ServiceFeatures"
 import Examples from "../components/Examples/Examples"
+import SeoMessage from "../components/SeoMessage/SeoMessage"
 
 const IndexPage = () => (
   <>
@@ -14,6 +15,7 @@ const IndexPage = () => (
     <Advantages />
     <ServiceFeatures />
     <Examples />
+    <SeoMessage />
   </>
 )
 
