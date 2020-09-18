@@ -42,7 +42,11 @@
         display: flex !important;
       }
       &__title {
+        font-family: "Roboto Condensed", sans-serif;
         margin-bottom: 4px !important;
+      }
+      &__description {
+        font-family: "Roboto Condensed", sans-serif;
       }
     }
   }

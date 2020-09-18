@@ -83,9 +83,9 @@ function AdvantageItem(props) {
         </Grid.Column>
         <Grid.Column mobile={14} className="advantage-item__container-info">
           <h4 className="advantage-item__title">{title}</h4>
-          <p>{description}</p>
+          <p className="advantage-item__description">{description}</p>
         </Grid.Column>
       </Grid.Row>
     </Grid>
-  );
+  )
 }
