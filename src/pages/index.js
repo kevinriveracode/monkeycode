@@ -6,6 +6,9 @@ import Advantages from "../components/Advantages/Advantages"
 import ServiceFeatures from "../components/ServiceFeatures/ServiceFeatures"
 import Examples from "../components/Examples/Examples"
 import SeoMessage from "../components/SeoMessage/SeoMessage"
+import PackContainer from "../components/PackContainer/PackContainer"
+import AllInOne from "../components/AllInOne/"
+import FormContact from "../components/FormContact/"
 
 const IndexPage = () => (
   <>
@@ -16,6 +19,9 @@ const IndexPage = () => (
     <ServiceFeatures />
     <Examples />
     <SeoMessage />
+    <PackContainer />
+    <AllInOne />
+    <FormContact />
   </>
 )
 

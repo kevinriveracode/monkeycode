@@ -1,0 +1,62 @@
+@import "../../scss/index.scss";
+
+.pack-container {
+  &__body-pack {
+    padding: 0 0px;
+  }
+  &__title{
+    padding: 1.5rem .7rem;
+    h3{
+      text-align: center;
+    }
+  }
+  .pack {
+    margin-bottom: 2rem !important;
+    &__container{
+      border:1px solid #f1f2f3;
+    }
+    &__header {
+      text-align: center;
+      height: 55px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #4070be;
+      border-radius: 8px 8px 0px 0px;
+      h6 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 0px;
+        span {
+          color: #d8d8d8;
+        }
+      }
+    }
+    &__footer {
+      height: 69px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1f2f3;
+      p {
+        font-size: 1.75rem;
+        font-family: "Roboto Condensed";
+      }
+    }
+    &__other {
+      padding: 1rem 0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__body {
+      padding: 1.5rem 0.75rem;
+      ul {
+        list-style: none;
+        margin: 0;
+        font-family: Roboto Condensed;
+        text-decoration: none;
+      }
+    }
+  }
+}

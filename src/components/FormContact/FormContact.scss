@@ -1,0 +1,56 @@
+@import "../../scss/index.scss";
+
+.form-contact {
+  padding: 50px 0px;
+  background-color: #4071be;
+  &__container-title {
+    text-align: center;
+  }
+  &__title {
+    font-size: 22px;
+    margin-bottom: 0px;
+    color: white;
+  }
+  &__subtitle {
+    margin-bottom: 0px;
+    font-size: 16px;
+    color: white;
+  }
+  &__phone-message {
+    font-size: 18px;
+    color: white;
+    font-family: "Roboto Condensed";
+    margin-bottom: 20px !important;
+  }
+  &__container-input {
+    margin-bottom: 15px !important;
+  }
+  &__verify-legal {
+    margin-bottom: 20px !important;
+    div {
+      label {
+        color: white !important;
+        font-family: "Roboto Condensed";
+      }
+    }
+  }
+  &__contact-button-container {
+    margin-bottom: 20px !important;
+    button {
+      width: 100%;
+      background-color: #dba865 !important;
+    }
+  }
+  &__email-message {
+    font-family: "Roboto Condensed";
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px !important;
+  }
+  &__message {
+    margin-bottom: 15px !important;
+    textarea {
+      width: 100% !important;
+    }
+  }
+}

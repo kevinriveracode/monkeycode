@@ -1,0 +1,22 @@
+@import "../../scss/index.scss";
+
+.all-in-one {
+  background-color: #f1f2f3;
+  padding: 50px 0 40px 0;
+
+  &__title {
+    font-size: 22px !important;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 0px !important;
+  }
+  &__feature {
+    font-size: 13px;
+    font-weight: 400;
+    margin-bottom: 0.8rem !important;
+    font-family: "Roboto Condensed", sans-serif;
+    i {
+      color: green;
+    }
+  }
+}
