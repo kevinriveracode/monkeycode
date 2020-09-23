@@ -1,26 +1,32 @@
-import React from "react";
-import { Container, Grid, Header, Button, Image } from "semantic-ui-react";
-import "./Banner.scss";
+import React from "react"
+import { Container, Grid, Header, Button, Image } from "semantic-ui-react"
+import "./Banner.scss"
 
 export default function Banner(props) {
+  const { title, subtitle, buttonPrimary, buttonSecondary } = props
+
   return (
     <section className="banner">
       <Container className="banner__container">
         <Grid columns={1}>
           <Grid.Row>
             <Grid.Column mobile={16}>
-              <h1 className="banner__primary-title">
-                DISEÑO WEB ORIGINAL RAPIDO Y SEGURO
-              </h1>
-              <h3 className="banner__secondary-title">
-                Creamos sitios web únicos para pequeñas y medianas empresas.
-              </h3>
+              <h1 className="banner__primary-title">{title}</h1>
+              <h3 className="banner__secondary-title">{subtitle}</h3>
               <div className="banner__container-buttons">
-                <Button className="banner__container-buttons banner__container-buttons--button-primary">
-                  Ver Planes
+                <Button
+                  as="a"
+                  href={buttonPrimary.link}
+                  className="banner__container-buttons banner__container-buttons--button-primary"
+                >
+                  {buttonPrimary.title}
                 </Button>
-                <Button className="banner__container-buttons banner__container-buttons--button-secondary">
-                  ¡Contactanos Ya!
+                <Button
+                  as="a"
+                  href={buttonSecondary.link}
+                  className="banner__container-buttons banner__container-buttons--button-secondary"
+                >
+                  {buttonSecondary.title}
                 </Button>
               </div>
               <Image
@@ -32,5 +38,5 @@ export default function Banner(props) {
         </Grid>
       </Container>
     </section>
-  );
+  )
 }

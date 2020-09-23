@@ -11,18 +11,43 @@ import AllInOne from "../components/AllInOne/"
 import FormContact from "../components/FormContact/"
 
 export default function IndexPage({ pageContext }) {
-  const { title } = pageContext
-
+  const { titlePage } = pageContext
   return (
     <>
-      <SEO title={title} />
+      <SEO title={pageContext.infoLanding.titlePage} />
       <Header />
-      <Banner />
-      <Advantages />
-      <ServiceFeatures />
-      <Examples />
-      <SeoMessage />
-      <PackContainer />
+      <Banner
+        title={pageContext.infoLanding.banner.title}
+        subtitle={pageContext.infoLanding.banner.subtitle}
+        buttonPrimary={pageContext.infoLanding.banner.buttonPrimary}
+        buttonSecondary={pageContext.infoLanding.banner.buttonSecondary}
+      />
+      <Advantages
+        title={pageContext.infoLanding.Advantages.title}
+        subtitle={pageContext.infoLanding.Advantages.subtitle}
+        advantages={pageContext.infoLanding.Advantages.advantages}
+        footerTitle={pageContext.infoLanding.Advantages.footerTitle}
+        footerButton={pageContext.infoLanding.Advantages.footerButton}
+      />
+      <ServiceFeatures
+        title={pageContext.infoLanding.features.title}
+        subtitle={pageContext.infoLanding.features.subtitle}
+        services={pageContext.infoLanding.features.services}
+      />
+      <Examples
+        title={pageContext.infoLanding.examples.title}
+        demos={pageContext.infoLanding.examples.demos}
+      />
+      <SeoMessage
+        title={pageContext.infoLanding.seoMessage.title}
+        description={pageContext.infoLanding.seoMessage.description}
+        quote={pageContext.infoLanding.seoMessage.quote}
+        author={pageContext.infoLanding.seoMessage.author}
+      />
+      <PackContainer
+        title={pageContext.infoLanding.packs.title}
+        packs={pageContext.infoLanding.packs.packs}
+      />
       <AllInOne />
       <FormContact />
     </>

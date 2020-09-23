@@ -1,35 +1,10 @@
-import React from "react";
-import { Container, Grid, Image } from "semantic-ui-react";
-import { map } from "loadsh";
-import "./ServiceFeatures.scss";
+import React from "react"
+import { Container, Grid, Image } from "semantic-ui-react"
+import { map } from "loadsh"
+import "./ServiceFeatures.scss"
 
 export default function ServiceFeatures(props) {
-  const service = [
-    {
-      url: "responsive.svg",
-      typeService: "WEB",
-      nameService: "Responsive",
-      backgroundColor: "#F1EADE"
-    },
-    {
-      url: "google.svg",
-      typeService: "WEB",
-      nameService: "Optimizada para Google",
-      backgroundColor: "#F7D9D9"
-    },
-    {
-      url: "admin.svg",
-      typeService: "WEB",
-      nameService: "100% Autoadministrable",
-      backgroundColor: "#EBE6FB"
-    },
-    {
-      url: "clock.svg",
-      typeService: "WEB",
-      nameService: "Entrega de 4 a 7 días",
-      backgroundColor: "#C9BFC8"
-    }
-  ];
+  const { title, subtitle, services } = props
 
   return (
     <section className="service-features">
@@ -37,19 +12,12 @@ export default function ServiceFeatures(props) {
         <Grid>
           <Grid.Row>
             <Grid.Column>
-              <h2 className="service-features__title">
-                ¿Que incluimos en nuestra páginas web?
-              </h2>
-              <h3 className="service-features__subtitle">
-                Ya sea que necesitas un sitio web de WordPress, para poner tu
-                negocio en línea, o una página online de ecommerce más complete,
-                nuestro equipo de desarrollo web, te ayudará a hacer realidad tu
-                visión.
-              </h3>
+              <h2 className="service-features__title">{title}</h2>
+              <h3 className="service-features__subtitle">{subtitle}</h3>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row className="service-features__features-container">
-            {map(service, (item, index) => (
+            {map(services, (item, index) => (
               <Grid.Column
                 mobile={8}
                 className="service-features__container-block"
@@ -67,11 +35,11 @@ export default function ServiceFeatures(props) {
         </Grid>
       </Container>
     </section>
-  );
+  )
 }
 
 function Feature(props) {
-  const { url, typeService, nameService, backgroundColor } = props;
+  const { url, typeService, nameService, backgroundColor } = props
   return (
     <Grid className="feature" style={{ backgroundColor }}>
       <Grid.Row>
@@ -86,5 +54,5 @@ function Feature(props) {
         </Grid.Column>
       </Grid.Row>
     </Grid>
-  );
+  )
 }

@@ -27,7 +27,7 @@ export default function AllInOne(props) {
             {map(featuresList, (entry, index) => (
               <Grid.Column mobile={8}>
                 <p className="all-in-one__feature">
-                  <i class="check icon"></i>
+                  <i class="check icon" />
                   {entry}
                 </p>
               </Grid.Column>
