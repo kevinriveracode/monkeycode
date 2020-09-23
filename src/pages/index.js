@@ -10,19 +10,21 @@ import PackContainer from "../components/PackContainer/PackContainer"
 import AllInOne from "../components/AllInOne/"
 import FormContact from "../components/FormContact/"
 
-const IndexPage = () => (
-  <>
-    <SEO title="Diseño web rápido, original y seguro | MonkeyCode" />
-    <Header />
-    <Banner />
-    <Advantages />
-    <ServiceFeatures />
-    <Examples />
-    <SeoMessage />
-    <PackContainer />
-    <AllInOne />
-    <FormContact />
-  </>
-)
+export default function IndexPage({ pageContext }) {
+  const { title } = pageContext
 
-export default IndexPage
+  return (
+    <>
+      <SEO title={title} />
+      <Header />
+      <Banner />
+      <Advantages />
+      <ServiceFeatures />
+      <Examples />
+      <SeoMessage />
+      <PackContainer />
+      <AllInOne />
+      <FormContact />
+    </>
+  )
+}
