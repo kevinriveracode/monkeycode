@@ -4,28 +4,20 @@ import { map } from "loadsh"
 import "./AllInOne.scss"
 
 export default function AllInOne(props) {
-  const featuresList = [
-    " PROYECTOS LLAVE EN MANO",
-    " CREACIÓN DE CUENTAS DE CORREO ELECTRONICO",
-    " ADAPTACIÓN A IDENTIDAD CORPORATIVA",
-    " DERECHOS DE PROPIEDAD INTELECTUAL",
-    " INSTALACIÓN EN TU SERVIDOR",
-    " FORMULARIOS DE CONTACTO",
-  ]
+  const featuresList = []
+  const { title, features } = props
   return (
     <section className="all-in-one">
       <Container>
         <Grid>
           <Grid.Row>
             <Grid.Column>
-              <h3 className="all-in-one__title">
-                TODOS NUESTROS PACKS INCLUYEN
-              </h3>
+              <h3 className="all-in-one__title">{title}</h3>
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            {map(featuresList, (entry, index) => (
-              <Grid.Column mobile={8}>
+            {map(features, (entry, index) => (
+              <Grid.Column mobile={8} key={index}>
                 <p className="all-in-one__feature">
                   <i class="check icon" />
                   {entry}

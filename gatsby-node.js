@@ -8,7 +8,7 @@
 exports.createPages = ({ actions: { createPage } }) => {
   createPage({
     path: "/diseño-web-profesional",
-    component: require.resolve("./src/pages/index.js"),
+    component: require.resolve("./src/pages/Landings/LandingWebDesign.js"),
     context: {
       infoLanding: {
         titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
@@ -186,6 +186,38 @@ exports.createPages = ({ actions: { createPage } }) => {
               backgroundColor: "#92CD41",
             },
           ],
+        },
+        allInOne: {
+          title: "TODOS NUESTROS PACKS INCLUYEN",
+          features: [
+            " PROYECTOS LLAVE EN MANO",
+            " CREACIÓN DE CUENTAS DE CORREO ELECTRONICO",
+            " ADAPTACIÓN A IDENTIDAD CORPORATIVA",
+            " DERECHOS DE PROPIEDAD INTELECTUAL",
+            " INSTALACIÓN EN TU SERVIDOR",
+            " FORMULARIOS DE CONTACTO",
+          ],
+        },
+        formWeb: {
+          title: "¿TIENES DUDAS?",
+          subtitle: "Contacta con nosotros como prefieras",
+          call: {
+            title: "Déjanos tú telefono y te llamamos:",
+            privacity: "He leído y acepto la politica de privacidad",
+            button: {
+              name: "TE LLAMAMOS",
+              link: "#",
+            },
+          },
+          email: {
+            title:
+              "También puedes enviarnos un correo o monkeycode@gmail.com, o utilizar este formulario de contacto. Estamos a tu disposición para cualquier pregunta o duda que puedas tener.",
+            privacity: "He leído y acepto la politica de privacidad",
+            button: {
+              name: "ENVIANOS TU CONSULTA",
+              link: "#",
+            },
+          },
         },
       },
     },

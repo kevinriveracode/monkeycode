@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Diseño web rápido, original y seguro | MonkeyCode `,
+    description: `Creamos sitios web únicos para pequeñas y medianas empresas.`,
+    author: `@kevinrivera`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
