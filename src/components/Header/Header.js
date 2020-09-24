@@ -1,6 +1,6 @@
-import React from "react";
-import { Container, Grid, Image, Header } from "semantic-ui-react";
-import "./Header.scss";
+import React from "react"
+import { Container, Grid, Image, Header } from "semantic-ui-react"
+import "./Header.scss"
 
 export default function HeaderMc(props) {
   return (
@@ -17,11 +17,14 @@ export default function HeaderMc(props) {
               mobile={3}
               className="header__column header__column--center"
             >
-              <Image src="/img/menu.svg" />
+              <Image
+                className="header__menu-mobile"
+                src="http://drive.google.com/uc?export=view&id=16lZQ5v2RVxkub04BUJ67f_4D51t9flFQ"
+              />
             </Grid.Column>
           </Grid.Row>
         </Grid>
       </Container>
     </header>
-  );
+  )
 }

@@ -24,10 +24,11 @@ export default function IndexPage({ pageContext }) {
         title: "¡Contactanos Ya!",
         link: "#",
       },
-      imageLink: "",
+      imageLink:
+        "http://drive.google.com/uc?export=view&id=1CB-vLvejMvfNu25porxWTVlmMaSZ1-C6",
     },
     Advantages: {
-      title: "Contrata nuestros servicios y aumenta las conversiones",
+      title: "¿Por qué debería contratar una página web?",
       subtitle:
         "Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de facturación y un mayor público",
       advantages: [
@@ -229,6 +230,7 @@ export default function IndexPage({ pageContext }) {
         subtitle={infoLanding.banner.subtitle}
         buttonPrimary={infoLanding.banner.buttonPrimary}
         buttonSecondary={infoLanding.banner.buttonSecondary}
+        imageLink={infoLanding.banner.imageLink}
       />
       <Advantages
         title={infoLanding.Advantages.title}

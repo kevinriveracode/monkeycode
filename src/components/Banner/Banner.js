@@ -3,7 +3,7 @@ import { Container, Grid, Header, Button, Image } from "semantic-ui-react"
 import "./Banner.scss"
 
 export default function Banner(props) {
-  const { title, subtitle, buttonPrimary, buttonSecondary } = props
+  const { title, subtitle, buttonPrimary, buttonSecondary, imageLink } = props
 
   return (
     <section className="banner">
@@ -29,10 +29,7 @@ export default function Banner(props) {
                   {buttonSecondary.title}
                 </Button>
               </div>
-              <Image
-                className="banner__optional-image"
-                src="/img/banner-diseño-web.svg"
-              />
+              <Image className="banner__optional-image" src={imageLink} />
             </Grid.Column>
           </Grid.Row>
         </Grid>
