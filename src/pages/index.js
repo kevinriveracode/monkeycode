@@ -8,7 +8,7 @@ export default function IndexPage({ pageContext }) {
     <>
       <SEO title="Main-page" />
       <Header />
-      <a href="/diseño-web-profesional">Landing Web</a>
+      <a href="/diseño-web-profesional">1)Landing Web</a>
     </>
   )
 }
