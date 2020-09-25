@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Grid, Button } from "semantic-ui-react"
+import { Container, Grid, Button, Image } from "semantic-ui-react"
 import { map } from "loadsh"
 import "./PackContainer.scss"
 
@@ -31,6 +31,7 @@ function Pack(props) {
     <Grid.Column className="pack" mobile={16}>
       <Grid.Row className="pack__container">
         <Grid.Column className="pack__header" style={{ backgroundColor }}>
+          <Image src="/icons/pack.svg" className="pack__icon" />
           <h6>
             PACK <span>{name}</span>
           </h6>
@@ -47,7 +48,9 @@ function Pack(props) {
           </ul>
         </Grid.Column>
         <Grid.Column className="pack__footer">
-          <p>{price}</p>
+          <p>
+            {price}/<span className="pack__price">pago único</span>
+          </p>
         </Grid.Column>
         <Grid.Column className="pack__other">
           <Button content="Activar" />

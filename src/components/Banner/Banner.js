@@ -4,9 +4,16 @@ import "./Banner.scss"
 
 export default function Banner(props) {
   const { title, subtitle, buttonPrimary, buttonSecondary, imageLink } = props
-
+  const backgroundImage = "/public/banner/diseño-web-bg.png"
   return (
-    <section className="banner">
+    <section
+      className="banner"
+      style={{
+        backgroundImage: `url("http://drive.google.com/uc?export=view&id=1jrFchP1VUmSjlLfkV0zOLoGBT_Tv-zr1")`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <Container className="banner__container">
         <Grid columns={1}>
           <Grid.Row>

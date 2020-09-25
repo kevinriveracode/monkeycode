@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Grid } from "semantic-ui-react"
+import { Container, Grid, Image } from "semantic-ui-react"
 import { map } from "loadsh"
 import "./AllInOne.scss"
 
@@ -12,6 +12,11 @@ export default function AllInOne(props) {
         <Grid>
           <Grid.Row>
             <Grid.Column>
+              <Image
+                src="/icons/rocket.svg"
+                alt="Proyecto llave en mano"
+                className="all-in-one__icon"
+              />
               <h3 className="all-in-one__title">{title}</h3>
             </Grid.Column>
           </Grid.Row>

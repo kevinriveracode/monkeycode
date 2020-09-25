@@ -24,6 +24,9 @@
   }
   &__container-input {
     margin-bottom: 15px !important;
+    .input {
+      width: 100% !important;
+    }
   }
   &__verify-legal {
     margin-bottom: 20px !important;

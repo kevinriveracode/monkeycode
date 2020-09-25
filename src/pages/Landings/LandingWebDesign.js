@@ -148,7 +148,7 @@ export default function IndexPage({ pageContext }) {
             title: "Activar pack",
             link: "",
           },
-          price: "270€ / pago único",
+          price: "270€",
           backgroundColor: "#4071B",
         },
         {
@@ -170,7 +170,7 @@ export default function IndexPage({ pageContext }) {
             title: "Activar pack",
             link: "",
           },
-          price: "450€ / pago único",
+          price: "450€",
           backgroundColor: "#FFAE37",
         },
         {
@@ -190,7 +190,7 @@ export default function IndexPage({ pageContext }) {
             title: "Activar pack",
             link: "",
           },
-          price: "690€ / pago único",
+          price: "690€",
           backgroundColor: "#92CD41",
         },
       ],

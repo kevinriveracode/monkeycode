@@ -6,14 +6,20 @@
   }
   &__title {
     padding: 1.5rem 0.7rem;
-    h3 {
-      text-align: center;
-    }
+    text-align: center !important;
   }
   .pack {
     margin-bottom: 2rem !important;
     &__container {
       border: 1px solid #f1f2f3;
+    }
+    &__icon {
+      width: 1.4rem !important;
+      margin-bottom: 0 !important;
+      margin-right: 8px !important;
+    }
+    &__price {
+      font-size: 16px;
     }
     &__header {
       text-align: center;
@@ -27,6 +33,7 @@
         font-size: 24px;
         font-weight: bold;
         margin-bottom: 0px;
+        color: #545454 !important;
         span {
           color: white;
         }
@@ -48,6 +55,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      button {
+        background-color: #fcb701 !important;
+      }
     }
     &__body {
       padding: 1.5rem 0.75rem;
