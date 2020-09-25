@@ -20,6 +20,7 @@ export default function Examples(props) {
                   title={entry.title}
                   titleButtonDemo={entry.titleButtonDemo}
                   titleButtonCheckout={entry.titleButtonCheckout}
+                  urlImageDemo={entry.urlImageDemo}
                 />
               ))}
             </Grid.Column>
@@ -31,14 +32,14 @@ export default function Examples(props) {
 }
 
 function Demo(props) {
-  const { title, titleButtonCheckout, titleButtonDemo } = props
+  const { title, titleButtonCheckout, titleButtonDemo, urlImageDemo } = props
   return (
     <Grid.Row className="demo">
       <Grid.Column mobile={16}>
-        <h6>{title}</h6>
+        <h6 className="demo__title">{title}</h6>
       </Grid.Column>
       <Grid.Column mobile={16}>
-        <Image src="" alt="" className="demo__image" />
+        <Image src={urlImageDemo} alt="" className="demo__image" />
       </Grid.Column>
       <Grid.Column mobile={16} className="demo__container-buttons">
         <Button
