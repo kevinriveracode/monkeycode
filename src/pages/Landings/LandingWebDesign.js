@@ -39,11 +39,12 @@ export default function IndexPage({ pageContext }) {
           url: `${baseUrlImages}mundo.svg`,
         },
         {
-          title: "Disponible 24 horas",
+          title: "Incrementa tus ventas y fideliza a los clientes",
           description:
-            "Tu sitio web estará disponible para proporcionar información las 24 horas del día.",
-          url: `${baseUrlImages}time.svg`,
+            "Estudia a tus clientes y crea una estrategia enfocada en fidelizar a nuevos clientes para tu negocio. Puedes escribir un blog hablando sobre los productos o servicios que ofreces y asi animar a tu publico a contactar con tu negocio.",
+          url: `${baseUrlImages}fidelizar.svg`,
         },
+
         {
           title: "Amplía tu mercado",
           description:
@@ -51,10 +52,22 @@ export default function IndexPage({ pageContext }) {
           url: `${baseUrlImages}crecimiento.svg`,
         },
         {
+          title: "Disponible 24 horas",
+          description:
+            "Tu sitio web estará disponible para proporcionar información las 24 horas del día.",
+          url: `${baseUrlImages}time.svg`,
+        },
+        {
           title: "Herramienta de venta",
           description:
             "Es importante que tu negocio tenga un portal donde pueda presentar su oferta para que los potenciales clientes puedan consultar la información antes de tomar una desición.",
           url: `${baseUrlImages}info.svg`,
+        },
+        {
+          title: "Diferenciate de la competencia",
+          description:
+            "Una web te permite mayor cercanía, las personas que busquen tus servicios o productos podran ver muy rapidamente que tu ofreces esos servicios y obtendras un mayor rango de venta.",
+          url: `${baseUrlImages}competencia.svg`,
         },
       ],
       footerTitle: "Contrata hoy mismo tu página web",
@@ -64,7 +77,7 @@ export default function IndexPage({ pageContext }) {
       },
     },
     features: {
-      title: "¿Que incluimos en nuestra páginas web?",
+      title: "¿Que incluimos en nuestras páginas web?",
       subtitle:
         "Ya sea que necesitas un sitio web de WordPress, para poner tu negocio en línea, o una página online de ecommerce más completa, nuestro equipo de desarrollo web, te ayudará a hacer realidad tu visión.",
       services: [
@@ -91,6 +104,18 @@ export default function IndexPage({ pageContext }) {
           typeService: "WEB",
           nameService: "Entrega de 4 a 7 días",
           backgroundColor: "#C9BFC8",
+        },
+        {
+          url: `${baseUrlImages}compartir.svg`,
+          typeService: "WEB",
+          nameService: "Integración a redes sociales",
+          backgroundColor: "#339AD6",
+        },
+        {
+          url: `${baseUrlImages}camara.svg`,
+          typeService: "WEB",
+          nameService: "Imagenes profesionales",
+          backgroundColor: "#F9992D",
         },
       ],
     },

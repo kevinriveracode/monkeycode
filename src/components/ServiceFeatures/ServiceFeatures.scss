@@ -1,6 +1,8 @@
 @import "../../scss/index.scss";
 
 .service-features {
+  padding-top: 1.5rem;
+  padding-bottom: 70px;
   &__title {
     font-size: 22px !important;
     text-align: center;
@@ -21,7 +23,7 @@
   }
   &__features-container {
     .feature {
-      min-height: 175px;
+      min-height: 185px;
       text-align: center;
       &__service {
         font-family: "Roboto Condensed", sans-serif !important;
