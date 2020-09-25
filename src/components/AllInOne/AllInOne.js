@@ -13,7 +13,7 @@ export default function AllInOne(props) {
           <Grid.Row>
             <Grid.Column>
               <Image
-                src="/icons/rocket.svg"
+                src="http://d1r0i6dbql3qta.cloudfront.net/rocket.svg"
                 alt="Proyecto llave en mano"
                 className="all-in-one__icon"
               />

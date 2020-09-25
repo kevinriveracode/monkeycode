@@ -19,7 +19,7 @@ export default function HeaderMc(props) {
             >
               <Image
                 className="header__menu-mobile"
-                src="http://drive.google.com/uc?export=view&id=16lZQ5v2RVxkub04BUJ67f_4D51t9flFQ"
+                src="http://d1r0i6dbql3qta.cloudfront.net/menu.svg"
               />
             </Grid.Column>
           </Grid.Row>

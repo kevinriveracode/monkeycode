@@ -9,7 +9,7 @@ export default function Banner(props) {
     <section
       className="banner"
       style={{
-        backgroundImage: `url("http://drive.google.com/uc?export=view&id=1jrFchP1VUmSjlLfkV0zOLoGBT_Tv-zr1")`,
+        backgroundImage: `url("http://d1r0i6dbql3qta.cloudfront.net/dise%C3%B1o-web-banner-bg+.png")`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}

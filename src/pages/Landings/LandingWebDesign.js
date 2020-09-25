@@ -11,7 +11,7 @@ import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
 
 export default function IndexPage({ pageContext }) {
-  const baseUrlImages = "http://drive.google.com/uc?export=view&id="
+  const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
     banner: {
@@ -25,8 +25,7 @@ export default function IndexPage({ pageContext }) {
         title: "¡Contactanos Ya!",
         link: "#",
       },
-      imageLink:
-        "http://drive.google.com/uc?export=view&id=1CB-vLvejMvfNu25porxWTVlmMaSZ1-C6",
+      imageLink: `${baseUrlImages}dise%C3%B1o-web-banner-icon.svg`,
     },
     Advantages: {
       title: "¿Por qué debería contratar una página web?",
@@ -37,29 +36,25 @@ export default function IndexPage({ pageContext }) {
           title: "Imagen profesional",
           description:
             "Tener una página web te permite hacer publicidad y promocionar tu negocio con una exposición a nivel mundial gracias al gran alcance de internet.",
-          url:
-            "http://drive.google.com/uc?export=view&id=1ZY7vp4ZKs6EbbcwaEltXZJ24YiOQFD5D",
+          url: `${baseUrlImages}mundo.svg`,
         },
         {
           title: "Disponible 24 horas",
           description:
             "Tu sitio web estará disponible para proporcionar información las 24 horas del día.",
-          url:
-            "http://drive.google.com/uc?export=view&id=1294b_zTdvfwYrdJp87-Nbcnab8z46Jfi",
+          url: `${baseUrlImages}time.svg`,
         },
         {
           title: "Amplía tu mercado",
           description:
             "Tener presencia en internet te ofrece la oportunidad de llegar a más clientes además de mejorar las oportunidades de negocio y la captación de clientes potenciales.",
-          url:
-            "http://drive.google.com/uc?export=view&id=1-ZlgeM6PO0GM3Karb54fBmVYvMp0dBw4",
+          url: `${baseUrlImages}crecimiento.svg`,
         },
         {
           title: "Herramienta de venta",
           description:
             "Es importante que tu negocio tenga un portal donde pueda presentar su oferta para que los potenciales clientes puedan consultar la información antes de tomar una desición.",
-          url:
-            "http://drive.google.com/uc?export=view&id=1zWeF8Od0eRZ9VQCDpc2jwN-UiCo2SRCP",
+          url: `${baseUrlImages}info.svg`,
         },
       ],
       footerTitle: "Contrata hoy mismo tu página web",
@@ -74,25 +69,25 @@ export default function IndexPage({ pageContext }) {
         "Ya sea que necesitas un sitio web de WordPress, para poner tu negocio en línea, o una página online de ecommerce más completa, nuestro equipo de desarrollo web, te ayudará a hacer realidad tu visión.",
       services: [
         {
-          url: `${baseUrlImages}1ONqYbm46rexC7FfS0Lwrlp0tIBTeqPEw`,
+          url: `${baseUrlImages}responsive.svg`,
           typeService: "WEB",
           nameService: "Responsive",
           backgroundColor: "#F1EADE",
         },
         {
-          url: `${baseUrlImages}1mGXB_51Pb35n6kyCv8BktpsiACQCwauu`,
+          url: `${baseUrlImages}google-seo.svg`,
           typeService: "WEB",
           nameService: "Optimizada para Google",
           backgroundColor: "#F7D9D9",
         },
         {
-          url: `${baseUrlImages}1FYbiAGuI1t2wIPQ-DLENS9svE-QZQDj9`,
+          url: `${baseUrlImages}autoadministrable.svg`,
           typeService: "WEB",
           nameService: "100% Autoadministrable",
           backgroundColor: "#EBE6FB",
         },
         {
-          url: `${baseUrlImages}1tRGNkitT9N2VE_FFVF3Bbav3l7Vu5Hfz`,
+          url: `${baseUrlImages}tiempo-entrega.svg`,
           typeService: "WEB",
           nameService: "Entrega de 4 a 7 días",
           backgroundColor: "#C9BFC8",
@@ -106,7 +101,7 @@ export default function IndexPage({ pageContext }) {
           title: "Diseño Web",
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
-          urlImageDemo: `${baseUrlImages}1qzWabDjI74-uDxVFX-qQgKBx6VTc9Pcu`,
+          urlImageDemo: `${baseUrlImages}demo-1.jpg`,
           linkDemo: "~",
           linkCheckout: "",
         },
@@ -114,7 +109,7 @@ export default function IndexPage({ pageContext }) {
           title: "Diseño Web",
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
-          urlImageDemo: `${baseUrlImages}1hzR1Z9LR9Vd6oLzRyZPUcRCFfPUTpo7d`,
+          urlImageDemo: `${baseUrlImages}demo-2.jpg`,
           linkDemo: "~",
           linkCheckout: "",
         },
