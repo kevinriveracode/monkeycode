@@ -11,6 +11,7 @@ import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
 
 export default function IndexPage({ pageContext }) {
+  const baseUrlImages = "http://drive.google.com/uc?export=view&id="
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
     banner: {
@@ -36,25 +37,29 @@ export default function IndexPage({ pageContext }) {
           title: "Imagen profesional",
           description:
             "Tener una página web te permite hacer publicidad y promocionar tu negocio con una exposición a nivel mundial gracias al gran alcance de internet.",
-          url: "",
+          url:
+            "http://drive.google.com/uc?export=view&id=1ZY7vp4ZKs6EbbcwaEltXZJ24YiOQFD5D",
         },
         {
           title: "Disponible 24 horas",
           description:
             "Tu sitio web estará disponible para proporcionar información las 24 horas del día.",
-          url: "",
+          url:
+            "http://drive.google.com/uc?export=view&id=1294b_zTdvfwYrdJp87-Nbcnab8z46Jfi",
         },
         {
           title: "Amplía tu mercado",
           description:
             "Tener presencia en internet te ofrece la oportunidad de llegar a más clientes además de mejorar las oportunidades de negocio y la captación de clientes potenciales.",
-          url: "",
+          url:
+            "http://drive.google.com/uc?export=view&id=1-ZlgeM6PO0GM3Karb54fBmVYvMp0dBw4",
         },
         {
           title: "Herramienta de venta",
           description:
             "Es importante que tu negocio tenga un portal donde pueda presentar su oferta para que los potenciales clientes puedan consultar la información antes de tomar una desición.",
-          url: "",
+          url:
+            "http://drive.google.com/uc?export=view&id=1zWeF8Od0eRZ9VQCDpc2jwN-UiCo2SRCP",
         },
       ],
       footerTitle: "Contrata hoy mismo tu página web",
@@ -66,28 +71,28 @@ export default function IndexPage({ pageContext }) {
     features: {
       title: "¿Que incluimos en nuestra páginas web?",
       subtitle:
-        "Ya sea que necesitas un sitio web de WordPress, para poner tu negocio en línea, o una página online de ecommerce más complete, nuestro equipo de desarrollo web, te ayudará a hacer realidad tu visión.",
+        "Ya sea que necesitas un sitio web de WordPress, para poner tu negocio en línea, o una página online de ecommerce más completa, nuestro equipo de desarrollo web, te ayudará a hacer realidad tu visión.",
       services: [
         {
-          url: "responsive.svg",
+          url: `${baseUrlImages}1ONqYbm46rexC7FfS0Lwrlp0tIBTeqPEw`,
           typeService: "WEB",
           nameService: "Responsive",
           backgroundColor: "#F1EADE",
         },
         {
-          url: "google.svg",
+          url: `${baseUrlImages}1mGXB_51Pb35n6kyCv8BktpsiACQCwauu`,
           typeService: "WEB",
           nameService: "Optimizada para Google",
           backgroundColor: "#F7D9D9",
         },
         {
-          url: "admin.svg",
+          url: `${baseUrlImages}1FYbiAGuI1t2wIPQ-DLENS9svE-QZQDj9`,
           typeService: "WEB",
           nameService: "100% Autoadministrable",
           backgroundColor: "#EBE6FB",
         },
         {
-          url: "clock.svg",
+          url: `${baseUrlImages}1tRGNkitT9N2VE_FFVF3Bbav3l7Vu5Hfz`,
           typeService: "WEB",
           nameService: "Entrega de 4 a 7 días",
           backgroundColor: "#C9BFC8",

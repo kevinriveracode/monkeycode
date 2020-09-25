@@ -48,6 +48,11 @@
       &__description {
         font-family: "Roboto Condensed", sans-serif;
       }
+      &__icon {
+        width: 2.2rem;
+        margin-bottom: 0px;
+        max-width: fit-content !important;
+      }
     }
   }
 }

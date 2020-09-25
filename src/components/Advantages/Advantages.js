@@ -31,10 +31,10 @@ export default function Advantages(props) {
           <Grid.Row>
             <Grid.Column mobile={16} className="advantages__footer">
               <h5 className="advantages__title">
-                "Contrata hoy mismo tu página web"
+                Contrata hoy mismo tu página web
               </h5>
               <Button as="a" className="advantages__button">
-                Contrata hoy mismo tu página web
+                ¿EMPEZAMOS?
               </Button>
             </Grid.Column>
           </Grid.Row>
@@ -51,7 +51,7 @@ function AdvantageItem(props) {
     <Grid className="advantage-item">
       <Grid.Row>
         <Grid.Column mobile={2} className="advantage-item__container-image">
-          <Image src={`/img/${url}`} />
+          <Image className="advantage-item__icon" src={url} />
         </Grid.Column>
         <Grid.Column mobile={14} className="advantage-item__container-info">
           <h4 className="advantage-item__title">{title}</h4>

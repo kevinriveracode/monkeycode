@@ -45,7 +45,7 @@ function Feature(props) {
       <Grid.Row>
         <Grid.Column mobile={16} className="feature__image-container">
           <div>
-            <Image src={`/img/${url}`} />
+            <Image src={url} />
           </div>
         </Grid.Column>
         <Grid.Column mobile={16}>

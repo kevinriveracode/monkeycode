@@ -38,6 +38,15 @@
       &__image-container {
         display: flex !important;
         justify-content: center;
+        div {
+          display: flex;
+          align-items: center;
+          img {
+            width: 4rem;
+            margin-bottom: 0px;
+            max-width: fit-content;
+          }
+        }
       }
     }
   }
