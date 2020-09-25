@@ -31,7 +31,10 @@ function Pack(props) {
     <Grid.Column className="pack" mobile={16}>
       <Grid.Row className="pack__container">
         <Grid.Column className="pack__header" style={{ backgroundColor }}>
-          <Image src="/icons/pack.svg" className="pack__icon" />
+          <Image
+            src="https://monkeycode.s3.eu-west-3.amazonaws.com/pack.svg"
+            className="pack__icon"
+          />
           <h6>
             PACK <span>{name}</span>
           </h6>
