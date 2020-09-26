@@ -1,4 +1,5 @@
 import React from "react"
+import ScrollUpButton from "react-scroll-up-button"
 import SEO from "../../components/seo"
 import Header from "../../components/Header/Header"
 import Banner from "../../components/Banner/Banner"
@@ -9,6 +10,7 @@ import SeoMessage from "../../components/SeoMessage/SeoMessage"
 import PackContainer from "../../components/PackContainer/PackContainer"
 import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
+import ScrollToTop from "react-scroll-to-top"
 
 export default function IndexPage({ pageContext }) {
   const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
@@ -295,6 +297,7 @@ export default function IndexPage({ pageContext }) {
         call={infoLanding.formWeb.call}
         email={infoLanding.formWeb.email}
       />
+      <ScrollToTop smooth color="#fcb701" />
     </>
   )
 }
