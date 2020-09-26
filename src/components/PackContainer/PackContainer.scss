@@ -2,16 +2,24 @@
 
 .pack-container {
   background-color: #f1f2f3;
-  padding-top: 1.5rem;
+  padding: 78px 0 90px !important;
   &__body-pack {
     padding: 0 0px;
   }
   &__title {
     padding: 1.5rem 0.7rem;
     text-align: center !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 30px;
+    }
   }
+
   .pack {
     margin-bottom: 2rem !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      min-width: 33.25% !important;
+      padding: 5px !important;
+    }
     &__container {
       border: 1px solid #f1f2f3;
       background-color: white;
@@ -65,11 +73,19 @@
     }
     &__body {
       padding: 1.5rem 0.75rem;
+      display: flex;
+      justify-content: center;
+      @include upBreakpoint($breakpoint-up-lg) {
+        min-height: 407px;
+      }
       ul {
         list-style: none;
         margin: 0;
         font-family: Roboto Condensed;
         text-decoration: none;
+        @include upBreakpoint($breakpoint-up-md) {
+          width: fit-content;
+        }
         li {
           i {
             color: green;

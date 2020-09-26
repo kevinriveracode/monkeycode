@@ -1,12 +1,15 @@
 @import "../../scss/index.scss";
 
 .advantages {
-  padding: 3.5rem 0rem !important;
+  padding: 78px 0 90px !important;
   &__title {
     font-size: 22px !important;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     margin-bottom: 0px !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 30px !important;
+    }
   }
   &__subtitle {
     margin-top: 5px !important;
@@ -15,6 +18,9 @@
     font-size: 16px;
     color: #141414 !important;
     font-family: "Roboto Condensed", sans-serif;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 22px !important;
+    }
   }
   &__button {
     background-color: #fcb701 !important;
@@ -38,15 +44,31 @@
       background-color: #f1f2f3;
       padding: 10px 0px;
       margin: 10px 0px !important;
+      @include upBreakpoint($breakpoint-up-md) {
+        min-height: 215px !important;
+      }
+      @include upBreakpoint($breakpoint-up-lg) {
+        min-height: 250px !important;
+      }
       &__container-image {
         display: flex !important;
+        @include upBreakpoint($breakpoint-up-lg) {
+          display: flex;
+          justify-content: center;
+        }
       }
       &__title {
         font-family: "Roboto Condensed", sans-serif;
         margin-bottom: 4px !important;
+        @include upBreakpoint($breakpoint-up-lg) {
+          text-align: center;
+        }
       }
       &__description {
         font-family: "Roboto Condensed", sans-serif;
+        @include upBreakpoint($breakpoint-up-lg) {
+          text-align: center;
+        }
       }
       &__icon {
         width: 2.2rem;

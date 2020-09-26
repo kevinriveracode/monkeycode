@@ -2,6 +2,9 @@
 
 .header {
   height: 75px;
+  @include upBreakpoint($breakpoint-up-lg) {
+    height: 125px;
+  }
   &__container {
     height: 100%;
   }

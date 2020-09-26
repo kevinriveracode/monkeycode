@@ -86,7 +86,7 @@ export default function IndexPage({ pageContext }) {
         {
           url: `${baseUrlImages}responsive.svg`,
           typeService: "WEB",
-          nameService: "Responsive",
+          nameService: "Diseño responsive",
           backgroundColor: "#F1EADE",
         },
         {

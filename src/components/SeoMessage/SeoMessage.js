@@ -18,8 +18,8 @@ export default function ServiceWorkerMessageEvent(props) {
             <p className="seo-message__subtitle">{description}</p>
           </Grid.Column>
         </Grid.Row>
-        <Grid.Row>
-          <Grid.Column>
+        <Grid.Row className="seo-message__container-row">
+          <Grid.Column className="seo-message__container-quote">
             <div className="seo-message__message">
               <p className="text">{quote}</p>
               <p className="quote">{author}</p>

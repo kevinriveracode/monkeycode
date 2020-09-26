@@ -17,16 +17,16 @@ export default function Advantages(props) {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row className="advantages__container-items">
-            <Grid.Column mobile={16}>
-              {map(advantages, (item, index) => (
+            {map(advantages, (item, index) => (
+              <Grid.Column mobile={16} tablet={8} computer={5}>
                 <AdvantageItem
                   key={index}
                   url={item.url}
                   title={item.title}
                   description={item.description}
                 />
-              ))}
-            </Grid.Column>
+              </Grid.Column>
+            ))}
           </Grid.Row>
           <Grid.Row>
             <Grid.Column mobile={16} className="advantages__footer">
@@ -50,10 +50,21 @@ function AdvantageItem(props) {
   return (
     <Grid className="advantage-item">
       <Grid.Row>
-        <Grid.Column mobile={2} className="advantage-item__container-image">
+        <Grid.Column
+          mobile={2}
+          tablet={3}
+          computer={16}
+          className="advantage-item__container-image"
+        >
           <Image className="advantage-item__icon" src={url} />
         </Grid.Column>
-        <Grid.Column mobile={14} className="advantage-item__container-info">
+        <Grid.Column
+          verticalAlign="middle"
+          mobile={14}
+          tablet={13}
+          computer={16}
+          className="advantage-item__container-info"
+        >
           <h4 className="advantage-item__title">{title}</h4>
           <p className="advantage-item__description">{description}</p>
         </Grid.Column>

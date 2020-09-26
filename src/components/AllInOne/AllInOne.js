@@ -22,7 +22,7 @@ export default function AllInOne(props) {
           </Grid.Row>
           <Grid.Row>
             {map(features, (entry, index) => (
-              <Grid.Column mobile={8} key={index}>
+              <Grid.Column mobile={8} computer={5} key={index}>
                 <p className="all-in-one__feature">
                   <i class="check icon" />
                   {entry}

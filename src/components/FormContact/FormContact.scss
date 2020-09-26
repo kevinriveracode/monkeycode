@@ -1,7 +1,7 @@
 @import "../../scss/index.scss";
 
 .form-contact {
-  padding: 50px 0px;
+  padding: 78px 0 90px !important;
   background-color: #4071be;
   &__container-title {
     text-align: center;
@@ -10,11 +10,17 @@
     font-size: 22px;
     margin-bottom: 0px;
     color: white;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 30px;
+    }
   }
   &__subtitle {
     margin-bottom: 0px;
     font-size: 16px;
     color: white;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 22px;
+    }
   }
   &__phone-message {
     font-size: 18px;

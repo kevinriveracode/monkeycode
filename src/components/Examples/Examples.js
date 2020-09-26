@@ -8,22 +8,27 @@ export default function Examples(props) {
 
   return (
     <section className="examples">
-      <Container>
+      <Container fluid>
         <Grid>
           <Grid.Row className="examples__container-title">
             <h2 className="examples__title">{title}</h2>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column mobile={16} className="examples__container-demo">
-              {map(demos, (entry, index) => (
+            {map(demos, (entry, index) => (
+              <Grid.Column
+                mobile={16}
+                tablet={8}
+                computer={8}
+                className="examples__container-demo"
+              >
                 <Demo
                   title={entry.title}
                   titleButtonDemo={entry.titleButtonDemo}
                   titleButtonCheckout={entry.titleButtonCheckout}
                   urlImageDemo={entry.urlImageDemo}
                 />
-              ))}
-            </Grid.Column>
+              </Grid.Column>
+            ))}
           </Grid.Row>
         </Grid>
       </Container>

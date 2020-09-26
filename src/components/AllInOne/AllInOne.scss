@@ -2,19 +2,25 @@
 
 .all-in-one {
   background-color: #ffffff;
-  padding: 50px 0 40px 0;
+  padding: 78px 0 90px !important;
 
   &__title {
-    font-size: 22px !important;
+    font-size: 22px;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     margin-bottom: 0px !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 30px;
+    }
   }
   &__feature {
     font-size: 13px;
     font-weight: 400;
     margin-bottom: 0.8rem !important;
     font-family: "Roboto Condensed", sans-serif;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 15px;
+    }
     i {
       color: green;
     }
@@ -22,5 +28,9 @@
   &__icon {
     width: 36px;
     margin: auto;
+    @include upBreakpoint($breakpoint-up-lg) {
+      width: 75px;
+      margin-bottom: 1.5rem;
+    }
   }
 }

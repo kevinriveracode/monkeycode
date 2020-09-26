@@ -20,6 +20,8 @@ export default function ServiceFeatures(props) {
             {map(services, (item, index) => (
               <Grid.Column
                 mobile={8}
+                tablet={5}
+                computer={2}
                 className="service-features__container-block"
               >
                 <Feature

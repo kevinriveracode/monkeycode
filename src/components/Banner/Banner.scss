@@ -5,16 +5,23 @@
   padding-top: 35px;
   padding-bottom: 50px;
   position: relative !important;
-  &__container {
+  @include upBreakpoint($breakpoint-up-lg) {
+    height: 430px;
+    display: flex;
+    align-items: center;
   }
   &__primary-title {
     font-family: "Roboto Condensed", sans-serif !important;
-    font-size: 22px !important;
+    font-size: 22px;
     font-weight: bold;
     color: #ffffff;
     margin: 0px;
     text-align: center;
     margin-bottom: 5px;
+    @include upBreakpoint($breakpoint-up-lg) {
+      text-align: left;
+      font-size: 55px;
+    }
   }
   &__secondary-title {
     font-family: "Roboto Condensed", sans-serif !important;
@@ -24,17 +31,28 @@
     margin: 0px;
     text-align: center;
     margin-bottom: 25px;
+    @include upBreakpoint($breakpoint-up-lg) {
+      text-align: left;
+      font-size: 24px;
+    }
   }
   &__container-buttons {
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
+    @include upBreakpoint($breakpoint-up-lg) {
+      justify-content: flex-start;
+    }
     &--button-primary {
       background-color: #fcb701 !important;
       border-radius: 4px !important;
       color: #141414 !important;
       padding: 8px 30px !important;
       min-width: 100px !important;
+      @include upBreakpoint($breakpoint-up-lg) {
+        padding: 10px 32px !important;
+        min-width: 202px !important;
+      }
     }
     &--button-secondary {
       background-color: transparent !important;
@@ -45,9 +63,21 @@
       min-width: 100px !important;
     }
   }
+  &__image-container {
+    padding: 0 !important;
+  }
   &__optional-image {
     position: absolute !important;
     left: 25% !important;
     bottom: -105px !important;
+    @include upBreakpoint($breakpoint-up-md) {
+      left: 33% !important;
+    }
+    @include upBreakpoint($breakpoint-up-lg) {
+      width: 19rem;
+      position: absolute !important;
+      right: 0px;
+      bottom: 67px !important;
+    }
   }
 }

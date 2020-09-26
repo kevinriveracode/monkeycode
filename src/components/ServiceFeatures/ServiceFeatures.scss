@@ -4,10 +4,13 @@
   padding-top: 1.5rem;
   padding-bottom: 70px;
   &__title {
-    font-size: 22px !important;
+    font-size: 22px;
     text-align: center;
     font-family: "Roboto Condensed", sans-serif;
     margin-bottom: 0px !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 30px;
+    }
   }
   &__subtitle {
     margin-top: 5px !important;
@@ -17,14 +20,25 @@
     font-size: 16px;
     color: #141414 !important;
     font-family: "Roboto Condensed", sans-serif;
+    @include upBreakpoint($breakpoint-up-lg) {
+      font-size: 22px;
+    }
   }
   &__container-block {
     min-height: 185px !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      min-height: 200px !important;
+      min-width: 16.5% !important;
+    }
   }
   &__features-container {
+    justify-content: center !important;
     .feature {
       min-height: 185px;
       text-align: center;
+      @include upBreakpoint($breakpoint-up-lg) {
+        min-height: 200px !important;
+      }
       &__service {
         font-family: "Roboto Condensed", sans-serif !important;
         font-size: 12px !important;

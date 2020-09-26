@@ -28,7 +28,7 @@ function Pack(props) {
   const { name, features, button, price, backgroundColor } = props.dataPack
 
   return (
-    <Grid.Column className="pack" mobile={16}>
+    <Grid.Column className="pack" mobile={16} tablet={16} computer={5}>
       <Grid.Row className="pack__container">
         <Grid.Column className="pack__header" style={{ backgroundColor }}>
           <Image
