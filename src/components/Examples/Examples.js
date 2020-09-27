@@ -52,7 +52,7 @@ function Demo(props) {
           className="demo__button demo__button--secondary"
         />
         <Button
-          content={titleButtonCheckout}
+          content={titleButtonCheckout + "x"}
           className="demo__button demo__button--primary"
         />
       </Grid.Column>

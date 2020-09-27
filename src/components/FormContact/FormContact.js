@@ -18,7 +18,6 @@ export default function FormContact(props) {
   const [emailUser, setEmailUser] = useState("")
   const [message, sendMessage] = useState("")
   const [messageEmail, setMessageEmail] = useState(false)
-
   const [nameNumber, setNameNumber] = useState("")
   const [number, setNumber] = useState("")
 
