@@ -30,7 +30,10 @@ export default function FormContact(props) {
       message: message,
       currentDate: new Date(),
     }
-    await axios.post("http://localhost:3000/sendMessageWeb", messageToSend)
+    await axios.post(
+      "https://monkeycodebusiness.herokuapp.com/sendMessageWeb",
+      messageToSend
+    )
     setMessageEmail(false)
   }
 
@@ -41,7 +44,10 @@ export default function FormContact(props) {
       number: number,
       currentDate: new Date(),
     }
-    await axios.post("http://localhost:3000/sendMessagePhone", messageToSend)
+    await axios.post(
+      "https://monkeycodebusiness.herokuapp.com/sendMessagePhone",
+      messageToSend
+    )
     setMessageEmail(false)
   }
 
