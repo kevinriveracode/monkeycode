@@ -24,13 +24,12 @@ export default function FormContact(props) {
   async function sendMessageWeb() {
     setMessageEmail(true)
     let messageToSend = {
-      from: emailUser,
-      nameUser: name,
+      name: name,
+      email: emailUser,
       message: message,
-      currentDate: new Date(),
     }
     await axios.post(
-      "https://monkeycodeapp.herokuapp.com/sendMessageWeb",
+      "https://monkeycodebackend.herokuapp.com/saveMessage",
       messageToSend
     )
     setMessageEmail(false)
