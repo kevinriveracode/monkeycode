@@ -31,7 +31,7 @@ export default function FormContact(props) {
       currentDate: new Date(),
     }
     await axios.post(
-      "https://monkeycodebusiness.herokuapp.com/sendMessageWeb",
+      "https://monkeycodeapp.herokuapp.com/sendMessageWeb",
       messageToSend
     )
     setMessageEmail(false)
@@ -45,7 +45,7 @@ export default function FormContact(props) {
       currentDate: new Date(),
     }
     await axios.post(
-      "https://monkeycodebusiness.herokuapp.com/sendMessagePhone",
+      "https://monkeycodeapp.herokuapp.com/sendMessagePhone",
       messageToSend
     )
     setMessageEmail(false)
