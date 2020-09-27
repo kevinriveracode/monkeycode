@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import {
   Container,
   Grid,
@@ -7,10 +7,44 @@ import {
   Button,
   TextArea,
 } from "semantic-ui-react"
+import axios from "axios"
+import moment from "moment"
 import "./FormContact.scss"
 
 export default function FormContact(props) {
   const { title, subtitle, call, email } = props
+
+  const [name, setName] = useState("")
+  const [emailUser, setEmailUser] = useState("")
+  const [message, sendMessage] = useState("")
+  const [messageEmail, setMessageEmail] = useState(false)
+
+  const [nameNumber, setNameNumber] = useState("")
+  const [number, setNumber] = useState("")
+
+  async function sendMessageWeb() {
+    setMessageEmail(true)
+    let messageToSend = {
+      from: emailUser,
+      nameUser: name,
+      message: message,
+      currentDate: new Date(),
+    }
+    await axios.post("http://localhost:3000/sendMessageWeb", messageToSend)
+    setMessageEmail(false)
+  }
+
+  async function sendMessagePhone() {
+    setMessageEmail(true)
+    let messageToSend = {
+      name: nameNumber,
+      number: number,
+      currentDate: new Date(),
+    }
+    await axios.post("http://localhost:3000/sendMessagePhone", messageToSend)
+    setMessageEmail(false)
+  }
+
   return (
     <section className="form-contact">
       <Container className="form-contact__container">
@@ -26,10 +60,19 @@ export default function FormContact(props) {
               <p className="form-contact__phone-message">{call.title}</p>
             </Grid.Column>
             <Grid.Column className="form-contact__container-input" mobile={8}>
-              <Input placeholder="Nombre" />
+              <Input
+                placeholder="Nombre"
+                value={nameNumber}
+                onChange={ev => setNameNumber(ev.target.value)}
+              />
             </Grid.Column>
             <Grid.Column className="form-contact__container-input" mobile={8}>
-              <Input placeholder="Teléfono" />
+              <Input
+                placeholder="Teléfono"
+                value={number}
+                onChange={ev => setNumber(ev.target.value)}
+                type="number"
+              />
             </Grid.Column>
             <Grid.Column mobile={16} className="form-contact__verify-legal">
               <Checkbox label={call.privacity} />
@@ -38,19 +81,32 @@ export default function FormContact(props) {
               mobile={16}
               className="form-contact__contact-button-container"
             >
-              <Button content={call.button.name} />
+              <Button content={call.button.name} onClick={sendMessagePhone} />
             </Grid.Column>
             <Grid.Column mobile={16}>
               <p className="form-contact__email-message">{email.title}</p>
             </Grid.Column>
             <Grid.Column mobile={8} className="form-contact__container-input">
-              <Input placeholder="Nombre" />
+              <Input
+                value={name}
+                onChange={ev => setName(ev.target.value)}
+                placeholder="Nombre"
+              />
             </Grid.Column>
             <Grid.Column mobile={8} className="form-contact__container-input">
-              <Input placeholder="Correo" />
+              <Input
+                value={emailUser}
+                onChange={ev => setEmailUser(ev.target.value)}
+                eholder="Correo"
+                type="email"
+              />
             </Grid.Column>
             <Grid.Column mobile={16} className="form-contact__message">
-              <TextArea placeholder="Lo que quieras contarnos..." />
+              <TextArea
+                value={message}
+                placeholder="Lo que quieras contarnos..."
+                onChange={ev => sendMessage(ev.target.value)}
+              />
             </Grid.Column>
             <Grid.Column mobile={16} className="form-contact__verify-legal">
               <Checkbox label={email.privacity} />
@@ -59,7 +115,11 @@ export default function FormContact(props) {
               mobile={16}
               className="form-contact__contact-button-container"
             >
-              <Button content={email.button.name} />
+              <Button
+                onClick={sendMessageWeb}
+                content={email.button.name}
+                loading={messageEmail}
+              />
             </Grid.Column>
           </Grid.Row>
         </Grid>
