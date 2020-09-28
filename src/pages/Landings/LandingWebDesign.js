@@ -168,7 +168,7 @@ export default function IndexPage({ pageContext }) {
           ],
           button: {
             title: "Activar pack",
-            link: "",
+            link: "/product/pack-valencia",
           },
           price: "270€",
           backgroundColor: "#4071B",
@@ -190,7 +190,7 @@ export default function IndexPage({ pageContext }) {
           ],
           button: {
             title: "Activar pack",
-            link: "",
+            link: "/product/pack-ibiza",
           },
           price: "450€",
           backgroundColor: "#FFAE37",
@@ -210,7 +210,7 @@ export default function IndexPage({ pageContext }) {
           ],
           button: {
             title: "Activar pack",
-            link: "",
+            link: "/product/diseño-web-pack-mallorca",
           },
           price: "690€",
           backgroundColor: "#92CD41",

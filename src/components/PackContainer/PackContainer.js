@@ -25,7 +25,14 @@ export default function PackContainer(props) {
 }
 
 function Pack(props) {
-  const { name, features, button, price, backgroundColor } = props.dataPack
+  const {
+    name,
+    features,
+    button,
+    price,
+    backgroundColor,
+    link,
+  } = props.dataPack
 
   return (
     <Grid.Column className="pack" mobile={16} tablet={16} computer={5}>
@@ -56,7 +63,7 @@ function Pack(props) {
           </p>
         </Grid.Column>
         <Grid.Column className="pack__other">
-          <Button content="Activar" />
+          <Button as="a" href={button.link} content="Activar" />
         </Grid.Column>
       </Grid.Row>
     </Grid.Column>

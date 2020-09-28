@@ -1,0 +1,65 @@
+@import "../../scss/index.scss";
+
+.product {
+  &__title {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 10px;
+  }
+  &__price {
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    font-size: 22px;
+    color: #4171be;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &__button {
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    color: #000000 !important;
+    min-width: 120px;
+    background-color: #fbb832 !important;
+  }
+  .first-steps {
+    display: flex !important;
+    justify-content: center !important;
+    padding-top: 40px !important;
+    h3 {
+      font-size: 22px;
+    }
+    margin-bottom: 20px;
+  }
+  .steps {
+    margin-left: 2.5rem;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .step-container {
+    padding: 1rem 20px 1rem 2rem;
+    border-left: 4px solid #000000;
+    position: relative;
+  }
+  .step {
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .step-point {
+    width: 20px;
+    height: 20px;
+    background-color: #fbb832;
+    position: absolute;
+    top: 18px;
+    left: -11px;
+    border-radius: 100%;
+  }
+}
