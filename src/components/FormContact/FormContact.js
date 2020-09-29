@@ -18,6 +18,7 @@ export default function FormContact(props) {
   const [emailUser, setEmailUser] = useState("")
   const [message, sendMessage] = useState("")
   const [messageEmail, setMessageEmail] = useState(false)
+  const [messagePhone, setMessagePhone] = useState(false)
   const [nameNumber, setNameNumber] = useState("")
   const [number, setNumber] = useState("")
 
@@ -36,17 +37,16 @@ export default function FormContact(props) {
   }
 
   async function sendMessagePhone() {
-    setMessageEmail(true)
+    setMessagePhone(true)
     let messageToSend = {
       name: nameNumber,
-      number: number,
-      currentDate: new Date(),
+      phone: number,
     }
     await axios.post(
-      "https://monkeycodeapp.herokuapp.com/sendMessagePhone",
+      "https://monkeycodeapp.herokuapp.com/savePhone",
       messageToSend
     )
-    setMessageEmail(false)
+    setMessagePhone(false)
   }
 
   return (
@@ -85,7 +85,11 @@ export default function FormContact(props) {
               mobile={16}
               className="form-contact__contact-button-container"
             >
-              <Button content={call.button.name} onClick={sendMessagePhone} />
+              <Button
+                content={call.button.name}
+                loading={messagePhone}
+                onClick={sendMessagePhone}
+              />
             </Grid.Column>
             <Grid.Column mobile={16}>
               <p className="form-contact__email-message">{email.title}</p>
