@@ -1,6 +1,7 @@
 @import "../../../src/scss/index.scss";
 
 .header {
+  background-color: #4171be;
   height: 75px;
   @include upBreakpoint($breakpoint-up-lg) {
     height: 125px;
@@ -10,6 +11,14 @@
   }
   &__grid {
     height: 100%;
+  }
+  &__logo {
+    width: 14rem;
+    margin-bottom: 0px !important;
+    @include upBreakpoint($breakpoint-up-lg) {
+      width: 18rem;
+      margin-bottom: 0px !important;
+    }
   }
   &__row {
     display: flex;
