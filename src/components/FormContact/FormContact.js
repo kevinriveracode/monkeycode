@@ -8,7 +8,7 @@ import {
   TextArea,
 } from "semantic-ui-react"
 import axios from "axios"
-import moment from "moment"
+import { ToastContainer, toast } from "react-toastify"
 import "./FormContact.scss"
 
 export default function FormContact(props) {
@@ -34,6 +34,10 @@ export default function FormContact(props) {
       messageToSend
     )
     setMessageEmail(false)
+    notify()
+    setName("")
+    setEmailUser("")
+    sendMessage("")
   }
 
   async function sendMessagePhone() {
@@ -47,7 +51,20 @@ export default function FormContact(props) {
       messageToSend
     )
     setMessagePhone(false)
+    setNameNumber("")
+    setNumber("")
   }
+
+  const notify = () =>
+    toast.info("Tu mensaje se a enviado!", {
+      position: "bottom-center",
+      autoClose: 3000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+    })
 
   return (
     <section className="form-contact">
@@ -127,6 +144,17 @@ export default function FormContact(props) {
                 onClick={sendMessageWeb}
                 content={email.button.name}
                 loading={messageEmail}
+              />
+              <ToastContainer
+                position="bottom-center"
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss={false}
+                draggable
+                pauseOnHover={false}
               />
             </Grid.Column>
           </Grid.Row>
