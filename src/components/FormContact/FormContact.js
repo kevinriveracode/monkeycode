@@ -43,7 +43,7 @@ export default function FormContact(props) {
       phone: number,
     }
     await axios.post(
-      "https://monkeycodeapp.herokuapp.com/savePhone",
+      "https://monkeycodebackend.herokuapp.com/savePhone",
       messageToSend
     )
     setMessagePhone(false)
