@@ -12,6 +12,33 @@
   &__grid {
     height: 100%;
   }
+  &__menu-desktop {
+    display: none;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    @include upBreakpoint($breakpoint-up-lg) {
+      display: flex;
+    }
+  }
+  &__menu-desktop-container {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: space-between;
+    li {
+      margin: 0px 18px;
+      font-family: "Roboto Condensed", sans-serif;
+      a {
+        font-size: 20px;
+        color: white;
+        &:hover {
+          color: #fbb832;
+          transition: color 1s;
+        }
+      }
+    }
+  }
   &__logo {
     width: 14rem;
     margin-bottom: 0px !important;
@@ -45,5 +72,8 @@
     margin-bottom: 0px;
     width: 28px;
     height: 28px;
+    @include upBreakpoint($breakpoint-up-lg) {
+      display: none !important;
+    }
   }
 }

@@ -44,6 +44,7 @@
       background-color: #f1f2f3;
       padding: 10px 0px;
       margin: 10px 0px !important;
+      justify-content: center;
       @include upBreakpoint($breakpoint-up-md) {
         min-height: 215px !important;
       }

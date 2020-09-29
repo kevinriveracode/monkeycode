@@ -10,7 +10,8 @@ import SeoMessage from "../../components/SeoMessage/SeoMessage"
 import PackContainer from "../../components/PackContainer/PackContainer"
 import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
-import ScrollToTop from "react-scroll-to-top"
+import TopButton from "../../components/TopButton"
+import Footer from "../../components/Footer"
 
 export default function IndexPage({ pageContext }) {
   const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
@@ -297,7 +298,8 @@ export default function IndexPage({ pageContext }) {
         call={infoLanding.formWeb.call}
         email={infoLanding.formWeb.email}
       />
-      <ScrollToTop smooth color="#fcb701" />
+      <Footer />
+      <TopButton />
     </>
   )
 }

@@ -1,0 +1,22 @@
+@import "../../scss/index.scss";
+
+#topButton {
+  background: transparent;
+  background-color: #fcb701;
+  border-radius: 4px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 8px;
+  position: fixed;
+  z-index: 1000000;
+  bottom: 25px;
+  right: 10px;
+}
+.reset {
+  width: 36px;
+  height: 36px;
+  margin: 0px !important;
+}
