@@ -15,7 +15,12 @@ export default function MainBanner(props) {
               alt=""
             />
           </Grid.Column>
-          <Grid.Column mobile={16} tablet={8} computer={8}>
+          <Grid.Column
+            mobile={16}
+            tablet={8}
+            computer={8}
+            className="main-banner__page-info"
+          >
             <div>
               <h1 className="main-banner__title">
                 Diseñamos tu producto digital
