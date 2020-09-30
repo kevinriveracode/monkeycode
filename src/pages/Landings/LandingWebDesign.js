@@ -152,8 +152,7 @@ export default function IndexPage({ pageContext }) {
       author: "KEVIN RIVERA - SEO MONKEYCODE",
     },
     packs: {
-      title:
-        "Tenemos 3 planes de Diseño Web, !Elige el que mejor de adapte a tus necesidades¡",
+      title: "¡Empiece ya a mejorar los resultados de su negocio!",
       packs: [
         {
           name: "VALENCIA",

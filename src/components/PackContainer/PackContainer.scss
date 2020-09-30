@@ -6,9 +6,13 @@
   &__body-pack {
     padding: 0 0px;
   }
+  &__container-title {
+    justify-content: center !important;
+  }
   &__title {
     padding: 1.5rem 0.7rem;
     text-align: center !important;
+
     @include upBreakpoint($breakpoint-up-lg) {
       font-size: 30px;
     }

@@ -12,7 +12,7 @@ export default function HeaderMc(props) {
               <a as="a" href="/">
                 <Image
                   className="header__logo"
-                  src="https://monkeycode.s3.eu-west-3.amazonaws.com/logo-monkeycode.png"
+                  src="https://monkeycode.s3.eu-west-3.amazonaws.com/menu-white.svg"
                   alt="Monkeycode | Diseño Web Profesional"
                 />
               </a>
@@ -24,7 +24,7 @@ export default function HeaderMc(props) {
             >
               <Image
                 className="header__menu-mobile"
-                src="https://monkeycode.s3.eu-west-3.amazonaws.com/menu-white.svg"
+                src="https://monkeycode.s3.eu-west-3.amazonaws.com/nav-mobile-white.svg"
               />
               <nav className="header__menu-desktop">
                 <ul className="header__menu-desktop-container">

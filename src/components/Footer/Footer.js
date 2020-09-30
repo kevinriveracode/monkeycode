@@ -7,14 +7,24 @@ export default function Footer(props) {
     <footer className="footer">
       <Container className="footer__container">
         <Grid className="footer__grid">
-          <Grid.Column className="footer__category" mobile={16} computer={5}>
+          <Grid.Column
+            className="footer__category"
+            mobile={16}
+            tablet={8}
+            computer={5}
+          >
             <h6>{"Servicios"}</h6>
             <p>Diseño web</p>
             <p>Tiendas Online</p>
             <p>Mantenimiento web</p>
             <p>Desarrollo de apps</p>
           </Grid.Column>
-          <Grid.Column className="footer__category" mobile={16} computer={5}>
+          <Grid.Column
+            className="footer__category"
+            mobile={16}
+            tablet={8}
+            computer={5}
+          >
             <h6>{"Condiciones generales"}</h6>
             <p>Formas de pago</p>
             <p>Impuestos</p>
@@ -34,10 +44,15 @@ export default function Footer(props) {
               />
             </div>
           </Grid.Column>
-          <Grid.Column className="footer__logo" mobile={16} computer={5}>
+          <Grid.Column
+            className="footer__logo"
+            mobile={16}
+            tablet={16}
+            computer={5}
+          >
             <Image
               className="footer__logo-svg"
-              src="https://monkeycode.s3.eu-west-3.amazonaws.com/logo-monkeycode.png"
+              src="https://monkeycode.s3.eu-west-3.amazonaws.com/menu-white.svg"
               alt="Monkeycode | Tu agencia de diseño web profesional | Construimos tu imagen en internet"
             />
             <h6>Síguenos en RRSS</h6>
