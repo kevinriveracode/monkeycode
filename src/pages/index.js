@@ -1,14 +1,21 @@
 import React from "react"
 import SEO from "../components/seo"
 import Header from "../components/Header/Header"
+import MainBanner from "../components/MainBanner"
+import Services from "../components/Services"
+import TopButton from "../components/TopButton"
+import Footer from "../components/Footer"
 
 export default function IndexPage({ pageContext }) {
   const { titlePage } = pageContext
   return (
     <>
-      <SEO title="Main-page" />
+      <SEO title="Monkeycode | Agencia de diseño web profesional, rapido y seguro" />
       <Header />
-      <a href="/diseño-web-profesional">1)Landing Web</a>
+      <MainBanner />
+      <Services />
+      <Footer />
+      <TopButton />
     </>
   )
 }

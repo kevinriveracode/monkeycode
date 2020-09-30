@@ -1,0 +1,35 @@
+import React from "react"
+import { Container, Grid, Image, Button } from "semantic-ui-react"
+
+import "./MainBanner.scss"
+
+export default function MainBanner(props) {
+  return (
+    <section className="main-banner">
+      <Container fluid className="main-banner__container">
+        <Grid className="main-banner__content">
+          <Grid.Column mobile={16} tablet={8} computer={8}>
+            <Image
+              className="main-banner__image"
+              src="https://monkeycode.s3.eu-west-3.amazonaws.com/ex+1.svg"
+              alt=""
+            />
+          </Grid.Column>
+          <Grid.Column mobile={16} tablet={8} computer={8}>
+            <div>
+              <h1 className="main-banner__title">
+                Diseñamos tu producto digital
+              </h1>
+              <p className="main-banner__description">
+                Somos una agencia de diseño web. Ayudamos a empresas grandes y
+                pequeñas diseñando logos de alto nivel, desarrollando webs que
+                nunca se olvidan y tiendas que venden. Tejemos redes sociales
+                que conectan, hacemos SEO del bueno, bonito y barato.
+              </p>
+            </div>
+          </Grid.Column>
+        </Grid>
+      </Container>
+    </section>
+  )
+}

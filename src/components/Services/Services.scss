@@ -1,0 +1,50 @@
+@import "../../scss/index.scss";
+
+.services {
+  padding: 50px 0px !important;
+  &__title-container {
+    font-size: 26px;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    text-align: center;
+    h2 {
+      text-align: center;
+    }
+  }
+}
+.service {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    @include upBreakpoint($breakpoint-up-md) {
+      font-size: 18px;
+    }
+  }
+  &__description {
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-weight: lighter;
+    text-align: center;
+    @include upBreakpoint($breakpoint-up-md) {
+      font-size: 16px;
+    }
+  }
+  &__button {
+    background-color: #fcb701 !important;
+    border-radius: 4px !important;
+    color: #141414 !important;
+    padding: 14px 30px !important;
+    min-width: 100px !important;
+    @include upBreakpoint($breakpoint-up-md) {
+      font-size: 12px !important;
+    }
+  }
+  &__image {
+  }
+}
