@@ -1,0 +1,20 @@
+@import "../../scss/index.scss";
+
+.buy {
+  padding: 50px 0;
+  background-color: #fcb701;
+  &__title {
+    font-family: "Roboto Condensed";
+    font-size: 22px;
+    font-weight: normal;
+  }
+  &__button-container {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  &__button {
+    border: 2px solid #1b1c1d !important;
+    color: #1b1c1d !important;
+    background-color: transparent !important;
+  }
+}

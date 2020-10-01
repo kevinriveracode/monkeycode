@@ -1,0 +1,36 @@
+@import "../../../src/scss/index.scss";
+
+.process {
+  padding-top: 55px;
+  padding-bottom: 70px;
+  &__title {
+    font-family: "Roboto Condensed";
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .step {
+    &__container {
+      background-color: #f1f2f3;
+      padding: 30px 10px;
+      border: 1px solid #cccccc;
+      @include upBreakpoint($breakpoint-up-lg) {
+        padding: 30px 20px;
+      }
+    }
+    &__title {
+      font-family: "Roboto Condensed";
+      font-size: 22px;
+      font-weight: normal;
+      margin-bottom: 0px;
+      text-align: center !important;
+      font-weight: bold;
+    }
+    &__description {
+      text-align: center;
+      font-family: "Roboto Condensed";
+      font-size: 18px;
+      font-weight: normal;
+    }
+  }
+}

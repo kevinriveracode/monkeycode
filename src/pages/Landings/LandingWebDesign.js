@@ -12,7 +12,7 @@ import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
 import TopButton from "../../components/TopButton"
 import Footer from "../../components/Footer"
-
+import Buy from "../../components/Buy"
 export default function IndexPage({ pageContext }) {
   const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
   const infoLanding = {

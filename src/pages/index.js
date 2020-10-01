@@ -6,6 +6,8 @@ import Services from "../components/Services"
 import TopButton from "../components/TopButton"
 import Footer from "../components/Footer"
 import Info from "../components/Info"
+import Process from "../components/Process"
+import Buy from "../components/Buy"
 
 export default function IndexPage({ pageContext }) {
   const { titlePage } = pageContext
@@ -73,6 +75,8 @@ export default function IndexPage({ pageContext }) {
       <Services />
       <Info data={indexPage.infoEcommerce} />
       <Info data={indexPage.infoWeb} />
+      <Process />
+      <Buy />
       <Footer />
       <TopButton />
     </>
