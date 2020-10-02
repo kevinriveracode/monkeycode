@@ -8,7 +8,12 @@ export default function MainBanner(props) {
     <section className="main-banner">
       <Container fluid className="main-banner__container">
         <Grid className="main-banner__content">
-          <Grid.Column mobile={16} tablet={8} computer={8}>
+          <Grid.Column
+            className="main-banner__image-container"
+            mobile={16}
+            tablet={8}
+            computer={8}
+          >
             <Image
               className="main-banner__image"
               src="https://monkeycode.s3.eu-west-3.amazonaws.com/home-banner.png"
@@ -31,6 +36,7 @@ export default function MainBanner(props) {
                 nunca se olvidan y tiendas que venden. Tejemos redes sociales
                 que conectan, hacemos SEO del bueno, bonito y barato.
               </p>
+              <Button secondary content="Empieza ya" />
             </div>
           </Grid.Column>
         </Grid>
