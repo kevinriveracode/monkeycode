@@ -52,7 +52,7 @@ export default function Footer(props) {
           >
             <Image
               className="footer__logo-svg"
-              src="https://monkeycode.s3.eu-west-3.amazonaws.com/menu-white.svg"
+              src="https://monkeycode.s3.eu-west-3.amazonaws.com/logo-kr.svg"
               alt="Monkeycode | Tu agencia de diseño web profesional | Construimos tu imagen en internet"
             />
             <h6>Síguenos en RRSS</h6>

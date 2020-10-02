@@ -11,7 +11,7 @@ export default function MainBanner(props) {
           <Grid.Column mobile={16} tablet={8} computer={8}>
             <Image
               className="main-banner__image"
-              src="https://monkeycode.s3.eu-west-3.amazonaws.com/ex+1.svg"
+              src="https://monkeycode.s3.eu-west-3.amazonaws.com/home-banner.png"
               alt=""
             />
           </Grid.Column>
