@@ -1,7 +1,7 @@
 @import "../../../src/scss/index.scss";
 
 .header {
-  background-color: #4171be;
+  background-color: #27292a;
   height: 75px;
   @include upBreakpoint($breakpoint-up-lg) {
     height: 125px;

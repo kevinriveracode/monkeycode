@@ -36,13 +36,17 @@
     }
   }
   &__button {
-    background-color: #fcb701 !important;
+    background-color: transparent !important;
     border-radius: 4px !important;
+    border: 2px solid #27292a !important;
     color: #141414 !important;
     padding: 14px 30px !important;
     min-width: 100px !important;
     @include upBreakpoint($breakpoint-up-md) {
       font-size: 12px !important;
+    }
+    @include upBreakpoint($breakpoint-up-md) {
+      font-size: 18px !important;
     }
   }
   &__image {
