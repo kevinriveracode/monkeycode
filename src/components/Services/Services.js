@@ -33,7 +33,7 @@ export default function Services(props) {
   ]
   return (
     <section className="services">
-      <Container className="services__container">
+      <Container fluid className="services__container">
         <Grid className="services__grid">
           <Grid.Column mobile={16} className="services__title-container">
             <h2>TENEMOS LO QUE NECESITAS</h2>
@@ -50,7 +50,7 @@ export default function Services(props) {
 function Service(props) {
   const { image, title, description, button } = props.info
   return (
-    <Grid.Column mobile={16} tablet={5} className="service">
+    <Grid.Column mobile={16} tablet={5} computer={5} className="service">
       <Image src={image} alt="" className="service__image" />
       <h4 className="service__title">{title}</h4>
       <p className="service__description">{description}</p>

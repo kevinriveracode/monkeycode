@@ -5,6 +5,11 @@
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
   }
+  &__article {
+    @include upBreakpoint($breakpoint-up-lg) {
+      padding-left: 5rem;
+    }
+  }
   &__title {
     font-family: "Roboto Condensed";
     font-size: 28;
@@ -44,6 +49,9 @@
     padding: 0px !important;
     img {
       margin: 0 0 0 0 !important;
+      @include upBreakpoint($breakpoint-up-lg) {
+        height: 100%;
+      }
     }
   }
 }

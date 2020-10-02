@@ -10,12 +10,17 @@ export default function Info(props) {
     buttons,
     image,
     background,
+    reverse,
   } = props.data
   return (
     <section className="info" style={{ background }}>
       <Container fluid className="info__container">
-        <Grid className="info__grid">
-          <Grid.Column className="info__article-container" mobile={16}>
+        <Grid className={`info__grid ${reverse}`}>
+          <Grid.Column
+            className="info__article-container"
+            mobile={16}
+            computer={8}
+          >
             <article className="info__article">
               <h2 className="info__title">{title}</h2>
               <h4 className="info__subtitle">{subtitle}</h4>
@@ -45,6 +50,7 @@ export default function Info(props) {
           <Grid.Column
             mobile={16}
             tablet={16}
+            computer={8}
             className="info__image-container"
           >
             <Image src={image} className="info__image" alt={title} />
