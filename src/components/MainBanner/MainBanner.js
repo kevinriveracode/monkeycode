@@ -29,10 +29,7 @@ export default function MainBanner(props) {
           >
             <div>
               <h1 className="main-banner__title">
-                <TextLoop interval={3000}>
-                  <span>Diseño tu página web</span>
-                  <span>Desarrollo tu E-commerce</span>
-                </TextLoop>
+                Diseñamos tu producto digital
               </h1>
               <p className="main-banner__description">
                 Somos una agencia de diseño web. Ayudamos a empresas grandes y
