@@ -33,7 +33,7 @@ export default function Services(props) {
   ]
   return (
     <section className="services">
-      <Container fluid className="services__container">
+      <Container className="services__container">
         <Grid className="services__grid">
           <Grid.Column mobile={16} className="services__title-container">
             <h2>TENEMOS LO QUE NECESITAS</h2>

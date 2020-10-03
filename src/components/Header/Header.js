@@ -8,7 +8,12 @@ export default function HeaderMc(props) {
       <Container className="header__container">
         <Grid columns={2} className="header__grid">
           <Grid.Row className="header__row">
-            <Grid.Column mobile={13} computer={4} className="header__column">
+            <Grid.Column
+              mobile={12}
+              tablet={6}
+              computer={4}
+              className="header__container-logo"
+            >
               <a as="a" href="/">
                 <Image
                   className="header__logo"
@@ -18,7 +23,8 @@ export default function HeaderMc(props) {
               </a>
             </Grid.Column>
             <Grid.Column
-              mobile={3}
+              mobile={4}
+              tablet={10}
               computer={12}
               className="header__column header__column--center"
             >

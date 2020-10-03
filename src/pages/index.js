@@ -65,6 +65,7 @@ export default function IndexPage({ pageContext }) {
       image:
         "https://monkeycode.s3.eu-west-3.amazonaws.com/emile-perron-xrVDYZRGdw4-unsplash+1.png",
       background: "#f1f2f3",
+      reverse: true,
     },
   }
   return (

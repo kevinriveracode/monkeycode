@@ -15,11 +15,12 @@ export default function Info(props) {
   return (
     <section className="info" style={{ background }}>
       <Container fluid className="info__container">
-        <Grid className={`info__grid ${reverse}`}>
+        <Grid className={`info__grid ${reverse ? "info__grid--reverse" : ""}`}>
           <Grid.Column
             className="info__article-container"
             mobile={16}
             computer={8}
+            verticalAlign="middle"
           >
             <article className="info__article">
               <h2 className="info__title">{title}</h2>

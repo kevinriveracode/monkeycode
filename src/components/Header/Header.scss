@@ -76,4 +76,12 @@
       display: none !important;
     }
   }
+  &__column {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
+  &__container-logo {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
 }

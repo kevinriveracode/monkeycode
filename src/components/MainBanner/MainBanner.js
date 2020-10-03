@@ -1,5 +1,6 @@
 import React from "react"
 import { Container, Grid, Image, Button } from "semantic-ui-react"
+import TextLoop from "react-text-loop"
 
 import "./MainBanner.scss"
 
@@ -11,7 +12,7 @@ export default function MainBanner(props) {
           <Grid.Column
             className="main-banner__image-container"
             mobile={16}
-            tablet={8}
+            tablet={16}
             computer={8}
           >
             <Image
@@ -22,13 +23,16 @@ export default function MainBanner(props) {
           </Grid.Column>
           <Grid.Column
             mobile={16}
-            tablet={8}
+            tablet={16}
             computer={8}
             className="main-banner__page-info"
           >
             <div>
               <h1 className="main-banner__title">
-                Diseñamos tu producto digital
+                <TextLoop interval={3000}>
+                  <span>Diseño tu página web</span>
+                  <span>Desarrollo tu E-commerce</span>
+                </TextLoop>
               </h1>
               <p className="main-banner__description">
                 Somos una agencia de diseño web. Ayudamos a empresas grandes y
@@ -36,7 +40,12 @@ export default function MainBanner(props) {
                 nunca se olvidan y tiendas que venden. Tejemos redes sociales
                 que conectan, hacemos SEO del bueno, bonito y barato.
               </p>
-              <Button secondary content="Empieza ya" />
+              <Button
+                className="main-banner__button"
+                secondary
+                content="Empieza ya"
+              />
+              <Button secondary content="Mas información" />
             </div>
           </Grid.Column>
         </Grid>

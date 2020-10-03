@@ -1,7 +1,7 @@
 @import "../../scss/index.scss";
 
 .services {
-  padding: 50px 0px !important;
+  padding: 78px 0 90px !important;
   &__title-container {
     font-size: 26px;
     font-family: "Roboto Condensed";
@@ -10,6 +10,9 @@
     h2 {
       text-align: center;
     }
+  }
+  &__grid {
+    justify-content: space-between !important;
   }
 }
 .service {
@@ -50,5 +53,9 @@
     }
   }
   &__image {
+    @include upBreakpoint($breakpoint-up-md) {
+      width: 371px;
+      height: 197px;
+    }
   }
 }

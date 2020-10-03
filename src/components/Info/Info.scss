@@ -1,9 +1,19 @@
 @import "../../../src/scss/index.scss";
 
 .info {
+  @include upBreakpoint($breakpoint-up-lg) {
+    margin-bottom: 1rem;
+  }
+
   &__article-container {
     padding-top: 4rem !important;
     padding-bottom: 4rem !important;
+  }
+  &__grid {
+    &--reverse {
+      display: flex !important;
+      flex-direction: row-reverse !important;
+    }
   }
   &__article {
     @include upBreakpoint($breakpoint-up-lg) {
@@ -51,6 +61,8 @@
       margin: 0 0 0 0 !important;
       @include upBreakpoint($breakpoint-up-lg) {
         height: 100%;
+        width: 100%;
+        height: 550px;
       }
     }
   }
