@@ -13,16 +13,16 @@ export default function IndexPage({ pageContext }) {
   const { titlePage } = pageContext
   const indexPage = {
     infoEcommerce: {
-      title: "Empieza a vender en internet",
-      subtitle: "Tienda online diseñada por Monkeycode",
+      title: "Tu pagina online de ecommerce más completa",
+      subtitle: "Aumenta las conversiones",
       description:
         "Te ofrecemos la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de cliente encantadora que no encontráras en ningún otro lugar.",
       advantages: [
-        "Diseñamos una plantilla única y original para tu empres, adaptada a la imagen corporativa de tu empresa.",
-        "Hacemos tiendas online que se adaptan a todo tipo de dispositivos.",
-        "Te entregamos una tienda equipada con varios metodos de pago como transferencia, paypal o targeta.",
-        "Incluimos hosting y dominio a tu nombre.",
-        "¿Y mucho mas!",
+        "Nuestras  tiendas se adaptan perfectamente a cualquier tipo de dispositivo.",
+        "Múltiples formas de pago como PayPal, tarjeta y transferencia.",
+        "Integracón de la ficha de tus productos en las principales redes sociales.",
+        "Instalamos el certificado SSL en todo el dominio de su tienda.",
+        "Nuestras tiendas online tienen la posiblidad de tener varios idiomas.",
       ],
       buttons: [
         {
@@ -41,13 +41,13 @@ export default function IndexPage({ pageContext }) {
       background: "#f1f2f3",
     },
     infoWeb: {
-      title: "Potencia tu presencia online",
-      subtitle: "Página web diseñada por Monkeycode",
+      title: "Diseño web enfocado a objetivos",
+      subtitle: "Presencia web",
       description:
-        "Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de factuación y un mayor público. ¡Así que contáctanos ya!",
+        "Con el máximo esfuerzo y atención a los detalles, creamos y diseñamos sitios online, aplicaciones web y otros servicios relacionados, que responden con precisión a tus expectativas y satisfacen las necesidades específicas de tu empresa.",
       advantages: [
-        "Nuestro estilo de diseño audaz y el uso de un código de marcado muy limpio, se combinan para producir sitios web fabulosos.",
-        "Contamos con un grupo de diseñadores y desarrolladores web profesionales.",
+        "Todos nuestros proyectos llevan incorporado un plan SEO inicial.",
+        "Optimización para móviles y tablets.",
         "Tenemos los mejores precios del mercado en cuanto a diseño web para tu empresa.",
       ],
       buttons: [

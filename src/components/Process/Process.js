@@ -15,19 +15,19 @@ export default function Process(props) {
           {map(
             [
               {
-                title: "Análisis",
+                title: "1.Analizamos tus necesidades",
                 description:
-                  "Definimos tus objetivos a lograr y planeamos una marco inicial u hoja de ruta del proyecto.",
+                  "Estudiamos y analizamos los objetivos de tu negocio, análisis de la presencial online actual de tu empresa y la de tu competencia.",
               },
               {
-                title: "Estrategia",
+                title: "Propuestas del diseño del sitio web",
                 description:
-                  "Estudiamos y planeamos la estrategia óptima para lograr tus objetivos",
+                  "Partiendo del análisis previo definimos los contenidos y elementos necesarios para conseguir una experiencia de usuario encantadora.",
               },
               {
                 title: "Puesta en marcha",
                 description:
-                  "Estudiamos y planeamos la estrategia óptima para lograr tus objetivos",
+                  "Realizamos una revisión completa de tu nueva web, teniendo en cuenta aspectos importantes como el posicionamiento en buscadores y la experiencia de usuario.",
               },
             ],
             entry => (

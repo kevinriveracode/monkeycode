@@ -29,13 +29,13 @@ export default function MainBanner(props) {
           >
             <div>
               <h1 className="main-banner__title">
-                Diseñamos tu producto digital
+                DISEÑO WEB ORIGINAL RÁPIDO Y SEGURO
               </h1>
               <p className="main-banner__description">
-                Somos una agencia de diseño web. Ayudamos a empresas grandes y
-                pequeñas diseñando logos de alto nivel, desarrollando webs que
-                nunca se olvidan y tiendas que venden. Tejemos redes sociales
-                que conectan, hacemos SEO del bueno, bonito y barato.
+                Si estás buscando una empresa de desarrollo web de primer nivel,
+                para diseñar y construir una página web única, totalmente
+                funcional, fácil de usar y que genere ingresos, entonces somos
+                la solución. ¡Este es el lugar perfecto para ti!
               </p>
               <Button
                 className="main-banner__button"
