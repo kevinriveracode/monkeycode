@@ -18,8 +18,9 @@ export default function IndexPage({ pageContext }) {
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
     banner: {
-      title: "DISEÑO WEB ORIGINAL RAPIDO Y SEGURO",
-      subtitle: "Creamos sitios web únicos para pequeñas y medianas empresas",
+      title: "CONTRATA NUESTROS SERVICIOS DE DISEÑO WEB",
+      subtitle:
+        "Nuestros diseñadores crearán un diseño web enfocado a objetivos, para garantizar que sea completamente único para ti",
       buttonPrimary: {
         title: "Ver Planes",
         link: "#",
@@ -28,7 +29,7 @@ export default function IndexPage({ pageContext }) {
         title: "¡Contactanos Ya!",
         link: "#",
       },
-      imageLink: `${baseUrlImages}dise%C3%B1o-web-banner-icon.svg`,
+      imageLink: `${baseUrlImages}bannerweb.svg`,
     },
     Advantages: {
       title: "¿Por qué debería contratar una página web?",

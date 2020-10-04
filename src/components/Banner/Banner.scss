@@ -64,9 +64,15 @@
     }
   }
   &__image-container {
+    display: flex !important;
+    align-items: center !important;
     padding: 0 !important;
+    img {
+      margin-bottom: 0px !important;
+    }
   }
   &__optional-image {
+    display: none !important;
     position: absolute !important;
     left: 25% !important;
     bottom: -105px !important;

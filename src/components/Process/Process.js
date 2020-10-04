@@ -20,12 +20,12 @@ export default function Process(props) {
                   "Estudiamos y analizamos los objetivos de tu negocio, análisis de la presencial online actual de tu empresa y la de tu competencia.",
               },
               {
-                title: "Propuestas del diseño del sitio web",
+                title: "2.Propuestas del diseño del sitio web",
                 description:
                   "Partiendo del análisis previo definimos los contenidos y elementos necesarios para conseguir una experiencia de usuario encantadora.",
               },
               {
-                title: "Puesta en marcha",
+                title: "3.Puesta en marcha",
                 description:
                   "Realizamos una revisión completa de tu nueva web, teniendo en cuenta aspectos importantes como el posicionamiento en buscadores y la experiencia de usuario.",
               },
