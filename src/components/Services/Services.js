@@ -20,7 +20,7 @@ export default function Services(props) {
         "Te ofrece la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de cliente encantadora que no encontrarás en ningún otro lugar.",
       button: {
         title: "Desde 450€",
-        link: "",
+        link: "/diseño-tienda-online",
       },
     },
     {

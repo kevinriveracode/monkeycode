@@ -4,6 +4,10 @@ exports.createPages = ({ actions: { createPage } }) => {
     component: require.resolve("./src/pages/Landings/LandingWebDesign.js"),
   })
   createPage({
+    path: "/diseño-tienda-online",
+    component: require.resolve("./src/pages/Landings/LandingTiendaOnline.js"),
+  })
+  createPage({
     path: "/product/pack-valencia",
     component: require.resolve("./src/pages/Products/ProductWebBasic.js"),
   })

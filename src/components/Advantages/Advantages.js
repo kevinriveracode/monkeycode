@@ -30,9 +30,7 @@ export default function Advantages(props) {
           </Grid.Row>
           <Grid.Row>
             <Grid.Column mobile={16} className="advantages__footer">
-              <h5 className="advantages__title">
-                Contrata hoy mismo tu página web
-              </h5>
+              <h5 className="advantages__title">{footerTitle}</h5>
               <Button as="a" className="advantages__button">
                 ¿EMPEZAMOS?
               </Button>
