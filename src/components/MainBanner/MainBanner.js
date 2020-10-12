@@ -42,7 +42,7 @@ export default function MainBanner(props) {
                 secondary
                 content="Empieza ya"
               />
-              <Button secondary content="Mas información" />
+              <Button className="main-banner__subButton" secondary content="Mas información" />
             </div>
           </Grid.Column>
         </Grid>
