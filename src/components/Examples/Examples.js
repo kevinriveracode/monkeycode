@@ -26,6 +26,7 @@ export default function Examples(props) {
                   titleButtonDemo={entry.titleButtonDemo}
                   titleButtonCheckout={entry.titleButtonCheckout}
                   urlImageDemo={entry.urlImageDemo}
+                  linkDemo={entry.linkDemo}
                 />
               </Grid.Column>
             ))}
@@ -37,7 +38,7 @@ export default function Examples(props) {
 }
 
 function Demo(props) {
-  const { title, titleButtonCheckout, titleButtonDemo, urlImageDemo } = props
+  const { title, titleButtonCheckout, titleButtonDemo, urlImageDemo, linkDemo } = props
   return (
     <Grid.Row className="demo">
       <Grid.Column mobile={16}>
@@ -49,6 +50,8 @@ function Demo(props) {
       <Grid.Column mobile={16} className="demo__container-buttons">
         <Button
           content={titleButtonDemo}
+          as="a"
+          href={linkDemo}
           className="demo__button demo__button--secondary"
         />
         <Button

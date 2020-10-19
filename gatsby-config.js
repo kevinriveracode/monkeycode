@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Diseño web rápido, original y seguro | MonkeyCode `,
+    title: `Diseño web rápido, original y seguro | StartFly `,
     description: `Creamos sitios web únicos para pequeñas y medianas empresas.`,
     author: `@kevinrivera`,
   },

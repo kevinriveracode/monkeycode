@@ -132,7 +132,7 @@ export default function IndexPage({ pageContext }) {
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
           urlImageDemo: `${baseUrlImages}demo-1.jpg`,
-          linkDemo: "~",
+          linkDemo: "https://startfly.es/ecommerces/perfumeria/index.php",
           linkCheckout: "",
         },
         {
@@ -148,10 +148,10 @@ export default function IndexPage({ pageContext }) {
     seoMessage: {
       title: "CONTRATA NUESTROS SERVICIOS Y AUMENTA LAS CONVERSIONES",
       description:
-        "En MonkeyCode nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potente, efectivos y atractivos.",
+        "En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potente, efectivos y atractivos.",
       quote:
         "Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de la facturación y un mayor público.",
-      author: "KEVIN RIVERA - SEO MONKEYCODE",
+      author: "KEVIN RIVERA - SEO STARTFLY",
     },
     packs: {
       title: "¡Empiece ya a mejorar los resultados de su negocio!",

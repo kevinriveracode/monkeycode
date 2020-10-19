@@ -60,7 +60,7 @@ export default function IndexPage({ pageContext }) {
   }
   return (
     <>
-      <SEO title="Monkeycode | Agencia de diseño web profesional, rapido y seguro" />
+      <SEO title="StartFly | Agencia de diseño web profesional, rapido y seguro" />
       <Header />
       <MainBanner />
       <Services />
