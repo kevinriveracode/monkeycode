@@ -1,7 +1,7 @@
 @import "../../../src/scss/index.scss";
 
 .header {
-  background-color: #27292a;
+  background-color: #EFFCFA;
   height: 75px;
   @include upBreakpoint($breakpoint-up-lg) {
     height: 125px;
@@ -31,9 +31,10 @@
       font-family: "Roboto Condensed", sans-serif;
       a {
         font-size: 20px;
-        color: white;
+        color: #008060;
+        font-weight: 500;
         &:hover {
-          color: #fbb832;
+          color: #008060;
           transition: color 1s;
         }
       }

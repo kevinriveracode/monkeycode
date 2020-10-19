@@ -17,7 +17,7 @@ export default function HeaderMc(props) {
               <a as="a" href="/">
                 <Image
                   className="header__logo"
-                  src="https://monkeycode.s3.eu-west-3.amazonaws.com/MONKEYCODE.svg"
+                  src="https://monkeycode.s3.eu-west-3.amazonaws.com/logostartfly.svg"
                   alt="Monkeycode | Diseño Web Profesional"
                 />
               </a>

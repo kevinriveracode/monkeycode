@@ -2,6 +2,7 @@
 
 .services {
   padding: 78px 0 90px !important;
+  background-color: #f1f2f3;
   &__title-container {
     font-size: 26px;
     font-family: "Roboto Condensed";
@@ -25,6 +26,7 @@
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 4px;
+    color: #008060 ;
     @include upBreakpoint($breakpoint-up-md) {
       font-size: 18px;
     }
@@ -41,10 +43,11 @@
   &__button {
     background-color: transparent !important;
     border-radius: 4px !important;
-    border: 2px solid #27292a !important;
-    color: #141414 !important;
+    border: 2px solid #008060  !important;
+    color: #008060 !important;
     padding: 14px 30px !important;
     min-width: 100px !important;
+    box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15) !important;
     @include upBreakpoint($breakpoint-up-md) {
       font-size: 12px !important;
     }

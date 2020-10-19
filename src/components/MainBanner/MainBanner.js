@@ -17,7 +17,7 @@ export default function MainBanner(props) {
           >
             <Image
               className="main-banner__image"
-              src="https://monkeycode.s3.eu-west-3.amazonaws.com/home-banner.png"
+              src="https://monkeycode.s3.eu-west-3.amazonaws.com/creative.jpg"
               alt=""
             />
           </Grid.Column>
@@ -42,7 +42,7 @@ export default function MainBanner(props) {
                 secondary
                 content="Empieza ya"
               />
-              <Button className="main-banner__subButton" secondary content="Mas información" />
+             
             </div>
           </Grid.Column>
         </Grid>

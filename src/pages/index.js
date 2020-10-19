@@ -27,18 +27,13 @@ export default function IndexPage({ pageContext }) {
       buttons: [
         {
           link: "/productos/ecommerce",
-          title: "Más información",
-          style: "secondary",
-        },
-        {
-          link: "/productos/ecommerce",
-          title: "Más información",
+          title: "Empieza a vender online",
           style: "primary",
         },
       ],
       image:
         "https://monkeycode.s3.eu-west-3.amazonaws.com/tim-bennett-OwvRB-M3GwE-unsplash+1+(4).png",
-      background: "#f1f2f3",
+      background: "#EFFCFA",
     },
     infoWeb: {
       title: "Diseño web enfocado a objetivos",
@@ -53,18 +48,13 @@ export default function IndexPage({ pageContext }) {
       buttons: [
         {
           link: "/productos/ecommerce",
-          title: "Más información",
-          style: "secondary",
-        },
-        {
-          link: "/productos/ecommerce",
-          title: "Más información",
+          title: "Contrata tu página web",
           style: "primary",
         },
       ],
       image:
         "https://monkeycode.s3.eu-west-3.amazonaws.com/emile-perron-xrVDYZRGdw4-unsplash+1.png",
-      background: "#f1f2f3",
+      background: "#EFFCFA",
       reverse: true,
     },
   }
