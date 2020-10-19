@@ -17,7 +17,7 @@ export default function IndexPage({ pageContext }) {
   const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
-    backgroundImage: "https://monkeycode.s3.eu-west-3.amazonaws.com/ecommerceBann.jpg",
+    backgroundImage: "http://monkeycode.s3.eu-west-3.amazonaws.com/ecommerceBann.jpg",
     banner: {
       title: "DISEÑAMOS TU TIENDA ONLINE PROFESIONAL",
       subtitle:
@@ -87,13 +87,13 @@ export default function IndexPage({ pageContext }) {
         "Equipamos nuestras tiendas con todo lo que necesitas para comenzar a vender online",
       services: [
         {
-          url: `${baseUrlImages}responsive.svg`,
+          url: `${baseUrlImages}001-comprar.svg`,
           typeService: "ECOMMERCE",
           nameService: "Sistemas de pago",
           backgroundColor: "#F1EADE",
         },
         {
-          url: `${baseUrlImages}google-seo.svg`,
+          url: `${baseUrlImages}002-prestashop.svg`,
           typeService: "ECOMMERCE",
           nameService: "Construida con Prestashop",
           backgroundColor: "#F7D9D9",
@@ -117,7 +117,7 @@ export default function IndexPage({ pageContext }) {
           backgroundColor: "#339AD6",
         },
         {
-          url: `${baseUrlImages}camara.svg`,
+          url: `${baseUrlImages}003-almacen.svg`,
           typeService: "ECOMMERCE",
           nameService: "Control de Stock",
           backgroundColor: "#F9992D",
