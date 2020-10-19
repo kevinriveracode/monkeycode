@@ -2,7 +2,7 @@
 
 .form-contact {
   padding: 78px 0 90px !important;
-  background-color: #6089ca;
+  background-color: #008060;
   &__container-title {
     text-align: center;
   }
@@ -46,8 +46,9 @@
   &__contact-button-container {
     margin-bottom: 20px !important;
     button {
-      width: 100%;
-      background-color: #fcb701 !important;
+      width: fit-content;
+      color: white !important;
+      background-color: #002e25!important;
     }
   }
   &__email-message {

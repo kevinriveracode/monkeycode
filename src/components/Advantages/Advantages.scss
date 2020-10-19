@@ -23,11 +23,12 @@
     }
   }
   &__button {
-    background-color: #fcb701 !important;
+    background-color: #008060!important;
     border-radius: 4px !important;
-    color: #141414 !important;
+    color: white !important;
     padding: 1.5rem 3rem !important;
     min-width: 100px !important;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15) !important;
   }
   &__footer {
     display: flex !important;
@@ -41,7 +42,7 @@
   &__container-items {
     .advantage-item {
       min-height: 100px !important;
-      background-color: #f1f2f3;
+      background-color: #effcfa;
       padding: 10px 0px;
       margin: 10px 0px !important;
       justify-content: center;

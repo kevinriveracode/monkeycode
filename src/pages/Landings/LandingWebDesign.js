@@ -14,7 +14,7 @@ import TopButton from "../../components/TopButton"
 import Footer from "../../components/Footer"
 import Buy from "../../components/Buy"
 export default function IndexPage({ pageContext }) {
-  const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
+  const baseUrlImages = "https://monkeycode.s3.eu-west-3.amazonaws.com/"
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
     backgroundImage: "https://monkeycode.s3.eu-west-3.amazonaws.com/webbanner.jpg",
@@ -87,40 +87,40 @@ export default function IndexPage({ pageContext }) {
         "Ya sea que necesitas un sitio web de WordPress, para poner tu negocio en línea, o una página online de ecommerce más completa, nuestro equipo de desarrollo web, te ayudará a hacer realidad tu visión.",
       services: [
         {
-          url: `${baseUrlImages}responsive.svg`,
+          url: `https://monkeycode.s3.eu-west-3.amazonaws.com/webresponsive.svg`,
           typeService: "WEB",
           nameService: "Diseño responsive",
-          backgroundColor: "#F1EADE",
+          backgroundColor: "rgb(208, 101, 3)",
         },
         {
-          url: `${baseUrlImages}google-seo.svg`,
+          url: `https://monkeycode.s3.eu-west-3.amazonaws.com/googleweb.svg`,
           typeService: "WEB",
           nameService: "Optimizada para Google",
-          backgroundColor: "#F7D9D9",
+          backgroundColor: "rgb(233, 147, 26)",
         },
         {
           url: `${baseUrlImages}autoadministrable.svg`,
           typeService: "WEB",
           nameService: "100% Autoadministrable",
-          backgroundColor: "#EBE6FB",
+          backgroundColor: "rgb(22, 145, 190)",
         },
         {
           url: `${baseUrlImages}tiempo-entrega.svg`,
           typeService: "WEB",
           nameService: "Entrega de 4 a 7 días",
-          backgroundColor: "#C9BFC8",
+          backgroundColor: "rgb(22, 107, 162)",
         },
         {
           url: `${baseUrlImages}compartir.svg`,
           typeService: "WEB",
-          nameService: "Integración a redes sociales",
-          backgroundColor: "#339AD6",
+          nameService: "Redes sociales",
+          backgroundColor: "rgb(27, 54, 71)",
         },
         {
-          url: `${baseUrlImages}camara.svg`,
+          url: `https://monkeycode.s3.eu-west-3.amazonaws.com/fotos.svg`,
           typeService: "WEB",
           nameService: "Imagenes profesionales",
-          backgroundColor: "#F9992D",
+          backgroundColor: "rgb(21, 40, 54)",
         },
       ],
     },

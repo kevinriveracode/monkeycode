@@ -2,7 +2,7 @@
 
 .examples {
   padding: 78px 20px 90px !important;
-  background-color: #f1f2f3;
+  background-color: #effcfa;;
   &__container-title {
     display: flex !important;
     justify-content: center !important;
@@ -51,14 +51,14 @@
         }
         &--primary {
           width: 50%;
-          color: black;
-          background-color: #fcb701 !important;
+          color: white;
+          background-color: #008060 !important;
         }
         &--secondary {
           width: 50%;
-          color: black;
+          color: #008060;
           background: transparent !important;
-          border: 2px solid #fcb701;
+          border: 2px solid #008060;
         }
       }
     }

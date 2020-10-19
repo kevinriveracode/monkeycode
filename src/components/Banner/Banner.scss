@@ -44,11 +44,16 @@
       justify-content: flex-start;
     }
     &--button-primary {
-      background-color: #fcb701 !important;
+      background-color: #008060!important;
+      align-items: center;
       border-radius: 4px !important;
-      color: #141414 !important;
+      color: #ffffff !important;
       padding: 8px 30px !important;
       min-width: 100px !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-content: center !important;
+      align-items: center !important;
       @include upBreakpoint($breakpoint-up-lg) {
         padding: 10px 32px !important;
         min-width: 202px !important;
