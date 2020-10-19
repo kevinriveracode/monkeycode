@@ -30,7 +30,7 @@ export default function Banner(props) {
               <Button
                 as="a"
                 href={buttonSecondary.link}
-                className="banner__container-buttons secondary"
+                className="banner__container-buttons banner__secondary "
               >
                 {buttonSecondary.title}
               </Button>

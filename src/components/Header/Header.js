@@ -41,7 +41,7 @@ export default function HeaderMc(props) {
                     <a href="/dise%C3%B1o-web-profesional">Diseño web</a>
                   </li>
                   <li>
-                    <a href="/">Tiendas Online</a>
+                    <a href="/diseño-tienda-online">Tiendas Online</a>
                   </li>
                   <li>
                     <a href="/">Contacto</a>

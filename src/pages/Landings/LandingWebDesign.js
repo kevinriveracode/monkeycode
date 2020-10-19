@@ -17,7 +17,7 @@ export default function IndexPage({ pageContext }) {
   const baseUrlImages = "https://monkeycode.s3.eu-west-3.amazonaws.com/"
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
-    backgroundImage: "https://monkeycode.s3.eu-west-3.amazonaws.com/webbanner.jpg",
+    backgroundImage: "https://monkeycode.s3.eu-west-3.amazonaws.com/webBann.jpg",
     banner: {
       title: "CONTRATA NUESTROS SERVICIOS DE DISEÑO WEB",
       subtitle:

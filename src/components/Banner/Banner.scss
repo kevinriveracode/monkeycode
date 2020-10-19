@@ -14,7 +14,7 @@
     font-family: "Roboto Condensed", sans-serif !important;
     font-size: 22px;
     font-weight: bold;
-    color: #ffffff;
+    color: #008060;
     margin: 0px;
     text-align: center;
     margin-bottom: 5px;
@@ -35,6 +35,11 @@
       text-align: left;
       font-size: 24px;
     }
+  }
+  &__secondary{
+    border: 2px solid #008060 !important;
+    color: #008060 !important;
+    background-color: transparent !important;
   }
   &__container-buttons {
     display: flex;
@@ -59,11 +64,12 @@
         min-width: 202px !important;
       }
     }
+    
     &--button-secondary {
       background-color: transparent !important;
       border-radius: 4px !important;
-      border: 2px solid #fcb701 !important;
-      color: #fcb701 !important;
+      border: 2px solid #008060 !important;
+      color: #008060 !important;
       padding: 8px 30px !important;
       min-width: 100px !important;
     }
