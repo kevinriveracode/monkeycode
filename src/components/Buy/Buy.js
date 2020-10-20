@@ -17,9 +17,9 @@ export default function Buy(props) {
           <Grid.Column mobile={8} className="buy__button-container">
             <Button
               className="secondary buy__button"
-              content="Contactanos"
+              content="Escríbenos"
               as="a"
-              href=""
+              href="/contacto"
             />
           </Grid.Column>
         </Grid>

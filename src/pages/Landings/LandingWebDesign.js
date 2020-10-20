@@ -27,8 +27,8 @@ export default function IndexPage({ pageContext }) {
         link: "#",
       },
       buttonSecondary: {
-        title: "Contactanos",
-        link: "#",
+        title: "Escríbenos",
+        link: "/contacto",
       },
       imageLink: `${baseUrlImages}bannerweb.svg`,
     },
@@ -132,7 +132,7 @@ export default function IndexPage({ pageContext }) {
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
           urlImageDemo: `${baseUrlImages}demo-1.jpg`,
-          linkDemo: "~",
+          linkDemo: "https://startfly.es/wordpress/?page_id=6",
           linkCheckout: "",
         },
         {
@@ -172,7 +172,7 @@ export default function IndexPage({ pageContext }) {
             title: "Activar pack",
             link: "/product/pack-valencia",
           },
-          price: "270€",
+          price: "300€",
           backgroundColor: "#4071B",
         },
         {
@@ -194,7 +194,7 @@ export default function IndexPage({ pageContext }) {
             title: "Activar pack",
             link: "/product/pack-ibiza",
           },
-          price: "450€",
+          price: "500€",
           backgroundColor: "#FFAE37",
         },
         {
@@ -214,7 +214,7 @@ export default function IndexPage({ pageContext }) {
             title: "Activar pack",
             link: "/product/diseño-web-pack-mallorca",
           },
-          price: "690€",
+          price: "900€",
           backgroundColor: "#92CD41",
         },
       ],
@@ -280,12 +280,7 @@ export default function IndexPage({ pageContext }) {
         title={infoLanding.examples.title}
         demos={infoLanding.examples.demos}
       />
-      <SeoMessage
-        title={infoLanding.seoMessage.title}
-        description={infoLanding.seoMessage.description}
-        quote={infoLanding.seoMessage.quote}
-        author={infoLanding.seoMessage.author}
-      />
+      
       <PackContainer
         title={infoLanding.packs.title}
         packs={infoLanding.packs.packs}

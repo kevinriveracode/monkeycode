@@ -29,7 +29,7 @@ export default function MainBanner(props) {
           >
             <div>
               <h1 className="main-banner__title">
-                DISEÑO WEB ORIGINAL RÁPIDO Y SEGURO
+                DISEÑO WEB ORIGINAL, RÁPIDO Y SEGURO
               </h1>
               <p className="main-banner__description">
                 Si estás buscando una empresa de desarrollo web de primer nivel,
@@ -40,7 +40,7 @@ export default function MainBanner(props) {
               <Button
                 className="main-banner__button"
                 secondary
-                content="Empieza ya"
+                content="Empezar"
               />
              
             </div>

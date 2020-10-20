@@ -19,6 +19,9 @@
       flex-direction: row-reverse !important;
     }
   }
+  &__feature {
+    margin-bottom: 8px;
+  }
   &__article {
     @include upBreakpoint($breakpoint-up-lg) {
       padding-left: 5rem;

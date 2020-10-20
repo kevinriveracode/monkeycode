@@ -9,7 +9,7 @@ export default function Services(props) {
       description:
         "Nos especializamos en diseñar y crear sitios web únicos para pequeñas y medianas empresas, orientados siempre a los objetivos que se proponga el cliente. ¡No tengas miedo de experimentar!",
       button: {
-        title: "Desde 250€",
+        title: "Desde 300€",
         link: "/diseño-web-profesional",
       },
     },
@@ -19,7 +19,7 @@ export default function Services(props) {
       description:
         "Te ofrece la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de cliente encantadora que no encontrarás en ningún otro lugar.",
       button: {
-        title: "Desde 450€",
+        title: "Desde 500€",
         link: "/diseño-tienda-online",
       },
     },
@@ -29,8 +29,8 @@ export default function Services(props) {
       description:
         "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún notienes uno, entonces nuestro equipo está aquí para ayudarte.",
       button: {
-        title: "Desde 450€",
-        link: "+ información",
+        title: "Escríbenos",
+        link: "/contacto",
       },
     },
   ]

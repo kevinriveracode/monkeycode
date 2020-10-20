@@ -8,7 +8,7 @@ import Footer from "../components/Footer"
 import Info from "../components/Info"
 import Process from "../components/Process"
 import Buy from "../components/Buy"
-
+import SeoMessage from "../components/SeoMessage"
 export default function IndexPage({ pageContext }) {
   const { titlePage } = pageContext
   const indexPage = {
@@ -23,10 +23,11 @@ export default function IndexPage({ pageContext }) {
         "Integracón de la ficha de tus productos en las principales redes sociales.",
         "Instalamos el certificado SSL en todo el dominio de su tienda.",
         "Nuestras tiendas online tienen la posiblidad de tener varios idiomas.",
+        "Te entragamos una tienda online totalmente autogestionable."
       ],
       buttons: [
         {
-          link: "/productos/ecommerce",
+          link: "/diseño-tienda-online/",
           title: "Empieza a vender online",
           style: "primary",
         },
@@ -34,6 +35,14 @@ export default function IndexPage({ pageContext }) {
       image:
         "https://monkeycode.s3.eu-west-3.amazonaws.com/tim-bennett-OwvRB-M3GwE-unsplash+1+(4).png",
       background: "#EFFCFA",
+    },
+    seoMessage: {
+      title: "CONTRATA NUESTROS SERVICIOS Y AUMENTA LAS CONVERSIONES",
+      description:
+        "En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potente, efectivos y atractivos.",
+      quote:
+        "Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de la facturación y un mayor público.",
+      author: "KEVIN RIVERA - SEO STARTFLY",
     },
     infoWeb: {
       title: "Diseño web enfocado a objetivos",
@@ -44,10 +53,11 @@ export default function IndexPage({ pageContext }) {
         "Todos nuestros proyectos llevan incorporado un plan SEO inicial.",
         "Optimización para móviles y tablets.",
         "Tenemos los mejores precios del mercado en cuanto a diseño web para tu empresa.",
+        "Tenemos una web totalmente autoadministrable.",
       ],
       buttons: [
         {
-          link: "/productos/ecommerce",
+          link: "/diseño-web-profesional/",
           title: "Contrata tu página web",
           style: "primary",
         },
@@ -68,6 +78,12 @@ export default function IndexPage({ pageContext }) {
       <Info data={indexPage.infoWeb} />
       <Process />
       <Buy />
+      <SeoMessage
+        title={"CONTRATA NUESTROS SERVICIOS Y AUMENTA LAS CONVERSIONES"}
+        description={"En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potente, efectivos y atractivos."}
+        quote={"Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de la facturación y un mayor público."}
+        author={"KEVIN RIVERA - SEO STARTFLY"}
+      />
       <Footer />
       <TopButton />
     </>

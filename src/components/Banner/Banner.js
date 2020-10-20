@@ -21,7 +21,7 @@ export default function Banner(props) {
             <h3 className="banner__secondary-title">{subtitle}</h3>
             <div className="banner__container-buttons">
               <Button
-                as="a"
+                as="button"
                 href={buttonPrimary.link}
                 className="banner__container-buttons banner__container-buttons--button-primary"
               >

@@ -14,7 +14,7 @@ import TopButton from "../../components/TopButton"
 import Footer from "../../components/Footer"
 import Buy from "../../components/Buy"
 export default function IndexPage({ pageContext }) {
-  const baseUrlImages = "http://d1r0i6dbql3qta.cloudfront.net/"
+  const baseUrlImages = "https://d1r0i6dbql3qta.cloudfront.net/"
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
     backgroundImage: "http://monkeycode.s3.eu-west-3.amazonaws.com/ecommerceBann.jpg",

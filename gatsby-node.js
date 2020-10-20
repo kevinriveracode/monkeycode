@@ -19,4 +19,8 @@ exports.createPages = ({ actions: { createPage } }) => {
     path: "/product/diseño-web-pack-mallorca",
     component: require.resolve("./src/pages/Products/ProductWebPremium.js"),
   })
+  createPage({
+    path: "/contacto",
+    component: require.resolve("./src/pages/contact.js"),
+  })
 }

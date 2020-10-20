@@ -14,10 +14,9 @@ export default function Footer(props) {
             computer={5}
           >
             <h6>{"Servicios"}</h6>
-            <p>Diseño web</p>
-            <p>Tiendas Online</p>
+            <a href="/dise%C3%B1o-web-profesional"><p>Diseño web</p></a>
+            <a href="/diseño-tienda-online"><p>Tiendas Online</p></a>
             <p>Mantenimiento web</p>
-            <p>Desarrollo de apps</p>
           </Grid.Column>
           <Grid.Column
             className="footer__category"
