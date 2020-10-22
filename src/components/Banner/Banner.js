@@ -22,8 +22,10 @@ export default function Banner(props) {
             <div className="banner__container-buttons">
               <Button
                 as="button"
-                href={buttonPrimary.link}
                 className="banner__container-buttons banner__container-buttons--button-primary"
+                onClick={() => window.document.getElementById("packs").scrollIntoView({
+                  behavior: 'smooth'
+                })}
               >
                 {buttonPrimary.title}
               </Button>

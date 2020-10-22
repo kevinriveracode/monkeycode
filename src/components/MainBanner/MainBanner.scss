@@ -42,13 +42,18 @@
     @include upBreakpoint($breakpoint-up-md) {
       font-size: 2rem;
     }
-    
+    @include upBreakpoint($breakpoint-up-xl) {
+      font-size: 3rem;
+    }
   }
   &__description {
     font-family: "Roboto Condensed";
     color: #212326;
     font-size: 16px;
     font-weight: normal;
+    @include upBreakpoint($breakpoint-up-xl) {
+      font-size: 1.2rem;
+    }
   }
   &__button {
     background-color: #008060 !important;

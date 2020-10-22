@@ -17,7 +17,7 @@ export default function Services(props) {
       image: "https://monkeycode.s3.eu-west-3.amazonaws.com/ecommerce-shop.svg",
       title: "TIENDA ONLINE",
       description:
-        "Te ofrece la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de cliente encantadora que no encontrarás en ningún otro lugar.",
+        "Te ofrecemos la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de usuario encantadora que no encontrarás en ningún otro lugar.",
       button: {
         title: "Desde 500€",
         link: "/diseño-tienda-online",
@@ -27,7 +27,7 @@ export default function Services(props) {
       image: "https://monkeycode.s3.eu-west-3.amazonaws.com/mantenimiento-shop.svg",
       title: "MANTENIMIENTO WEB",
       description:
-        "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún notienes uno, entonces nuestro equipo está aquí para ayudarte.",
+        "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún no tienes uno, entonces nuestro equipo está aquí para ayudarte, Escríbenos.",
       button: {
         title: "Escríbenos",
         link: "/contacto",

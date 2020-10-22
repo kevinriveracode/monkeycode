@@ -7,7 +7,7 @@ export default function PackContainer(props) {
   const { title, packs } = props
 
   return (
-    <section className="pack-container">
+    <section className="pack-container" id="packs">
       <Container>
         <Grid>
           <Grid.Row className="pack-container__container-title">

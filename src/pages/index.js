@@ -10,19 +10,19 @@ import Process from "../components/Process"
 import Buy from "../components/Buy"
 import SeoMessage from "../components/SeoMessage"
 export default function IndexPage({ pageContext }) {
-  const { titlePage } = pageContext
+ 
   const indexPage = {
     infoEcommerce: {
-      title: "Tu pagina online de ecommerce más completa",
-      subtitle: "Aumenta las conversiones",
+      title: "Diseño Tienda Online Profesional",
+      subtitle: "¿Quieres Vender Online?",
       description:
-        "Te ofrecemos la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de cliente encantadora que no encontráras en ningún otro lugar.",
+        "Te ofrecemos la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de usuario encantadora que no encontrarás en ningún otro lugar.",
       advantages: [
-        "Nuestras  tiendas se adaptan perfectamente a cualquier tipo de dispositivo.",
-        "Múltiples formas de pago como PayPal, tarjeta y transferencia.",
-        "Integracón de la ficha de tus productos en las principales redes sociales.",
-        "Instalamos el certificado SSL en todo el dominio de su tienda.",
-        "Nuestras tiendas online tienen la posiblidad de tener varios idiomas.",
+        "Desarrollamos tu tienda online con un diseño profesional y optimizado a la conversión.",
+        "Estudiamos tu producto y modelo de negocio.",
+        "Creamos la arquitectura web de tu tienda orientada a SEO.",
+        "Presentamos un boceto de la maquetación de la tienda y sus funcionalidades.",
+        "Desarrollamos tu tienda online con un diseño profesional y optimizado a la conversión.",
         "Te entragamos una tienda online totalmente autogestionable."
       ],
       buttons: [
@@ -45,15 +45,15 @@ export default function IndexPage({ pageContext }) {
       author: "KEVIN RIVERA - SEO STARTFLY",
     },
     infoWeb: {
-      title: "Diseño web enfocado a objetivos",
-      subtitle: "Presencia web",
+      title: "Diseño Web Profesional",
+      subtitle: "Desarrollamos tu presencia en internet",
       description:
         "Con el máximo esfuerzo y atención a los detalles, creamos y diseñamos sitios online, aplicaciones web y otros servicios relacionados, que responden con precisión a tus expectativas y satisfacen las necesidades específicas de tu empresa.",
       advantages: [
         "Todos nuestros proyectos llevan incorporado un plan SEO inicial.",
         "Optimización para móviles y tablets.",
         "Tenemos los mejores precios del mercado en cuanto a diseño web para tu empresa.",
-        "Tenemos una web totalmente autoadministrable.",
+        "Todas nuestras web son totalmente autoadministrable.",
       ],
       buttons: [
         {
@@ -68,9 +68,14 @@ export default function IndexPage({ pageContext }) {
       reverse: true,
     },
   }
+
+  const description = "Diseño web profesional, rápido y seguro para pymes y emprendedores. Wordpress profesional y desarrollos a medida. Te ofrecemos calidad, entregas rápidas y precios competitivos."
+
   return (
     <>
       <SEO title="StartFly | Agencia de diseño web profesional, rapido y seguro" />
+      <SEO description={description} />
+      
       <Header />
       <MainBanner />
       <Services />

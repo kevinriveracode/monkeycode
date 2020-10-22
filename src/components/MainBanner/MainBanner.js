@@ -32,16 +32,12 @@ export default function MainBanner(props) {
                 DISEÑO WEB ORIGINAL, RÁPIDO Y SEGURO
               </h1>
               <p className="main-banner__description">
-                Si estás buscando una empresa de desarrollo web de primer nivel,
-                para diseñar y construir una página web única, totalmente
-                funcional, fácil de usar y que genere ingresos, entonces somos
-                la solución. ¡Este es el lugar perfecto para ti!
+                Si estás buscando una empresa de desarrollo web de primer nivel, 
+                para diseñar y construir una página web única, totalmente funcional, 
+                fácil de usar y que genere ingresos, entonces somos la solución. 
+                Éste es el lugar perfecto para ti!
               </p>
-              <Button
-                className="main-banner__button"
-                secondary
-                content="Empezar"
-              />
+              
              
             </div>
           </Grid.Column>

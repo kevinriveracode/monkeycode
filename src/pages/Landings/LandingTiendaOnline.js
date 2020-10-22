@@ -17,7 +17,7 @@ export default function IndexPage({ pageContext }) {
   const baseUrlImages = "https://d1r0i6dbql3qta.cloudfront.net/"
   const infoLanding = {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
-    backgroundImage: "http://monkeycode.s3.eu-west-3.amazonaws.com/ecommerceBann.jpg",
+    backgroundImage: "https://monkeycode.s3.eu-west-3.amazonaws.com/bannweb.jpg",
     banner: {
       title: "DISEÑAMOS TU TIENDA ONLINE PROFESIONAL",
       subtitle:
@@ -46,7 +46,7 @@ export default function IndexPage({ pageContext }) {
         {
           title: "Flexibiliza tus horarios",
           description:
-            "Una tienda online está abierta 24 horas al día, 7 días a la semana y 365 días al año. De esa forma no atas al cliente a que visite tu negocio en horario de apertura.",
+            "Una tienda online está abierta 24 horas al día, 7 días a la semana y 365 días al año. De esa forma no atas al cliente a  tu horario de apertura.",
           url: `${baseUrlImages}fidelizar.svg`,
         },
 
