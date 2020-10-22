@@ -37,8 +37,6 @@ export default function MainBanner(props) {
                 fácil de usar y que genere ingresos, entonces somos la solución. 
                 Éste es el lugar perfecto para ti!
               </p>
-              
-             
             </div>
           </Grid.Column>
         </Grid>

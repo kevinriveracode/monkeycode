@@ -17,8 +17,8 @@ export default function ViewPackBasic(props) {
     title: "PACK DE DISEÑO WEB VALENCIA",
     price: "300 €",
     description:
-      "Al dia de hoy cualquiera puede hacer una página web si se lo propone, pero nuestro Pack de diseño web Valencia es otro mundo. Desarrollaremos tu web con un diseño espectacular, podra tener todas las secciones que necesites, se vera igual de espectacular en movil que en escritorio y sin olvidar que tu mismo podras manejarla fácilmente. Si sientes pasión por tu proyecto, haz que destaque de verdad.",
-    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-valencia",
+      "Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Sera una web con un diseño único y espectacular, la categorización será perfecta, se verá genial en los móviles y, lo mas importante, lo podrás manejar fácilmente. Si te apasiona tu proyecto haz que destaque.",
+    urlCheckout: "http://localhost:3000/buy-pack-valencia",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -30,11 +30,23 @@ export default function ViewPackBasic(props) {
       setMessage("Order canceled")
     }
   }, [])
-  async function handleClick(ev) {
+  async function handleClick(ev , info) {
     //Función a compra
     const stripe = await stripePromise
+    console.log(info)
     const response = await fetch(infoPage.urlCheckout, {
-      method: "post",
+      method:'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        name: info.name,
+        lastname: info.lastname,
+        email: info.email,
+        payment: info.payment
+      })
     })
     const session = await response.json()
     const result = await stripe.redirectToCheckout({
@@ -126,7 +138,7 @@ export default function ViewPackBasic(props) {
           </Grid>
         </Container>
         {
-          openCheckout && (<Checkout  />)
+          openCheckout && (<Checkout sendInfo={handleClick}  />)
         }
         {
           !openCheckout && (
@@ -168,11 +180,14 @@ function Checkout(props){
   const [email,setEmail] = useState('');
   const [paymentMethod , setPaymentMethod] = useState('');
   const [errorBuy,setErrorBuy] = useState(false);
+  const { sendInfo } = props;
+  const [loading,setLoading] = useState(false);
 
-  function handlerBuyService() {
+  function handlerBuyService(ev) {
     console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
       name: name,
+      lastname: lastname,
       email: email,
       paymentMethod: paymentMethod
     }
@@ -188,7 +203,9 @@ function Checkout(props){
       setErrorBuy(true)
       return
     }
-
+    setLoading(true)
+    
+    props.sendInfo(ev , newBuy);
   }
 
   return(
@@ -238,7 +255,7 @@ function Checkout(props){
               <p><b>TOTAL</b></p>
               <span>300 €</span>
             </div>
-            <Button className="checkout__buy" onClick={handlerBuyService} content="Comprar" />
+            <Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />
             <p className="checkout__subtitle checkout__subtitle--span">*Al darle a comprar Acepta todas nuestra politicas de privacidad.</p>
           </section>
         </Grid.Column>
