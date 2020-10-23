@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "500 €",
     description:
       "Diseñamos y desarrollamos un web que sea líder en tu sector. Te ofrecemos una potente herramienta que te permitirá reforzar la imagen de tu empresa y que te ayude a captar nuevos clientes, contaras con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles. Una web que tu mismo podrás gestionar fácilmente para crear nuevo contenido, editar secciones y mucho más, gracias a que usamos Wordpress para nuestros desarrollos.",
-    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-valencia",
+    urlCheckout: "http://localhost:3000/buy-pack-ibiza",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -30,11 +30,23 @@ export default function ViewPackBasic(props) {
       setMessage("Order canceled")
     }
   }, [])
-  async function handleClick(ev) {
+  async function handleClick(ev , info) {
     //Función a compra
     const stripe = await stripePromise
+    console.log(info)
     const response = await fetch(infoPage.urlCheckout, {
-      method: "post",
+      method:'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        name: info.name,
+        lastname: info.lastname,
+        email: info.email,
+        payment: info.paymentMethod
+      })
     })
     const session = await response.json()
     const result = await stripe.redirectToCheckout({
@@ -110,7 +122,6 @@ export default function ViewPackBasic(props) {
               <Icon name="star" />
               <Icon name="star" />
               <Icon name="star" />
-              <Icon name="star" />
               <span className="product__sub">
                 (Recomendado por nuestros clientes)
               </span>
@@ -127,7 +138,7 @@ export default function ViewPackBasic(props) {
           </Grid>
         </Container>
         {
-          openCheckout && (<Checkout  />)
+          openCheckout && (<Checkout sendInfo={handleClick}  />)
         }
         {
           !openCheckout && (
@@ -169,11 +180,15 @@ function Checkout(props){
   const [email,setEmail] = useState('');
   const [paymentMethod , setPaymentMethod] = useState('');
   const [errorBuy,setErrorBuy] = useState(false);
+  const { sendInfo } = props;
+  const [loading,setLoading] = useState(false);
 
-  function handlerBuyService() {
+ 
+  function handlerBuyService(ev) {
     console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
       name: name,
+      lastname: lastname,
       email: email,
       paymentMethod: paymentMethod
     }
@@ -189,9 +204,35 @@ function Checkout(props){
       setErrorBuy(true)
       return
     }
-
+    setLoading(true)
+    
+    props.sendInfo(ev , newBuy);
   }
-
+  async function handlerBuyTransfer(ev) {
+    setLoading(true);
+    const newBuy = {
+      name: name,
+      lastname: lastname,
+      email: email,
+      paymentMethod: paymentMethod
+    }
+    const response = await fetch("http://localhost:3000/buy-pack-ibiza-transfer", {
+      method:'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        name: name,
+        lastname: lastname,
+        email: email,
+        payment: paymentMethod
+      })
+    })
+    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
+    setLoading(false);
+  }
   return(
     <Container className="checkout">
       <Grid>
@@ -239,7 +280,15 @@ function Checkout(props){
               <p><b>TOTAL</b></p>
               <span>500 €</span>
             </div>
-            <Button className="checkout__buy" onClick={handlerBuyService} content="Comprar" />
+            {
+              paymentMethod === ''  && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />)
+            }
+            {
+              paymentMethod === 'card'  && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />)
+            }
+            {
+              paymentMethod === 'transfer' && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyTransfer} content="Comprar" />)
+            }
             <p className="checkout__subtitle checkout__subtitle--span">*Al darle a comprar Acepta todas nuestra politicas de privacidad.</p>
           </section>
         </Grid.Column>

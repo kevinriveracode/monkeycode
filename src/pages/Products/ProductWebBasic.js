@@ -45,7 +45,7 @@ export default function ViewPackBasic(props) {
         name: info.name,
         lastname: info.lastname,
         email: info.email,
-        payment: info.payment
+        payment: info.paymentMethod
       })
     })
     const session = await response.json()
@@ -183,6 +183,7 @@ function Checkout(props){
   const { sendInfo } = props;
   const [loading,setLoading] = useState(false);
 
+ 
   function handlerBuyService(ev) {
     console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
@@ -207,7 +208,31 @@ function Checkout(props){
     
     props.sendInfo(ev , newBuy);
   }
-
+  async function handlerBuyTransfer(ev) {
+    setLoading(true);
+    const newBuy = {
+      name: name,
+      lastname: lastname,
+      email: email,
+      paymentMethod: paymentMethod
+    }
+    const response = await fetch("http://localhost:3000/buy-pack-valencia-transfer", {
+      method:'POST',
+      mode: 'cors',
+      headers: {
+        'Content-Type': 'application/json'
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify({
+        name: name,
+        lastname: lastname,
+        email: email,
+        payment: paymentMethod
+      })
+    })
+    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
+    setLoading(false);
+  }
   return(
     <Container className="checkout">
       <Grid>
@@ -255,7 +280,15 @@ function Checkout(props){
               <p><b>TOTAL</b></p>
               <span>300 €</span>
             </div>
-            <Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />
+            {
+              paymentMethod === ''  && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />)
+            }
+            {
+              paymentMethod === 'card'  && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />)
+            }
+            {
+              paymentMethod === 'transfer' && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyTransfer} content="Comprar" />)
+            }
             <p className="checkout__subtitle checkout__subtitle--span">*Al darle a comprar Acepta todas nuestra politicas de privacidad.</p>
           </section>
         </Grid.Column>
