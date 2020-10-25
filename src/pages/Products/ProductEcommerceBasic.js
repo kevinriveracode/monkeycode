@@ -3,6 +3,8 @@ import { Container, Grid, Button, Icon, Image, Form } from "semantic-ui-react"
 import { loadStripe } from "@stripe/stripe-js"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+
+
 import "./ProductWeb.scss"
 const stripePromise = loadStripe(
   "pk_test_51HWHRmHTnDUNNyj1WnUWdywxldZ5REcniBlDGqD85nuoyU9p327p9IC31lqVB9QuP1sfm7H4eYRrW1mAryfS5OzJ00cwgqIs7v"
@@ -99,7 +101,7 @@ export default function ViewPackBasic(props) {
       answer: 'Por supuesto. Dejaremos tu web preparada para que puedas modificar los textos y los parámetros básicos, incluso algunos de diseño. No te hará falta contratar ningún servicio externo.'
     },
     {
-      question: '¿Qué ocurre si el diseño no me gusta?',
+      question: '¿Qué ocurre sdiseño-tienda-online/i el diseño no me gusta?',
       answer: 'Contamos con varias fases de revisión, y siempre que estemos dentro del plan de trabajo fijado, no dejaremos de hacer cambios que sean necesarios hasta que el diseño sea de tu agrado.'
     },
     
@@ -107,6 +109,7 @@ export default function ViewPackBasic(props) {
   return (
     <>
       <Header />
+      
       <section className="product">
         <Container>
           <Grid columns={16}>
@@ -314,7 +317,7 @@ function Faq(props){
 function MiniatureProduct(props){
   const {image , text} = props;
   return(
-    <Grid.Column mobile={8} className="miniature">
+    <Grid.Column  className="miniature">
         <Image className="miniature__image" src={image} alt="" />
   <h4 className="miniature__title">{text}</h4> 
     </Grid.Column>

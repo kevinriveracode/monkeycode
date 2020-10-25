@@ -41,7 +41,7 @@ export default function IndexPage({ pageContext }) {
     seoMessage: {
       title: "CONTRATA NUESTROS SERVICIOS Y AUMENTA LAS CONVERSIONES",
       description:
-        "En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potente, efectivos y atractivos.",
+        "En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potentes, efectivos y atractivos.",
       quote:
         "Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de la facturación y un mayor público.",
       author: "KEVIN RIVERA - SEO STARTFLY",
@@ -75,12 +75,19 @@ export default function IndexPage({ pageContext }) {
 
   return (
     <>
-      <SEO title="Diseño web Valencia | Agencia de diseño web en Valencia" />
+      <Helmet>
+        <html lang="es" />
+        <meta name="robots" content="index"/>
+      </Helmet>
       <SEO description={description} />
       <Helmet>
         <html lang="es" />
+        <meta title="Diseño web Valencia | Agencia de diseño web en Valencia" />
         <meta name="keywords" content="diseño web valencia, diseño web tienda online, diseño web ecommerce, diseño de paginas web profesionales, Diseño de tiendas online y ecommerce" />
         <meta name="robots" content="index"/>
+        <meta property="og:site_name" content="Startfly"></meta>
+        <meta property="og:locale" content="es_ES"></meta>
+        <link rel="canonical" href="https://startfly.es/"></link>
       </Helmet>
       <Header />
       <MainBanner />
@@ -91,7 +98,7 @@ export default function IndexPage({ pageContext }) {
       <Buy />
       <SeoMessage
         title={"CONTRATA NUESTROS SERVICIOS Y AUMENTA LAS CONVERSIONES"}
-        description={"En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potente, efectivos y atractivos."}
+        description={"En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potentes, efectivos y atractivos."}
         quote={"Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de la facturación y un mayor público."}
         author={"KEVIN RIVERA - SEO STARTFLY"}
       />

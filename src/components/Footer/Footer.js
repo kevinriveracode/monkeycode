@@ -57,6 +57,8 @@ export default function Footer(props) {
             <h6>Síguenos en RRSS</h6>
             <div className="footer__social-gallery">
               <Image
+                as="a"
+                href="https://www.facebook.com/Startfly-102003808381019"
                 src="https://monkeycode.s3.eu-west-3.amazonaws.com/facebook.svg"
                 alt="Facebook"
               />
