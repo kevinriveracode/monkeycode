@@ -12,7 +12,8 @@ import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
 import TopButton from "../../components/TopButton"
 import Footer from "../../components/Footer"
-import Buy from "../../components/Buy"
+import {Helmet} from "react-helmet"
+
 export default function IndexPage({ pageContext }) {
   const baseUrlImages = "https://monkeycode.s3.eu-west-3.amazonaws.com/"
   const infoLanding = {
@@ -263,7 +264,16 @@ export default function IndexPage({ pageContext }) {
   }
   return (
     <>
-      <SEO title={infoLanding.titlePage} />
+      <SEO title="Agencia de diseño de páginas web económicas en valencia" />
+      <SEO description="Startfly es una empresa de diseño web profesional con varios años de experiencia. Creamos tu página web a un precio de escandalo." />
+      <Helmet>
+        <html lang="es" />
+        <meta name="keywords" content="diseño de páginas web en valencia, diseño web profesional, paginas web ecónomicas, diseño web en valencia" />
+        <meta name="robots" content="index"/>
+        <meta property="og:site_name" content="Startfly"></meta>
+        <meta property="og:locale" content="es_ES"></meta>
+        <link rel="canonical" href="https://startfly.es/diseño-web-profesional/"></link>
+      </Helmet>
       <Header />
       <Banner
         title={infoLanding.banner.title}

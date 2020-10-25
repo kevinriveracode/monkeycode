@@ -1,5 +1,5 @@
 import React from "react"
-import ScrollUpButton from "react-scroll-up-button"
+import {Helmet} from "react-helmet"
 import SEO from "../../components/seo"
 import Header from "../../components/Header/Header"
 import Banner from "../../components/Banner/Banner"
@@ -259,7 +259,16 @@ export default function IndexPage({ pageContext }) {
   }
   return (
     <>
-      <SEO title={infoLanding.titlePage} />
+      <SEO title="Diseño de tiendas online y ecommerce en Valencia | Diseño web Valencia" />
+      <SEO description="¿Quieres abrir una Tienda Online a un precio insuperable y con todas las funcionalidades? Startfly te ofrece un trabajo profesional a partir de 500 €." />
+      <Helmet>
+        <html lang="es" />
+        <meta name="keywords" content="diseño de páginas web en valencia, diseño web profesional, paginas web ecónomicas, diseño web en valencia" />
+        <meta name="robots" content="index"/>
+        <meta property="og:site_name" content="Startfly"></meta>
+        <meta property="og:locale" content="es_ES"></meta>
+        <link rel="canonical" href="https://startfly.es/diseño-tienda-online/"></link>
+      </Helmet>
       <Header />
       <Banner
         title={infoLanding.banner.title}
