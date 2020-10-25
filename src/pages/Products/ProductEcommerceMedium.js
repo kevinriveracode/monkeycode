@@ -13,12 +13,12 @@ export default function ViewPackBasic(props) {
   const [openCheckout, setOpenCheckout] = useState(false);
   const infoPage = {
     image:
-      "https://monkeycode.s3.eu-west-3.amazonaws.com/packvalencia.svg",
-    title: "PACK DE DISEÑO WEB VALENCIA",
-    price: "300 €",
+      "https://monkeycode.s3.eu-west-3.amazonaws.com/packmilan.svg",
+    title: "PACK DE DISEÑO ECOMMERCE MILAN",
+    price: "780 €",
     description:
-      "Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Sera una web con un diseño único y espectacular, la categorización será perfecta, se verá genial en los móviles y, lo mas importante, lo podrás manejar fácilmente. Si te apasiona tu proyecto haz que destaque.",
-    urlCheckout: "http://localhost:3000/buy-pack-valencia",
+      "Ponemos en tus manos una potente herramienta para vender online, una solución que te ayudara a cumplir tus objetivos de venta a la vez que gestionas cómodamente tu proyecto. Con un diseño gráfico original, con slogans potentes y que se adapte a todos los dispositivos. Tu ecommerce tendrá todo lo necesario para generar confianza en tus clientes.",
+    urlCheckout: "http://localhost:3000/buy-pack-milan",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -113,12 +113,13 @@ export default function ViewPackBasic(props) {
       <section className="product">
         <Container>
           <Grid columns={16}>
-            <Grid.Column mobile={16} tablet={8} computer={8} className="product__container-image">
+            <Grid.Column className="product__container-image" mobile={16} tablet={8} computer={8}>
               <Image src={infoPage.image} className="product__image" alt={infoPage.title} />
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={8}>
               <h1 className="product__title">{infoPage.title}</h1>
               <p className="product__price">{infoPage.price}</p>
+              <Icon name="star" />
               <Icon name="star" />
               <Icon name="star" />
               <Icon name="star" />
@@ -270,15 +271,15 @@ function Checkout(props){
           <section className="checkout-resume">
             <div className="checkout-resume__item">
               <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño web: PACK VALENCIA</p>
-              <span>300 €</span>
+              <span>780 €</span>
             </div>
             <div className="checkout-resume__item">
               <p><b>SUBTOTAL</b></p>
-              <span>300 €</span>
+              <span>780 €</span>
             </div>
             <div className="checkout-resume__item">
               <p><b>TOTAL</b></p>
-              <span>300 €</span>
+              <span>780 €</span>
             </div>
             {
               paymentMethod === ''  && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />)

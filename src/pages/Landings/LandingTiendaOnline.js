@@ -157,64 +157,69 @@ export default function IndexPage({ pageContext }) {
       title: "¡Empiece ya a mejorar los resultados de su negocio!",
       packs: [
         {
-          name: "VALENCIA",
+          name: "ROMA",
           features: [
-            "Diseño único y original",
-            "Secciónes ilimitadas",
-            "Categorización",
-            "Web Móvil (Responsive)",
-            "15 fotos profesionales",
-            "Integración a redes sociales",
-            "Autoadministrable",
-            "Formación",
+           "Diseño gráfico original",
+           "Productos infinitos",
+           "Gestión de Stock, precios, codigos de descuento",
+           "Paypal, targeta y transferencia",
+           "Notificaciones automáticas",
+           "Programación en Wordpress",
+           "Web móvil (responsive)",
+           "Secciones ilimitadas",
+           "Importación de hasta 15 productos"
           ],
           button: {
-            title: "Activar pack",
-            link: "/product/pack-valencia",
+            title: "Activar",
+            link: "/product/diseño-web-pack-roma",
           },
-          price: "270€",
+          price: "500 €",
           backgroundColor: "#4071B",
         },
         {
-          name: "IBIZA",
+          name: "MILAN",
           features: [
             "Diseño único y original",
-            "Secciónes ilimitadas",
-            "Creación de slogans",
+            "Paypal, targeta y transferencia",
+            "Notificaciones automaticas",
             "Categorización",
+            "Modulo de gestión de envios",
+            "WordPress o Prestashop",
+            "2 idiomas (No incluye traducción)",
+            "Secciones ilimitadas",
+            "Slogans y mensajes",
             "Web Móvil (Responsive)",
-            "15 fotos profesionales",
-            "Alta en Google Maps, Google Business",
-            "Integración a redes sociales",
-            "Muchas mas caracteristicas",
-            "Autoadministrable",
-            "Formación",
+            "Importación de hasta 50 productos"
           ],
           button: {
             title: "Activar pack",
-            link: "/product/pack-ibiza",
+            link: "/product/diseño-web-pack-milan",
           },
-          price: "450€",
+          price: "780 €",
           backgroundColor: "#FFAE37",
         },
         {
-          name: "MALLORCA",
+          name: "VENECIA",
           features: [
-            "Todo lo anterior y adémas",
-            "Experiencia de usuarios extra",
-            "Slogans + textos potentes",
-            "Efectos y animaciones",
-            "Adaptada a multiples idiomas (3)",
-            "Meta - etiquetado",
-            "Alta en Google Maps, Business y Analytics",
-            "30 fotos profesionales",
-            "!Y mucho más¡",
+            "Diseño único y original",
+            "Paypal, targeta y transferencia",
+            "Notificaciones automaticas",
+            "Categorización",
+            "Plan de lanzamiento (Adwords y Facebook)",
+            "Revisión de redacciónes",
+            "Modulo de gestión de envios",
+            "WordPress o Prestashop",
+            "Multi-idioma (Hasta 5 idiomas)",
+            "Secciones ilimitadas",
+            "Slogans y mensajes",
+            "Web Móvil (Responsive)",
+            "Importación de hasta 100 productos"
           ],
           button: {
             title: "Activar pack",
-            link: "/product/diseño-web-pack-mallorca",
+            link: "/product/diseño-web-pack-venecia",
           },
-          price: "690€",
+          price: "1300 €",
           backgroundColor: "#92CD41",
         },
       ],
@@ -279,12 +284,6 @@ export default function IndexPage({ pageContext }) {
       <Examples
         title={infoLanding.examples.title}
         demos={infoLanding.examples.demos}
-      />
-      <SeoMessage
-        title={infoLanding.seoMessage.title}
-        description={infoLanding.seoMessage.description}
-        quote={infoLanding.seoMessage.quote}
-        author={infoLanding.seoMessage.author}
       />
       <PackContainer
         title={infoLanding.packs.title}

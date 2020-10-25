@@ -20,6 +20,18 @@ exports.createPages = ({ actions: { createPage } }) => {
     component: require.resolve("./src/pages/Products/ProductWebPremium.js"),
   })
   createPage({
+    path: "/product/diseño-web-pack-roma",
+    component: require.resolve("./src/pages/Products/ProductEcommerceBasic.js"),
+  })
+  createPage({
+    path: "/product/diseño-web-pack-milan",
+    component: require.resolve("./src/pages/Products/ProductEcommerceMedium.js"),
+  })
+  createPage({
+    path: "/product/diseño-web-pack-venecia",
+    component: require.resolve("./src/pages/Products/ProductEcommerceMedium.js"),
+  })
+  createPage({
     path: "/contacto",
     component: require.resolve("./src/pages/contact.js"),
   })

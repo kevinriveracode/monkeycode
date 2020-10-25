@@ -13,12 +13,12 @@ export default function ViewPackBasic(props) {
   const [openCheckout, setOpenCheckout] = useState(false);
   const infoPage = {
     image:
-      "https://monkeycode.s3.eu-west-3.amazonaws.com/packvalencia.svg",
-    title: "PACK DE DISEÑO WEB VALENCIA",
-    price: "300 €",
+      "https://monkeycode.s3.eu-west-3.amazonaws.com/packroma.svg",
+    title: "PACK DE DISEÑO ECOMMERCE ROMA",
+    price: "500 €",
     description:
-      "Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Sera una web con un diseño único y espectacular, la categorización será perfecta, se verá genial en los móviles y, lo mas importante, lo podrás manejar fácilmente. Si te apasiona tu proyecto haz que destaque.",
-    urlCheckout: "http://localhost:3000/buy-pack-valencia",
+      "Desarrollamos tu tienda online con todas las garantías para que triunfe. No temas a la competencia, pondremos todos nuestros conocimientos y entusiasmo a tu disposición para que tu ecommerce sea un éxito. Diseño web original y potente, comunicación que conecta, programación exquisita y facilidad de gestión. Empieza a vender.",
+    urlCheckout: "http://localhost:3000/buy-pack-roma",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -31,15 +31,12 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    //Función a compra
     const stripe = await stripePromise
-    console.log(info)
     const response = await fetch(infoPage.urlCheckout, {
       method:'POST',
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
         name: info.name,
@@ -113,7 +110,7 @@ export default function ViewPackBasic(props) {
       <section className="product">
         <Container>
           <Grid columns={16}>
-            <Grid.Column mobile={16} tablet={8} computer={8} className="product__container-image">
+            <Grid.Column className="product__container-image" mobile={16} tablet={8} computer={8}>
               <Image src={infoPage.image} className="product__image" alt={infoPage.title} />
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={8}>
@@ -160,14 +157,12 @@ export default function ViewPackBasic(props) {
                         answer={entry.answer}
                       />))
                     }
-                    
                   </Grid>
                 </Container>
               </Grid>
             </Container>
           )
         }
-        
       </section>
       <Footer />
     </>
@@ -216,7 +211,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("http://localhost:3000/buy-pack-valencia-transfer", {
+    const response = await fetch("http://localhost:3000/buy-pack-roma-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {
@@ -269,16 +264,16 @@ function Checkout(props){
           <h2 className="checkout__title">Resumen</h2>   
           <section className="checkout-resume">
             <div className="checkout-resume__item">
-              <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño web: PACK VALENCIA</p>
-              <span>300 €</span>
+              <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño Ecommerce: PACK MILAN</p>
+              <span>500 €</span>
             </div>
             <div className="checkout-resume__item">
               <p><b>SUBTOTAL</b></p>
-              <span>300 €</span>
+              <span>500 €</span>
             </div>
             <div className="checkout-resume__item">
               <p><b>TOTAL</b></p>
-              <span>300 €</span>
+              <span>500 €</span>
             </div>
             {
               paymentMethod === ''  && (<Button loading={loading} className="checkout__buy" onClick={handlerBuyService} content="Comprar" />)
@@ -319,7 +314,7 @@ function Faq(props){
 function MiniatureProduct(props){
   const {image , text} = props;
   return(
-    <Grid.Column className="miniature">
+    <Grid.Column mobile={8} className="miniature">
         <Image className="miniature__image" src={image} alt="" />
   <h4 className="miniature__title">{text}</h4> 
     </Grid.Column>

@@ -13,7 +13,7 @@ export default function ViewPackBasic(props) {
   const [openCheckout, setOpenCheckout] = useState(false);
   const infoPage = {
     image:
-      "https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg",
+      "https://monkeycode.s3.eu-west-3.amazonaws.com/packibiza.svg",
     title: "PACK DE DISEÑO WEB IBIZA",
     price: "500 €",
     description:
@@ -113,7 +113,7 @@ export default function ViewPackBasic(props) {
       <section className="product">
         <Container>
           <Grid columns={16}>
-            <Grid.Column mobile={16} tablet={8} computer={8}>
+            <Grid.Column mobile={16} tablet={8} computer={8} className="product__container-image">
               <Image src={infoPage.image} className="product__image" alt={infoPage.title} />
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={8}>

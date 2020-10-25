@@ -13,12 +13,12 @@ export default function ViewPackBasic(props) {
   const [openCheckout, setOpenCheckout] = useState(false);
   const infoPage = {
     image:
-      "https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg",
+      "https://monkeycode.s3.eu-west-3.amazonaws.com/packmallorca.svg",
     title: "PACK DE DISEÑO WEB MALLORCA",
     price: "900 €",
     description:
       "¿Estás preparado para echar a volar tu negocio a lo mas alto? Nuestro pack de diseño web mallorca cambiara la forma en la que los demás ven tu empresa. Contaras con una web visualmente espectacular, Atraerá a los usuarios con mensajes y textos potentes y efectos y animaciones únicas. Este pack incluye multi-idioma, blog, meta-etiquetado, google analytics y maps. Una web única y exclusiva. Apuesta sobre seguro sobre tu estrategia online.",
-    urlCheckout: "http://localhost:3000/buy-pack-mallorca",
+    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-mallorca",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -113,7 +113,7 @@ export default function ViewPackBasic(props) {
       <section className="product">
         <Container>
           <Grid columns={16}>
-            <Grid.Column mobile={16} tablet={8} computer={8}>
+            <Grid.Column mobile={16} tablet={8} computer={8} className="product__container-image">
               <Image src={infoPage.image} className="product__image" alt={infoPage.title} />
             </Grid.Column>
             <Grid.Column mobile={16} tablet={8} computer={8}>
@@ -218,7 +218,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("http://localhost:3000/buy-pack-mallorca-transfer", {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-mallorca-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {

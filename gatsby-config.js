@@ -16,7 +16,12 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+      trackingId: `UA-180851710-1`,
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
