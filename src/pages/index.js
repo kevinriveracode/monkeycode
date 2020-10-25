@@ -9,6 +9,8 @@ import Info from "../components/Info"
 import Process from "../components/Process"
 import Buy from "../components/Buy"
 import SeoMessage from "../components/SeoMessage"
+import {Helmet} from "react-helmet";
+
 export default function IndexPage({ pageContext }) {
  
   const indexPage = {
@@ -73,9 +75,13 @@ export default function IndexPage({ pageContext }) {
 
   return (
     <>
-      <SEO title="StartFly | Agencia de diseño web profesional, rapido y seguro" />
+      <SEO title="Diseño web Valencia | Agencia de diseño web en Valencia" />
       <SEO description={description} />
-      
+      <Helmet>
+        <html lang="es" />
+        <meta name="keywords" content="diseño web valencia, diseño web tienda online, diseño web ecommerce, diseño de paginas web profesionales, Diseño de tiendas online y ecommerce" />
+        <meta name="robots" content="index"/>
+      </Helmet>
       <Header />
       <MainBanner />
       <Services />

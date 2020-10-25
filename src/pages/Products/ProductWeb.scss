@@ -77,8 +77,7 @@
   margin-right: 4px;
   margin-bottom: 5px;
   @include upBreakpoint($breakpoint-up-lg) {
-    width: 165px !important;
-    height: 176px;
+    width: 25% !important;
     &__image {
       width: 75px;
       height: 75px;

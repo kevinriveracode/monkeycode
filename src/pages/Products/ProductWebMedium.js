@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "500 €",
     description:
       "Diseñamos y desarrollamos un web que sea líder en tu sector. Te ofrecemos una potente herramienta que te permitirá reforzar la imagen de tu empresa y que te ayude a captar nuevos clientes, contaras con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles. Una web que tu mismo podrás gestionar fácilmente para crear nuevo contenido, editar secciones y mucho más, gracias a que usamos Wordpress para nuestros desarrollos.",
-    urlCheckout: "http://localhost:3000/buy-pack-ibiza",
+    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-ibiza",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -216,7 +216,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("http://localhost:3000/buy-pack-ibiza-transfer", {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-ibiza-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {

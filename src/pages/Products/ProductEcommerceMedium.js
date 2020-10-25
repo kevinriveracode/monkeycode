@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "780 €",
     description:
       "Ponemos en tus manos una potente herramienta para vender online, una solución que te ayudara a cumplir tus objetivos de venta a la vez que gestionas cómodamente tu proyecto. Con un diseño gráfico original, con slogans potentes y que se adapte a todos los dispositivos. Tu ecommerce tendrá todo lo necesario para generar confianza en tus clientes.",
-    urlCheckout: "http://localhost:3000/buy-pack-milan",
+    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-milan",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -217,7 +217,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("http://localhost:3000/buy-pack-valencia-transfer", {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {

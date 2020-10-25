@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "500 €",
     description:
       "Desarrollamos tu tienda online con todas las garantías para que triunfe. No temas a la competencia, pondremos todos nuestros conocimientos y entusiasmo a tu disposición para que tu ecommerce sea un éxito. Diseño web original y potente, comunicación que conecta, programación exquisita y facilidad de gestión. Empieza a vender.",
-    urlCheckout: "http://localhost:3000/buy-pack-roma",
+    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-roma",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -211,7 +211,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("http://localhost:3000/buy-pack-roma-transfer", {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-roma-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {

@@ -54,7 +54,7 @@ function Service(props) {
   const { image, title, description, button } = props.info
   return (
     <Grid.Column mobile={16} tablet={5} computer={5} className="service">
-      <Image src={image} alt="" className="service__image" />
+      <Image src={image} alt={title} className="service__image" />
       <h4 className="service__title">{title}</h4>
       <p className="service__description">{description}</p>
       <Button

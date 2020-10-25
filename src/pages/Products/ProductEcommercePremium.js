@@ -18,10 +18,9 @@ export default function ViewPackBasic(props) {
     price: "1300 €",
     description:
       "Tendrás una tu disposición una tienda online con un diseño atractivo que aporta una experiencia de navegación única y agradable. En nuestro diseño Ecommerce, aplicamos una optimización de la arquitectura web para que tus usuarios encuentre tu tienda online de forma rápida y fácil.",
-    urlCheckout: "http://localhost:3000/buy-pack-venecia",
+    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-venecia",
   }
   useEffect(() => {
-    // Check to see if this is a redirect back from checkout
     const query = new URLSearchParams(window.location.search)
     if (query.get("success")) {
       setMessage("Orden placed!! Todo perfecto")
@@ -31,9 +30,7 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    //Función a compra
     const stripe = await stripePromise
-    console.log(info)
     const response = await fetch(infoPage.urlCheckout, {
       method:'POST',
       mode: 'cors',
@@ -218,7 +215,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("http://localhost:3000/buy-pack-venecia-transfer", {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-venecia-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {

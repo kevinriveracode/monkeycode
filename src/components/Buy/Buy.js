@@ -9,12 +9,12 @@ export default function Buy(props) {
         <Grid>
           <Grid.Column
             verticalAlign="middle"
-            mobile={16} tablet={8}
+            computer={8} mobile={16} tablet={8}
             className="buy__title-container"
           >
             <h4>Digitalize su negocio en apenas unos dias</h4>
           </Grid.Column>
-          <Grid.Column mobile={16} tablet={8} className="buy__button-container">
+          <Grid.Column computer={8} mobile={16} tablet={8} className="buy__button-container">
             <Button
               className="secondary buy__button"
               content="Escríbenos"

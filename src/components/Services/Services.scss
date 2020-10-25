@@ -48,6 +48,7 @@
     padding: 14px 30px !important;
     min-width: 100px !important;
     box-shadow: 0 5px 15px 0 rgba(0,0,0,0.15) !important;
+    width: fit-content;
     @include upBreakpoint($breakpoint-up-md) {
       font-size: 12px !important;
     }
