@@ -1,0 +1,38 @@
+@import "../../scss/index.scss";
+
+.purchase-info { 
+    background-color: #f1f2f3;
+    min-height: 650px;
+    display: flex !important;
+    align-items: center !important;
+    &__title {
+        font-family: 'Roboto Condensed';
+        font-size: 26px;
+        font-weight: bold;
+    }
+    &__subtitle {
+        font-family: 'Roboto Condensed';
+        font-size: 18px;
+    }
+    &__new-service {
+        color: #67B02C;
+        font-weight: bold;
+        font-family: 'Roboto Condensed';
+    }
+    &__card-transfer {
+        background-color: #f1f2f3;
+        ul {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            list-style: none;
+            li {
+                font-family: 'Roboto Condensed';
+            }
+        }
+    }
+    .container {
+        padding: 12px;
+        border-radius: 8px;
+        background-color: #ffffff;
+    }
+}

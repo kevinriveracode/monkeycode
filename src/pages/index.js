@@ -75,13 +75,10 @@ export default function IndexPage({ pageContext }) {
 
   return (
     <>
-      <Helmet>
-        <html lang="es" />
-        <meta name="robots" content="index"/>
-      </Helmet>
       <SEO description={description} />
       <Helmet>
         <html lang="es" />
+        <title>Diseño web profesional - Agencia de diseño web en Valencia</title>
         <meta title="Diseño web Valencia | Agencia de diseño web en Valencia" />
         <meta name="keywords" content="diseño web valencia, diseño web tienda online, diseño web ecommerce, diseño de paginas web profesionales, Diseño de tiendas online y ecommerce" />
         <meta name="robots" content="index"/>

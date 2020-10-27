@@ -35,4 +35,16 @@ exports.createPages = ({ actions: { createPage } }) => {
     path: "/contacto",
     component: require.resolve("./src/pages/contact.js"),
   })
+  createPage({
+    path: "/politica-de-privacidad",
+    component: require.resolve("./src/pages/Legal/privacity.js"),
+  })
+  createPage({
+    path: "/terminos-y-condiciones",
+    component: require.resolve("./src/pages/Legal/conditions.js"),
+  })
+  createPage({
+    path: "/pack-purchase-complete",
+    component: require.resolve("./src/pages/Purchase/purchase-service.js"),
+  })
 }

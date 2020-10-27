@@ -1,0 +1,19 @@
+@import "../../scss/index.scss";
+
+.privacidad {
+    padding-top: 70px;
+    padding-bottom: 50px;
+    p {
+        font-family: 'Roboto Condensed';
+        font-size: 16px !important;
+    }
+    ul {
+        list-style: none;
+    }
+    li {
+        font-family: 'Roboto Condensed';
+    }
+    h3 {
+        color: #008060;
+    }
+}

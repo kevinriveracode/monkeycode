@@ -28,7 +28,7 @@ export default function Footer(props) {
             <p>Formas de pago</p>
             <p>Impuestos</p>
             <p>Garantía</p>
-            <p>Condiciones generales y de privacidad</p>
+            <a href="/politica-de-privacidad"><p>Condiciones generales y de privacidad</p></a>
             <div className="footer__payments-container">
               <Image
                 className="footer__payments payment-mgr-1"

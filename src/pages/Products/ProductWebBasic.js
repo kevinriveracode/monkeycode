@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "300 €",
     description:
       "Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Sera una web con un diseño único y espectacular, la categorización será perfecta, se verá genial en los móviles y, lo mas importante, lo podrás manejar fácilmente. Si te apasiona tu proyecto haz que destaque.",
-    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-valencia",
+    urlCheckout: "http://localhost:3000/buy-pack-valencia",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout

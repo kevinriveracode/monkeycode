@@ -54,28 +54,28 @@ export default function ViewPackBasic(props) {
   }
   const features = [
     {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/responsive-product.png",
-      text: 'ADAPTADA A DISPOSITIVOS MOVILES'
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/design.svg",
+      text: 'DISEÑOS ESPECTACULAR'
     },
     {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/logo-google.svg",
-      text: 'OPTIMIZADA PARA GOOGLE'
-    },
-    {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/autoadministrable.svg",
-      text: '100% AUTOADMINISTRABLES'
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/tiendashop.svg",
+      text: 'DESARROLLO EN PRESTASHOP'
     },
     {
       image: "https://monkeycode.s3.eu-west-3.amazonaws.com/producto-entrega.svg",
-      text: 'ENTREGA ENTRE 4 Y 7 DÍAS'
+      text: 'INTEGRACIÓN DE PAGO Y ENVIO'
     },
     {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/wordpress.svg",
-      text: 'WEB CONSTRUIDA CON WORDPRESS'
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/responsive-product.png",
+      text: 'WEB RESPONSIVE'
     },
     {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/designweb.svg",
-      text: 'DISEÑO WEB ORIGINAL, RAPIDO YSEGURO'
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/autoadministrable.svg",
+      text: 'AUTOGESTIONABLE'
+    },
+    {
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/caja.svg",
+      text: 'PRODUCTOS INFINITOS'
     }
   ]
   
@@ -267,7 +267,7 @@ function Checkout(props){
           <h2 className="checkout__title">Resumen</h2>   
           <section className="checkout-resume">
             <div className="checkout-resume__item">
-              <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño Ecommerce: PACK MILAN</p>
+              <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño Ecommerce: PACK ROMA</p>
               <span>500 €</span>
             </div>
             <div className="checkout-resume__item">
