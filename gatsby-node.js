@@ -44,7 +44,11 @@ exports.createPages = ({ actions: { createPage } }) => {
     component: require.resolve("./src/pages/Legal/conditions.js"),
   })
   createPage({
-    path: "/pack-purchase-complete",
+    path: "/pack-purchase-complete-transfer",
     component: require.resolve("./src/pages/Purchase/purchase-service.js"),
+  })
+  createPage({
+    path: "/pack-purchase-complete",
+    component: require.resolve("./src/pages/Purchase/purchase-service-card.js"),
   })
 }

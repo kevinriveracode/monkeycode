@@ -33,13 +33,11 @@ export default function ViewPackBasic(props) {
   async function handleClick(ev , info) {
     //Función a compra
     const stripe = await stripePromise
-    console.log(info)
-    const response = await fetch(infoPage.urlCheckout, {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia", {
       method:'POST',
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
         name: info.name,
@@ -48,6 +46,9 @@ export default function ViewPackBasic(props) {
         payment: info.paymentMethod
       })
     })
+    localStorage.setItem('card-operation',JSON.stringify({
+      name: info.name,
+    }));
     const session = await response.json()
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
@@ -216,6 +217,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
+    let info;
     const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia-transfer", {
       method:'POST',
       mode: 'cors',
@@ -230,8 +232,9 @@ function Checkout(props){
         payment: paymentMethod
       })
     })
-    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
+    localStorage.setItem('transfer-operation',info);
     setLoading(false);
+    window.location="https://startfly.es/pack-purchase-complete-transfer/"
   }
   return(
     <Container className="checkout">

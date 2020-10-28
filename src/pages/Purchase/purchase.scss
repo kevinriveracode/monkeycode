@@ -5,10 +5,14 @@
     min-height: 650px;
     display: flex !important;
     align-items: center !important;
+    .container {
+        border: 1px solid #b3b3b3 !important;
+    }
     &__title {
         font-family: 'Roboto Condensed';
         font-size: 26px;
         font-weight: bold;
+        margin-bottom: 4px;
     }
     &__subtitle {
         font-family: 'Roboto Condensed';
@@ -19,11 +23,13 @@
         font-weight: bold;
         font-family: 'Roboto Condensed';
     }
+    &__container-purchase {
+        padding: 4rem 4rem !important;
+    }
     &__card-transfer {
         background-color: #f1f2f3;
         ul {
-            padding-top: 10px;
-            padding-bottom: 10px;
+            padding: 1rem 0;
             list-style: none;
             li {
                 font-family: 'Roboto Condensed';

@@ -4,8 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import './purchase.scss';
 
-export default function PurchaseService(props) {
-    let infoOperation = JSON.parse(localStorage.getItem('transfer-operation'))
+export default function PurchaseServiceCard(props) {
+    let infoOperation = JSON.parse(localStorage.getItem('card-operation'))
 
     return(
         <>
@@ -18,15 +18,7 @@ export default function PurchaseService(props) {
                         <p className="purchase-info__subtitle">Estas a punto de usar tus nuevos servicios:</p>
                         <p className="purchase-info__new-service"><i class="check icon" /> PACK DE DISEÑO WEB VALENCIA</p>
                         <hr/>
-                        <p className="purchase-info__subtitle">Para poder confirmar su pedido con <b>ID. {infoOperation.idOperation}</b>, debera subir su justificante de pago a la cuenta de correo electronico startfly.group@gmail.com en un plazo maximo de <b>24h</b></p>
-                        <div className="purchase-info__card-transfer">
-                            <ul>
-                                <li><b>- Banco u nº de cuenta:</b> Caixabank - xxxx xxxx xxxx xxxx</li>
-                                <li><b>- IBAN:</b> ES35 xxxx xxxx xxxx xxxx</li>
-                                <li><b>- Concepto:</b> Pedido {infoOperation.idOperation}</li>
-                                <li><b>- Importe:</b> {infoOperation.price} €</li>
-                            </ul>
-                        </div>
+                        <p className="purchase-info__subtitle">En 2 o 3 horas te llegara un correo electrónico con un enlace a un formulario, este formulario nos servira como base para el diseño de tu web.</p>   
                     </Grid.Column>
                 </Grid>
             </Container>

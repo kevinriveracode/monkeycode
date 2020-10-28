@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "500 €",
     description:
       "Diseñamos y desarrollamos un web que sea líder en tu sector. Te ofrecemos una potente herramienta que te permitirá reforzar la imagen de tu empresa y que te ayude a captar nuevos clientes, contaras con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles. Una web que tu mismo podrás gestionar fácilmente para crear nuevo contenido, editar secciones y mucho más, gracias a que usamos Wordpress para nuestros desarrollos.",
-    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-ibiza",
+    urlCheckout: "http://localhost:8000/buy-pack-ibiza",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -34,12 +34,11 @@ export default function ViewPackBasic(props) {
     //Función a compra
     const stripe = await stripePromise
     console.log(info)
-    const response = await fetch(infoPage.urlCheckout, {
+    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-ibiza", {
       method:'POST',
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
         name: info.name,
@@ -48,6 +47,10 @@ export default function ViewPackBasic(props) {
         payment: info.paymentMethod
       })
     })
+    console.log(info)
+    localStorage.setItem('card-operation',JSON.stringify({
+      name: info.name,
+    }));
     const session = await response.json()
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
@@ -185,7 +188,6 @@ function Checkout(props){
 
  
   function handlerBuyService(ev) {
-    console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
       name: name,
       lastname: lastname,
@@ -216,12 +218,12 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
+    let info;
     const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-ibiza-transfer", {
       method:'POST',
       mode: 'cors',
       headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
         name: name,
@@ -229,9 +231,10 @@ function Checkout(props){
         email: email,
         payment: paymentMethod
       })
-    })
-    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
+    }).then(res => res.text() ).then( data => info = data)
+    localStorage.setItem('transfer-operation',info);   
     setLoading(false);
+    window.location="https://startfly.es/pack-purchase-complete-transfer/"
   }
   return(
     <Container className="checkout">
@@ -312,7 +315,6 @@ function Faq(props){
           <p>{answer}</p>
         </div>
       )}
-      
     </Grid.Column>
   )
 }
@@ -321,7 +323,7 @@ function MiniatureProduct(props){
   return(
     <Grid.Column className="miniature">
         <Image className="miniature__image" src={image} alt="" />
-  <h4 className="miniature__title">{text}</h4> 
+        <h4 className="miniature__title">{text}</h4> 
     </Grid.Column>
   )
 }

@@ -218,6 +218,7 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
+    let info;
     const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-mallorca-transfer", {
       method:'POST',
       mode: 'cors',
@@ -231,9 +232,10 @@ function Checkout(props){
         email: email,
         payment: paymentMethod
       })
-    })
-    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
+    }).then(res => res.text() ).then( data => info = data)
+    localStorage.setItem('transfer-operation',info);   
     setLoading(false);
+    window.location="https://startfly.es/pack-purchase-complete-transfer/"
   }
   return(
     <Container className="checkout">
