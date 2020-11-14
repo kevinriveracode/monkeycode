@@ -4,8 +4,8 @@ import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import './purchase.scss';
 
-export default function PurchaseServiceCard(props) {
-    let infoOperation = JSON.parse(localStorage.getItem('card-operation'))
+export default function PurchaseServiceCardFailed(props) {
+    let infoOperation = typeof window !== 'undefined' && JSON.parse(localStorage.getItem('card-operation'))
 
     return(
         <>

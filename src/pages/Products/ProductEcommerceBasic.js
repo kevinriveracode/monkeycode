@@ -36,7 +36,7 @@ export default function ViewPackBasic(props) {
     const stripe = await stripePromise
     const response = await fetch(infoPage.urlCheckout, {
       method:'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       },
@@ -214,12 +214,12 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-roma-transfer", {
+    const response = await fetch("https://stagging-startfly.herokuapp.com/buy-pack-roma-transfer", {
       method:'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: name,

@@ -5,8 +5,7 @@ import Footer from "../../components/Footer";
 import './purchase.scss';
 
 export default function PurchaseService(props) {
-    let infoOperation = JSON.parse(localStorage.getItem('transfer-operation'))
-
+    let infoOperation = typeof window !== 'undefined' && JSON.parse(localStorage.getItem('transfer-operation'))
     return(
         <>
         <Header/>
@@ -18,7 +17,7 @@ export default function PurchaseService(props) {
                         <p className="purchase-info__subtitle">Estas a punto de usar tus nuevos servicios:</p>
                         <p className="purchase-info__new-service"><i class="check icon" /> PACK DE DISEÑO WEB VALENCIA</p>
                         <hr/>
-                        <p className="purchase-info__subtitle">Para poder confirmar su pedido con <b>ID. {infoOperation.idOperation}</b>, debera subir su justificante de pago a la cuenta de correo electronico startfly.group@gmail.com en un plazo maximo de <b>24h</b></p>
+                    <p className="purchase-info__subtitle">Para poder confirmar su pedido con <b>ID. {infoOperation.idOperation}</b>, debera subir su justificante de pago a la cuenta de correo electronico startfly.group@gmail.com en un plazo maximo de <b>24h</b></p>
                         <div className="purchase-info__card-transfer">
                             <ul>
                                 <li><b>- Banco u nº de cuenta:</b> Caixabank - xxxx xxxx xxxx xxxx</li>

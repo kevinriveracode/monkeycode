@@ -31,14 +31,12 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    //Función a compra
     const stripe = await stripePromise
-    console.log(info)
-    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-ibiza", {
+    const response = await fetch("https://stagging-startfly.herokuapp.com/buy-pack-ibiza", {
       method:'POST',
-      mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: info.name,
@@ -47,10 +45,6 @@ export default function ViewPackBasic(props) {
         payment: info.paymentMethod
       })
     })
-    console.log(info)
-    localStorage.setItem('card-operation',JSON.stringify({
-      name: info.name,
-    }));
     const session = await response.json()
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
@@ -221,7 +215,7 @@ function Checkout(props){
     let info;
     const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-ibiza-transfer", {
       method:'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
       },

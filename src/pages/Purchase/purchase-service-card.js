@@ -5,7 +5,7 @@ import Footer from "../../components/Footer";
 import './purchase.scss';
 
 export default function PurchaseServiceCard(props) {
-    let infoOperation = JSON.parse(localStorage.getItem('card-operation'))
+    let infoOperation = typeof window !== 'undefined' && JSON.parse(localStorage.getItem('card-operation'))
 
     return(
         <>

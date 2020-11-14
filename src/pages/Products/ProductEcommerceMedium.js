@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "780 €",
     description:
       "Ponemos en tus manos una potente herramienta para vender online, una solución que te ayudara a cumplir tus objetivos de venta a la vez que gestionas cómodamente tu proyecto. Con un diseño gráfico original, con slogans potentes y que se adapte a todos los dispositivos. Tu ecommerce tendrá todo lo necesario para generar confianza en tus clientes.",
-    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-milan",
+    urlCheckout: "https://stagging-startfly.herokuapp.com/buy-pack-milan",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -31,15 +31,12 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    //Función a compra
     const stripe = await stripePromise
-    console.log(info)
     const response = await fetch(infoPage.urlCheckout, {
       method:'POST',
-      mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: info.name,
@@ -186,7 +183,6 @@ function Checkout(props){
 
  
   function handlerBuyService(ev) {
-    console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
       name: name,
       lastname: lastname,
@@ -219,7 +215,7 @@ function Checkout(props){
     }
     const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia-transfer", {
       method:'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
         // 'Content-Type': 'application/x-www-form-urlencoded',

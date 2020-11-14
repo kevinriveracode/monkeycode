@@ -31,13 +31,12 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    //Función a compra
-    const stripe = await stripePromise
-    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia", {
+    const stripe =  await stripePromise;
+    const response = await fetch("https://stagging-startfly.herokuapp.com/buy-pack-valencia", {
       method:'POST',
-      mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: info.name,
@@ -46,13 +45,12 @@ export default function ViewPackBasic(props) {
         payment: info.paymentMethod
       })
     })
-    localStorage.setItem('card-operation',JSON.stringify({
-      name: info.name,
-    }));
-    const session = await response.json()
+    const session = await response.json();
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
-    })
+    });
+    
+    
   }
   const features = [
     {
@@ -218,9 +216,9 @@ function Checkout(props){
       paymentMethod: paymentMethod
     }
     let info;
-    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia-transfer", {
+    const response = await fetch("http://localhost:3000/buy-pack-valencia-transfer", {
       method:'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
         // 'Content-Type': 'application/x-www-form-urlencoded',
@@ -231,10 +229,10 @@ function Checkout(props){
         email: email,
         payment: paymentMethod
       })
-    })
+    }).then(res => res.text() ).then( data => info = data)
     localStorage.setItem('transfer-operation',info);
     setLoading(false);
-    window.location="https://startfly.es/pack-purchase-complete-transfer/"
+    window.location="/pack-purchase-complete-transfer"
   }
   return(
     <Container className="checkout">

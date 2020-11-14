@@ -31,15 +31,12 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    //Función a compra
     const stripe = await stripePromise
-    console.log(info)
     const response = await fetch(infoPage.urlCheckout, {
       method:'POST',
-      mode: 'cors',
       headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: info.name,
@@ -221,7 +218,7 @@ function Checkout(props){
     let info;
     const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-mallorca-transfer", {
       method:'POST',
-      mode: 'cors',
+      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
         // 'Content-Type': 'application/x-www-form-urlencoded',
