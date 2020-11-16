@@ -34,11 +34,13 @@ export default function ViewPackBasic(props) {
   }, [])
   async function handleClick(ev , info) {
     const stripe = await stripePromise
-    const response = await fetch(infoPage.urlCheckout, {
+    const url = "http://localhost:3000/buy-pack-roma";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-roma";
+    const response = await fetch(urlprod, {
       method:'POST',
-      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: info.name,
@@ -183,7 +185,6 @@ function Checkout(props){
 
  
   function handlerBuyService(ev) {
-    console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
       name: name,
       lastname: lastname,

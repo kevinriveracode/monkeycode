@@ -60,7 +60,7 @@ export default function IndexPage({ pageContext }) {
           title: "Conecta mejor con tus clientes",
           description:
             "Gracias a la analítica web podrás conocer más detalles sobre tus clientes y orientar así tu campaña de marketing, tus productos, etc. Cuanto más sepas sobre ellos, más podrás cubrir sus necesidades con tus productos.",
-          url: `${baseUrlImages}time.svg`,
+          url: `https://monkeycode.s3.eu-west-3.amazonaws.com/confianza.svg`,
         },
         {
           title: "Menores costes",
@@ -93,13 +93,13 @@ export default function IndexPage({ pageContext }) {
           backgroundColor: "#F1EADE",
         },
         {
-          url: `${baseUrlImages}002-prestashop.svg`,
+          url: "https://monkeycode.s3.eu-west-3.amazonaws.com/cms.svg",
           typeService: "ECOMMERCE",
           nameService: "Construida con Prestashop",
           backgroundColor: "#F7D9D9",
         },
         {
-          url: `${baseUrlImages}autoadministrable.svg`,
+          url: `https://monkeycode.s3.eu-west-3.amazonaws.com/en-todo-el-mundo.svg`,
           typeService: "ECOMMERCE",
           nameService: "Adaptada a imagen corporativa",
           backgroundColor: "#EBE6FB",
@@ -174,7 +174,7 @@ export default function IndexPage({ pageContext }) {
             link: "/product/diseño-web-pack-roma",
           },
           price: "500 €",
-          backgroundColor: "#4071B",
+          backgroundColor: "#95d6b4",
         },
         {
           name: "MILAN",
@@ -196,7 +196,7 @@ export default function IndexPage({ pageContext }) {
             link: "/product/diseño-web-pack-milan",
           },
           price: "780 €",
-          backgroundColor: "#FFAE37",
+          backgroundColor: "#5cb25b",
         },
         {
           name: "VENECIA",
@@ -220,7 +220,7 @@ export default function IndexPage({ pageContext }) {
             link: "/product/diseño-web-pack-venecia",
           },
           price: "1300 €",
-          backgroundColor: "#92CD41",
+          backgroundColor: "rgb(131, 174, 39)",
         },
       ],
     },

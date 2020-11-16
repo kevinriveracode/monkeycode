@@ -30,13 +30,14 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    const stripe = await stripePromise
+    const stripe = await stripePromise;
+    const url = "http://localhost:3000/buy-pack-venecia";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-venecia";
     const response = await fetch(infoPage.urlCheckout, {
       method:'POST',
-      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: info.name,

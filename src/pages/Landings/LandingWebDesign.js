@@ -60,7 +60,7 @@ export default function IndexPage({ pageContext }) {
           title: "Disponible 24 horas",
           description:
             "Tu sitio web estará disponible para proporcionar información las 24 horas del día en cualquier lugar del planeta.",
-          url: `${baseUrlImages}time.svg`,
+          url: `https://monkeycode.s3.eu-west-3.amazonaws.com/apoyo.svg`,
         },
         {
           title: "Herramienta de venta",

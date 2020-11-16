@@ -32,7 +32,9 @@ export default function ViewPackBasic(props) {
   }, [])
   async function handleClick(ev , info) {
     const stripe =  await stripePromise;
-    const response = await fetch("https://stagging-startfly.herokuapp.com/buy-pack-valencia", {
+    const url = "http://localhost:3000/buy-pack-valencia";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-valencia";
+    const response = await fetch(urlprod, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -48,9 +50,7 @@ export default function ViewPackBasic(props) {
     const session = await response.json();
     const result = await stripe.redirectToCheckout({
       sessionId: session.id,
-    });
-    
-    
+    }); 
   }
   const features = [
     {
@@ -184,7 +184,6 @@ function Checkout(props){
 
  
   function handlerBuyService(ev) {
-    console.log('Send',name,lastname,email,paymentMethod)
     const newBuy = {
       name: name,
       lastname: lastname,
@@ -216,12 +215,15 @@ function Checkout(props){
       paymentMethod: paymentMethod
     }
     let info;
-    const response = await fetch("http://localhost:3000/buy-pack-valencia-transfer", {
+    
+    const url = "http://localhost:3000/buy-pack-valencia-transfer";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-valencia-transfer";
+
+    const response = await fetch(urlprod, {
       method:'POST',
       mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: JSON.stringify({
         name: name,
@@ -230,7 +232,7 @@ function Checkout(props){
         payment: paymentMethod
       })
     }).then(res => res.text() ).then( data => info = data)
-    localStorage.setItem('transfer-operation',info);
+    
     setLoading(false);
     window.location="/pack-purchase-complete-transfer"
   }

@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     price: "900 €",
     description:
       "¿Estás preparado para echar a volar tu negocio a lo mas alto? Nuestro pack de diseño web mallorca cambiara la forma en la que los demás ven tu empresa. Contaras con una web visualmente espectacular, Atraerá a los usuarios con mensajes y textos potentes y efectos y animaciones únicas. Este pack incluye multi-idioma, blog, meta-etiquetado, google analytics y maps. Una web única y exclusiva. Apuesta sobre seguro sobre tu estrategia online.",
-    urlCheckout: "https://monkeycodebackend.herokuapp.com/buy-pack-mallorca",
+    urlCheckout: "http://localhost:3000/buy-pack-mallorca",
   }
   useEffect(() => {
     // Check to see if this is a redirect back from checkout
@@ -31,8 +31,10 @@ export default function ViewPackBasic(props) {
     }
   }, [])
   async function handleClick(ev , info) {
-    const stripe = await stripePromise
-    const response = await fetch(infoPage.urlCheckout, {
+    const stripe =  await stripePromise;
+    const url = "http://localhost:3000/buy-pack-mallorca";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-mallorca";
+    const response = await fetch(urlprod, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',

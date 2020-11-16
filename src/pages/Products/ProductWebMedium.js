@@ -32,7 +32,9 @@ export default function ViewPackBasic(props) {
   }, [])
   async function handleClick(ev , info) {
     const stripe = await stripePromise
-    const response = await fetch("https://stagging-startfly.herokuapp.com/buy-pack-ibiza", {
+    const url = "http://localhost:3000/buy-pack-ibiza";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-ibiza";
+    const response = await fetch(urlprod, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',

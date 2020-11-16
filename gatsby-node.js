@@ -29,7 +29,7 @@ exports.createPages = ({ actions: { createPage } }) => {
   })
   createPage({
     path: "/product/diseño-web-pack-venecia",
-    component: require.resolve("./src/pages/Products/ProductEcommerceMedium.js"),
+    component: require.resolve("./src/pages/Products/ProductEcommercePremium.js"),
   })
   createPage({
     path: "/contacto",

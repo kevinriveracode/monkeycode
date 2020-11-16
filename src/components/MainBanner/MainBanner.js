@@ -17,7 +17,7 @@ export default function MainBanner(props) {
           >
             <Image
               className="main-banner__image"
-              src="https://monkeycode.s3.eu-west-3.amazonaws.com/creative.jpg"
+              src="https://monkeycode.s3.eu-west-3.amazonaws.com/startflyhd.jpg"
               alt="diseño web valencia"
             />
           </Grid.Column>
