@@ -16,7 +16,7 @@
   }
   &__page-info {
     padding: 34px 20px !important;
-    background-color: #EFFCFA;
+    background-color: #008060;
     @include upBreakpoint($breakpoint-up-md) {
       display: flex !important;
       align-items: center;
@@ -34,7 +34,7 @@
   }
   &__title {
     font-family: "Roboto Condensed";
-    color: #004c3f;
+    color: #effcfa;
     font-size: 50px;
     font-weight: bold;
     margin-bottom: 14px;
@@ -43,16 +43,16 @@
       font-size: 2rem;
     }
     @include upBreakpoint($breakpoint-up-xl) {
-      font-size: 3rem;
+      font-size: 2.5rem;
     }
   }
   &__description {
     font-family: "Roboto Condensed";
-    color: #212326;
+    color: #ffffff;
     font-size: 16px;
     font-weight: normal;
     @include upBreakpoint($breakpoint-up-xl) {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
   &__button {

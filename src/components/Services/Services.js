@@ -4,7 +4,7 @@ import "./Services.scss"
 export default function Services(props) {
   const services = [
     {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg",
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/maintance-web.svg",
       title: "DISEÑO WEB Y BLOG",
       description:
         "Nos especializamos en diseñar y crear sitios web únicos para pequeñas y medianas empresas, orientados siempre a los objetivos que se proponga el cliente. ¡No tengas miedo de experimentar!",
@@ -24,7 +24,7 @@ export default function Services(props) {
       },
     },
     {
-      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/mantenimiento-shop.svg",
+      image: "https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg",
       title: "MANTENIMIENTO WEB",
       description:
         "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún no tienes uno, entonces nuestro equipo está aquí para ayudarte, Escríbenos.",

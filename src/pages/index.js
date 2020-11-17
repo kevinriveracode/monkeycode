@@ -35,7 +35,7 @@ export default function IndexPage({ pageContext }) {
         },
       ],
       image:
-        "https://monkeycode.s3.eu-west-3.amazonaws.com/tim-bennett-OwvRB-M3GwE-unsplash+1+(4).png",
+        "https://monkeycode.s3.eu-west-3.amazonaws.com/ecommerce-plan.jpg",
       background: "#EFFCFA",
     },
     seoMessage: {
@@ -65,7 +65,7 @@ export default function IndexPage({ pageContext }) {
         },
       ],
       image:
-        "https://monkeycode.s3.eu-west-3.amazonaws.com/emile-perron-xrVDYZRGdw4-unsplash+1.png",
+        "https://monkeycode.s3.eu-west-3.amazonaws.com/dise%C3%B1o-web-planes.jpg",
       background: "#EFFCFA",
       reverse: true,
     },

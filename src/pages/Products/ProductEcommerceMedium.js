@@ -34,7 +34,7 @@ export default function ViewPackBasic(props) {
     const stripe = await stripePromise;
     const url = "http://localhost:3000/buy-pack-milan";
     const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-milan";
-    const response = await fetch(url, {
+    const response = await fetch(urlprod, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',
