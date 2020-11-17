@@ -1,13 +1,10 @@
 import React from "react"
 import SEO from "../components/seo"
 import Header from "../components/Header/Header"
-import MainBanner from "../components/MainBanner"
-import Services from "../components/Services"
+
 import TopButton from "../components/TopButton"
 import Footer from "../components/Footer"
-import Info from "../components/Info"
-import Process from "../components/Process"
-import Buy from "../components/Buy"
+import Banner from "../components/Banner"
 import FormContact from "../components/FormContact"
 
 export default function IndexPage({ pageContext }) {
@@ -41,6 +38,12 @@ export default function IndexPage({ pageContext }) {
     <>
       <SEO title="StartFly | Contacto" />
       <Header />
+      <Banner 
+        title="ESTAMOS ENCANTADOS DE CONOCER TU PROYECTO"
+        subtitle="En Startfly te ayudamos a ahorrar desde el primer momento. No gaster en teléfono, nosotros te llamamos."
+        backgroundImage="https://monkeycode.s3.eu-west-3.amazonaws.com/banntienda.jpg"
+        
+      />
       <FormContact
         title={infoLanding.formWeb.title}
         subtitle={infoLanding.formWeb.subtitle}

@@ -30,7 +30,7 @@ export default function Services(props) {
         "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún no tienes uno, entonces nuestro equipo está aquí para ayudarte, Escríbenos.",
       button: {
         title: "Escríbenos",
-        link: "/contacto",
+        link: "/mantenimiento-web",
       },
     },
   ]

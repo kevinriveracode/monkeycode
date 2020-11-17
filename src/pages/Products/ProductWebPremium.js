@@ -218,12 +218,13 @@ function Checkout(props){
       paymentMethod: paymentMethod
     }
     let info;
-    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-mallorca-transfer", {
+    const url = "http://localhost:3000/buy-pack-mallorca-transfer";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-mallorca-transfer";
+    const response = await fetch(urlprod, {
       method:'POST',
-      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: name,
@@ -231,10 +232,9 @@ function Checkout(props){
         email: email,
         payment: paymentMethod
       })
-    }).then(res => res.text() ).then( data => info = data)
-    localStorage.setItem('transfer-operation',info);   
+    })  
     setLoading(false);
-    window.location="https://startfly.es/pack-purchase-complete-transfer/"
+    window.location="/pack-purchase-complete-transfer/"
   }
   return(
     <Container className="checkout">

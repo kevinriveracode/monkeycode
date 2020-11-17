@@ -1,9 +1,11 @@
-import React from "react"
+import React , {useState} from "react"
 import { Container, Grid, Image, Header } from "semantic-ui-react"
 import "./Header.scss"
 
 export default function HeaderMc(props) {
+  const [isVisible , setVisible] = useState(false);
   return (
+    <>
     <header className="header">
       <Container className="header__container">
         <Grid columns={2} className="header__grid">
@@ -29,6 +31,7 @@ export default function HeaderMc(props) {
               className="header__column header__column--center"
             >
               <Image
+                onClick={() => setVisible(!isVisible)}
                 className="header__menu-mobile"
                 src="https://monkeycode.s3.eu-west-3.amazonaws.com/nav-mobile-white.svg"
               />
@@ -43,7 +46,9 @@ export default function HeaderMc(props) {
                   <li>
                     <a href="/diseño-tienda-online">Tiendas Online</a>
                   </li>
-                  
+                  <li>
+                    <a href="/mantenimiento-web">Mantenimiento Web</a>
+                  </li>
                   <li>
                     <a href="/contacto">Contacto</a>
                   </li>
@@ -54,5 +59,19 @@ export default function HeaderMc(props) {
         </Grid>
       </Container>
     </header>
+    {
+      isVisible && (
+        <section className="menu-mobile">
+          <ul>
+            <li><a href="/diseño-web-profesional/"><i class="code icon" /> Diseño web</a></li>
+            <li><a href="/diseño-tienda-online/"><i class="code icon" /> Tienda online | Ecommerce</a></li>
+            <li><a href="/mantenimiento-web"><i class="cogs icon" /> Manteniento web</a></li>
+            <li><a href="/contacto/"><i class="envelope open outline icon" /> Contacto</a></li>
+          </ul>
+        </section>
+      )
+    }
+    
+    </>
   )
 }

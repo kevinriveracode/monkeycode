@@ -215,9 +215,10 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("https://stagging-startfly.herokuapp.com/buy-pack-roma-transfer", {
+    const url = "http://localhost:3000/buy-pack-roma-transfer";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-roma-transfer";
+    const response = await fetch(url, {
       method:'POST',
-      mode: 'no-cors',
       headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*'
@@ -229,8 +230,8 @@ function Checkout(props){
         payment: paymentMethod
       })
     })
-    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
     setLoading(false);
+    window.location="/pack-purchase-complete-transfer/"
   }
   return(
     <Container className="checkout">

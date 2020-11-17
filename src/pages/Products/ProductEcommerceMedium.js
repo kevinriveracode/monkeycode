@@ -215,12 +215,13 @@ function Checkout(props){
       email: email,
       paymentMethod: paymentMethod
     }
-    const response = await fetch("https://monkeycodebackend.herokuapp.com/buy-pack-valencia-transfer", {
+    const url = "http://localhost:3000/buy-pack-milan";
+    const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-milan";
+    const response = await fetch(urlprod, {
       method:'POST',
-      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json'
-        // 'Content-Type': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: name,
@@ -229,8 +230,8 @@ function Checkout(props){
         payment: paymentMethod
       })
     })
-    response.status === 200 && console.log('OK SU PERFIL SE A GUARDADO')
     setLoading(false);
+    window.location="/pack-purchase-complete-transfer"
   }
   return(
     <Container className="checkout">
@@ -268,7 +269,7 @@ function Checkout(props){
           <h2 className="checkout__title">Resumen</h2>   
           <section className="checkout-resume">
             <div className="checkout-resume__item">
-              <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño web: PACK VALENCIA</p>
+              <p><span><Image src="https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg" /></span>Diseño web: PACK MILAN</p>
               <span>780 €</span>
             </div>
             <div className="checkout-resume__item">

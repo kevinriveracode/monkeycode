@@ -51,4 +51,8 @@ exports.createPages = ({ actions: { createPage } }) => {
     path: "/pack-purchase-complete",
     component: require.resolve("./src/pages/Purchase/purchase-service-card.js"),
   })
+  createPage({
+    path: "/mantenimiento-web",
+    component: require.resolve("./src/pages/Landings/LandingMantenimientoWeb.js"),
+  })
 }

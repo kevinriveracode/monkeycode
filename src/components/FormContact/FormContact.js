@@ -134,7 +134,7 @@ export default function FormContact(props) {
               />
             </Grid.Column>
             <Grid.Column mobile={16} className="form-contact__verify-legal">
-              <Checkbox label={`He leído y acepto la ${<a href="https://startfly.es/politica-de-privacidad">politica de privacidad</a>}`} />
+              <Checkbox label={`He leído y acepto la politica de privacidad`} />
             </Grid.Column>
             <Grid.Column
               mobile={16}

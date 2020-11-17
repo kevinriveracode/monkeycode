@@ -49,6 +49,7 @@
         @include upBreakpoint($breakpoint-up-md) {
           font-size: 14px;
         }
+        font-size: .8rem;
         &--primary {
           width: 50%;
           color: white;

@@ -34,7 +34,7 @@ export default function ViewPackBasic(props) {
     const stripe =  await stripePromise;
     const url = "http://localhost:3000/buy-pack-valencia";
     const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-valencia";
-    const response = await fetch(urlprod, {
+    const response = await fetch(url, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -215,15 +215,13 @@ function Checkout(props){
       paymentMethod: paymentMethod
     }
     let info;
-    
     const url = "http://localhost:3000/buy-pack-valencia-transfer";
     const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-valencia-transfer";
-
     const response = await fetch(urlprod, {
       method:'POST',
-      mode: 'no-cors',
       headers: {
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*'
       },
       body: JSON.stringify({
         name: name,
@@ -231,8 +229,7 @@ function Checkout(props){
         email: email,
         payment: paymentMethod
       })
-    }).then(res => res.text() ).then( data => info = data)
-    
+    })
     setLoading(false);
     window.location="/pack-purchase-complete-transfer"
   }

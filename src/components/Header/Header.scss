@@ -86,3 +86,29 @@
     justify-content: flex-start !important;
   }
 }
+
+.menu-mobile {
+  position: fixed;
+  top: 59px;
+  z-index: 10000;
+  background-color: #ccdbdc;
+  width: 100%;
+  height: 40%;
+  transition: position 3s;
+  padding-top: 2rem;
+  border-bottom: 4px solid #008060;
+  ul {
+    list-style: none;
+    li {
+      font-family: 'Roboto Condensed';
+      margin-bottom: 2rem;
+      font-size: 22px;
+      a {
+        color: #008060;
+      }
+      i {
+        font-size: 15px;
+      }
+    }
+  }
+}

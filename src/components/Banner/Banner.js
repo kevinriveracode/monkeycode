@@ -20,22 +20,31 @@ export default function Banner(props) {
             <h1 className="banner__primary-title">{title}</h1>
             <h3 className="banner__secondary-title">{subtitle}</h3>
             <div className="banner__container-buttons">
-              <Button
-                as="button"
-                className="banner__container-buttons banner__container-buttons--button-primary"
-                onClick={() => window.document.getElementById("packs").scrollIntoView({
-                  behavior: 'smooth'
-                })}
-              >
-                {buttonPrimary.title}
-              </Button>
-              <Button
-                as="a"
-                href={buttonSecondary.link}
-                className="banner__container-buttons banner__secondary "
-              >
-                {buttonSecondary.title}
-              </Button>
+              {
+                typeof buttonPrimary !== 'undefined' && (
+                  <Button
+                    as="button"
+                    className="banner__container-buttons banner__container-buttons--button-primary"
+                    onClick={() => window.document.getElementById("packs").scrollIntoView({
+                      behavior: 'smooth'
+                    })}
+                  >
+                    {buttonPrimary.title}
+                  </Button>
+                )
+              }
+              {
+                typeof buttonSecondary !== 'undefined' && (
+                  <Button
+                    as="a"
+                    href={buttonSecondary.link}
+                    className="banner__container-buttons banner__secondary "
+                  >
+                    {buttonSecondary.title}
+                  </Button>
+                )
+              }
+              
             </div>
           </Grid.Column>
           <Grid.Column
