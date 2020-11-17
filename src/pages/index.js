@@ -75,15 +75,32 @@ export default function IndexPage({ pageContext }) {
 
   return (
     <>
-      <SEO description={description} />
       <Helmet>
         <html lang="es" />
-        <title>Diseño web profesional - Agencia de diseño web en Valencia</title>
-        <meta title="Diseño web Valencia | Agencia de diseño web en Valencia" />
-        <meta name="keywords" content="diseño web valencia, diseño web tienda online, diseño web ecommerce, diseño de paginas web profesionales, Diseño de tiendas online y ecommerce" />
+        <title>Diseño Web Valencia | Agencia de diseño web y ecommerce </title>
+        <meta name="description" content="StartFly es una empresa de diseñadores profesionales de páginas web con muchas experiencia. Diseñamos y desarrollamos tu página web a un precio incomparable." ></meta>
+        <meta name="keywords" content="diseño web valencia, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{
+          "@context": "https://schema.org",
+          "@type": "Agencia Web",
+          "name": "Startfly",
+          "review": {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5"
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Jorge Lopez"
+            }
+          },
+        }`}}>
+        </script>
         <link rel="canonical" href="https://startfly.es/"></link>
       </Helmet>
       <Header />

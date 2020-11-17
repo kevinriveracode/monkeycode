@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import {Helmet} from "react-helmet"
 import { Container } from 'semantic-ui-react';
 import './main.scss';
 
@@ -8,6 +9,13 @@ export default function Privacity(props) {
     return(
         <>
             <Header/>
+            <Helmet>
+                <html lang="es" />
+                <title>Politica de privacidad | Startfly</title>
+                <meta name="robots" content="index"/>
+                <meta property="og:site_name" content="Startfly"></meta>
+                <meta property="og:locale" content="es_ES"></meta>
+            </Helmet>
             <section className="privacidad">
                 <Container>
                     <p>

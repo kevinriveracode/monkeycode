@@ -67,8 +67,8 @@
     img {
       margin: 0 0 0 0 !important;
       height: 100% !important;
-      @include upBreakpoint($breakpoint-up-lg) {
-        height: 100%;
+      height: 250px ;
+      @include upBreakpoint($breakpoint-up-md) {
         width: 100%;
         height: 550px;
       }

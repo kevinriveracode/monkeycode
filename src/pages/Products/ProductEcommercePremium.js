@@ -3,6 +3,7 @@ import { Container, Grid, Button, Icon, Image, Form } from "semantic-ui-react"
 import { loadStripe } from "@stripe/stripe-js"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
+import {Helmet} from "react-helmet";
 import "./ProductWeb.scss"
 const stripePromise = loadStripe(
   "pk_test_51HWHRmHTnDUNNyj1WnUWdywxldZ5REcniBlDGqD85nuoyU9p327p9IC31lqVB9QuP1sfm7H4eYRrW1mAryfS5OzJ00cwgqIs7v"
@@ -108,6 +109,16 @@ export default function ViewPackBasic(props) {
   return (
     <>
       <Header />
+      <Helmet>
+        <html lang="es" />
+        <title>Aumenta tu presencia en internet | pack Venecia | Tienda online| Startfly</title>
+        <meta name="description" content="Desarrollamos tu tienda online con todas las garantías para que triunfe. No temas a la competencia, pondremos todos nuestros conocimientos y entusiasmo a tu disposición para que tu ecommerce sea un éxito. " ></meta>
+        <meta name="keywords" content="pack de diseño web venecia, precios de paginas web, precio pagina web, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
+        <meta name="robots" content="index"/>
+        <meta property="og:site_name" content="Startfly"></meta>
+        <meta property="og:locale" content="es_ES"></meta>
+        <link rel="canonical" href="https://startfly.es/product/diseño-web-pack-venecia/"></link>
+      </Helmet>
       <section className="product">
         <Container>
           <Grid columns={16}>

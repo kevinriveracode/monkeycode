@@ -1,6 +1,5 @@
 import React from "react"
 import ScrollUpButton from "react-scroll-up-button"
-import SEO from "../../components/seo"
 import Header from "../../components/Header/Header"
 import Banner from "../../components/Banner/Banner"
 import Advantages from "../../components/Advantages/Advantages"
@@ -132,16 +131,16 @@ export default function IndexPage({ pageContext }) {
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
           urlImageDemo: `${baseUrlImages}demo-1.jpg`,
-          linkDemo: "https://startfly.es/wordpress/?page_id=6",
-          linkCheckout: "",
+          linkDemo: "#",
+          linkCheckout: "#",
         },
         {
           title: "Diseño Web",
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
           urlImageDemo: `${baseUrlImages}demo-2.jpg`,
-          linkDemo: "~",
-          linkCheckout: "",
+          linkDemo: "#",
+          linkCheckout: "#",
         },
       ],
     },
@@ -263,11 +262,11 @@ export default function IndexPage({ pageContext }) {
   }
   return (
     <>
-      <SEO title="Agencia de diseño de páginas web económicas en valencia" />
-      <SEO description="Startfly es una empresa de diseño web profesional con varios años de experiencia. Creamos tu página web a un precio de escandalo." />
       <Helmet>
         <html lang="es" />
-        <meta name="keywords" content="diseño de páginas web en valencia, diseño web profesional, paginas web ecónomicas, diseño web en valencia" />
+        <title>Startfly | Empresa de diseño de páginas web al mejor precio en Valencia</title>
+        <meta name="description" content="Startfly es una empresa de diseñadores profesionales de páginas web con varios años de experiencia. Creamos tu página web a un precio insuperable." />
+        <meta name="keywords" content="diseño web valencia, diseño paginas web valencia, diseño de paginas web valencia, paginas web valencia, paginas web valencia, crear web valencia, empresas de diseño web valencia, web valencia, diseño valencia" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta>

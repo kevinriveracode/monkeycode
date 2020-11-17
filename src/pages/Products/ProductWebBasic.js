@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Container, Grid, Button, Icon, Image, Form } from "semantic-ui-react"
 import { loadStripe } from "@stripe/stripe-js"
+import {Helmet} from "react-helmet"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import "./ProductWeb.scss"
@@ -109,6 +110,16 @@ export default function ViewPackBasic(props) {
   return (
     <>
       <Header />
+      <Helmet>
+        <html lang="es" />
+        <title>Aumenta tu presencia en internet | pack Valencia | Diseño Web | Startfly</title>
+        <meta name="description" content="Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Si te apasiona tu proyecto haz que destaque." ></meta>
+        <meta name="keywords" content="pack de diseño web valencia, precios de paginas web, precio pagina web, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
+        <meta name="robots" content="index"/>
+        <meta property="og:site_name" content="Startfly"></meta>
+        <meta property="og:locale" content="es_ES"></meta>
+        <link rel="canonical" href="https://startfly.es/product/diseño-web-pack-valencia/"></link>
+      </Helmet>
       <section className="product">
         <Container>
           <Grid columns={16}>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Container, Grid, Button, Icon, Image, Form } from "semantic-ui-react"
+import { Helmet } from "react-helmet"
 import { loadStripe } from "@stripe/stripe-js"
 import Header from "../../components/Header"
 import Footer from "../../components/Footer"
@@ -109,6 +110,16 @@ export default function ViewPackBasic(props) {
   return (
     <>
       <Header />
+      <Helmet>
+        <html lang="es" />
+        <title>Aumenta tu presencia en internet | pack Milan | Tienda online| Startfly</title>
+        <meta name="description" content="Ponemos en tus manos una potente herramienta para vender online. Con un diseño gráfico original, con slogans potentes y que se adapte a todos los dispositivos. Tu ecommerce tendrá todo lo necesario para generar confianza en tus clientes." ></meta>
+        <meta name="keywords" content="pack de diseño web milan, precios de paginas web, precio pagina web, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
+        <meta name="robots" content="index"/>
+        <meta property="og:site_name" content="Startfly"></meta>
+        <meta property="og:locale" content="es_ES"></meta>
+        <link rel="canonical" href="https://startfly.es/product/diseño-web-pack-milan/"></link>
+      </Helmet>
       <section className="product">
         <Container>
           <Grid columns={16}>

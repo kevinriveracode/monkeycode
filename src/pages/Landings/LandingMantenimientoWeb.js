@@ -32,15 +32,15 @@ export default function IndexPage({ pageContext }) {
   }
   return (
     <>
-      <SEO title="Diseño de tiendas online y ecommerce en Valencia | Diseño web Valencia" />
-      <SEO description="¿Quieres abrir una Tienda Online a un precio insuperable y con todas las funcionalidades? Startfly te ofrece un trabajo profesional a partir de 500 €." />
       <Helmet>
         <html lang="es" />
-        <meta name="keywords" content="diseño de páginas web en valencia, diseño web profesional, paginas web ecónomicas, diseño web en valencia" />
+        <title>Expertos en Mantenimiento Web Wordpress desde 20€ | startfly</title>
+        <meta name="description" content="Somos expertos en mantenimiento de páginas web en WordPress desde 20€ al mes, soporte técnico y ayuda en caso de virus. ¡Mantén tu web actualizada! ✅" ></meta>
+        <meta name="keywords" content="diseño web valencia, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta>
-        <link rel="canonical" href="https://startfly.es/diseño-tienda-online/"></link>
+        <link rel="canonical" href="https://startfly.es/mantenimiento-web/"></link>
       </Helmet>
       <Header />
       <Banner

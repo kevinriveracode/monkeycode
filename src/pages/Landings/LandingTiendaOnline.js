@@ -1,6 +1,5 @@
 import React from "react"
-import {Helmet} from "react-helmet"
-import SEO from "../../components/seo"
+
 import Header from "../../components/Header/Header"
 import Banner from "../../components/Banner/Banner"
 import Advantages from "../../components/Advantages/Advantages"
@@ -12,7 +11,7 @@ import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
 import TopButton from "../../components/TopButton"
 import Footer from "../../components/Footer"
-import Buy from "../../components/Buy"
+import {Helmet} from "react-helmet"
 export default function IndexPage({ pageContext }) {
   const baseUrlImages = "https://d1r0i6dbql3qta.cloudfront.net/"
   const infoLanding = {
@@ -132,16 +131,16 @@ export default function IndexPage({ pageContext }) {
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
           urlImageDemo: `${baseUrlImages}demo-1.jpg`,
-          linkDemo: "https://startfly.es/ecommerces/perfumeria/index.php",
-          linkCheckout: "",
+          linkDemo: "#",
+          linkCheckout: "#",
         },
         {
           title: "Tienda online",
           titleButtonDemo: "Ver Demo",
           titleButtonCheckout: "Consigue tu web",
           urlImageDemo: `${baseUrlImages}demo-2.jpg`,
-          linkDemo: "~",
-          linkCheckout: "",
+          linkDemo: "#",
+          linkCheckout: "#",
         },
       ],
     },
@@ -259,15 +258,15 @@ export default function IndexPage({ pageContext }) {
   }
   return (
     <>
-      <SEO title="Diseño de tiendas online y ecommerce en Valencia | Diseño web Valencia" />
-      <SEO description="¿Quieres abrir una Tienda Online a un precio insuperable y con todas las funcionalidades? Startfly te ofrece un trabajo profesional a partir de 500 €." />
       <Helmet>
         <html lang="es" />
-        <meta name="keywords" content="diseño de páginas web en valencia, diseño web profesional, paginas web ecónomicas, diseño web en valencia" />
+        <title>Diseño Web Valencia | Agencia de diseño web y ecommerce </title>
+        <meta name="description" content="StartFly es una empresa de diseñadores profesionales de páginas web con muchas experiencia. Diseñamos y desarrollamos tu página web a un precio incomparable." ></meta>
+        <meta name="keywords" content="diseño web valencia, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta>
-        <link rel="canonical" href="https://startfly.es/diseño-tienda-online/"></link>
+        <link rel="canonical" href="https://startfly.es/diseño-tienda-online"></link>
       </Helmet>
       <Header />
       <Banner
