@@ -122,7 +122,7 @@ export default function FormContact(props) {
               <Input
                 value={emailUser}
                 onChange={ev => setEmailUser(ev.target.value)}
-                eholder="Correo"
+                placeholder="Email"
                 type="email"
               />
             </Grid.Column>

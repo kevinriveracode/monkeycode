@@ -6,7 +6,7 @@ import Footer from "../../components/Footer"
 import { Helmet } from "react-helmet"
 import "./ProductWeb.scss"
 const stripePromise = loadStripe(
-  "pk_test_51HWHRmHTnDUNNyj1WnUWdywxldZ5REcniBlDGqD85nuoyU9p327p9IC31lqVB9QuP1sfm7H4eYRrW1mAryfS5OzJ00cwgqIs7v"
+  "pk_live_51HWHRmHTnDUNNyj1AMjBKSM5dSVzzXVqMoGPQ5JkhVY6luR6DXYc6FUYWGlyFSm8vOKSnPii1xwAguvMLwgJbfzH00MGNxrO7o"
 )
 
 export default function ViewPackBasic(props) {
@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     title: "PACK DE DISEÑO WEB MALLORCA",
     price: "900 €",
     description:
-      "¿Estás preparado para echar a volar tu negocio a lo mas alto? Nuestro pack de diseño web mallorca cambiara la forma en la que los demás ven tu empresa. Contaras con una web visualmente espectacular, Atraerá a los usuarios con mensajes y textos potentes y efectos y animaciones únicas. Este pack incluye multi-idioma, blog, meta-etiquetado, google analytics y maps. Una web única y exclusiva. Apuesta sobre seguro sobre tu estrategia online.",
+      "¿Estás preparado para echar a volar tu negocio a lo más alto? Nuestro pack de diseño web mallorca cambiará la forma en la que los demás ven tu empresa. Contarás con una web visualmente espectacular, atraerá a los usuarios con mensajes y textos potentes y efectos y animaciones únicas. Este pack incluye multi-idioma, blog, meta-etiquetado, google analytics y maps. Una web única y exclusiva. Apuesta sobre seguro sobre tu estrategia online.",
   }
   useEffect(() => {
     const query = new URLSearchParams(window.location.search)
@@ -81,14 +81,14 @@ export default function ViewPackBasic(props) {
   const faqs = [
     {
       answer: 'Una vez completes el proceso de compra, récibiras acceso a un formulario en el recogeremos información sobre tu proyecto y en base a eso empezaremos la construcción de tu sitio.',
-      question: 'Te interesa que diseñemos tu web ¿Qué pasos debes seguir?'
+      question: 'Te interesa que diseñemos tu web. ¿Qué pasos debes seguir?'
     },
     {
       answer: 'Podrás pagar tus pedidos de diseño web tanto con targeta como con transferencia bancaria. Proximamente añadiremos otros metodos de pago que te permitan la financiación de tu web.',
       question: '¿Qué tipo de medios de pago ofrecemos?'
     },
     {
-      answer: 'Por supuesto, nuestro personal esta para ayudarte siempre que lo necesites. Envia un correo electronico a startfly.support@gmail.com y nos podremos en contacto contigo lo mas pronto posible.',
+      answer: 'Por supuesto, nuestro personal esta para ayudarte siempre que lo necesites. Envia un correo electronico a startfly.support@gmail.com y nos podremos en contacto contigo lo más pronto posible.',
       question: '¿Podrás comunicarte con nosotros?'
     },
     {
@@ -110,7 +110,7 @@ export default function ViewPackBasic(props) {
       <Helmet>
         <html lang="es" />
         <title>Aumenta tu presencia en internet | pack Mallorca | Diseño Web | startfly</title>
-        <meta name="description" content="¿Estás preparado para echar a volar tu negocio a lo mas alto? Nuestro pack de diseño web cambiara la forma en la que los demás ven tu empresa. Este pack incluye multi-idioma, blog, meta-etiquetado, google analytics y maps. Una web única y exclusiva. Apuesta sobre seguro sobre tu estrategia online." ></meta>
+        <meta name="description" content="¿Estás preparado para echar a volar tu negocio a lo más alto? Nuestro pack de diseño web cambiará la forma en la que los demás ven tu empresa. Este pack incluye multi-idioma, blog, meta-etiquetado, google analytics y maps. Una web única y exclusiva. Apuesta sobre seguro sobre tu estrategia online." ></meta>
         <meta name="keywords" content="pack de diseño web mallorca, precios de paginas web, precio pagina web, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>

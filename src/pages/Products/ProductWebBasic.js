@@ -6,7 +6,7 @@ import Header from "../../components/Header"
 import Footer from "../../components/Footer"
 import "./ProductWeb.scss"
 const stripePromise = loadStripe(
-  "pk_test_51HWHRmHTnDUNNyj1WnUWdywxldZ5REcniBlDGqD85nuoyU9p327p9IC31lqVB9QuP1sfm7H4eYRrW1mAryfS5OzJ00cwgqIs7v"
+  "pk_live_51HWHRmHTnDUNNyj1AMjBKSM5dSVzzXVqMoGPQ5JkhVY6luR6DXYc6FUYWGlyFSm8vOKSnPii1xwAguvMLwgJbfzH00MGNxrO7o"
 )
 
 export default function ViewPackBasic(props) {
@@ -18,11 +18,10 @@ export default function ViewPackBasic(props) {
     title: "PACK DE DISEÑO WEB VALENCIA",
     price: "300 €",
     description:
-      "Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Sera una web con un diseño único y espectacular, la categorización será perfecta, se verá genial en los móviles y, lo mas importante, lo podrás manejar fácilmente. Si te apasiona tu proyecto haz que destaque.",
+      "Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo más alto. Será una web con un diseño único y espectacular, la categorización será perfecta, se verá genial en los móviles y, lo más importante, lo podrás manejar fácilmente. Si te apasiona tu proyecto haz que destaque.",
     urlCheckout: "http://localhost:3000/buy-pack-valencia",
   }
   useEffect(() => {
-    // Check to see if this is a redirect back from checkout
     const query = new URLSearchParams(window.location.search)
     if (query.get("success")) {
       setMessage("Orden placed!! Todo perfecto")
@@ -35,7 +34,7 @@ export default function ViewPackBasic(props) {
     const stripe =  await stripePromise;
     const url = "http://localhost:3000/buy-pack-valencia";
     const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-valencia";
-    const response = await fetch(url, {
+    const response = await fetch(urlprod, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,7 +82,7 @@ export default function ViewPackBasic(props) {
   const faqs = [
     {
       answer: 'Una vez completes el proceso de compra, récibiras acceso a un formulario en el recogeremos información sobre tu proyecto y en base a eso empezaremos la construcción de tu sitio.',
-      question: 'Te interesa que diseñemos tu web ¿Qué pasos debes seguir?'
+      question: 'Te interesa que diseñemos tu web. ¿Qué pasos debes seguir?'
     },
     {
       answer: 'Podrás pagar tus pedidos de diseño web tanto con targeta como con transferencia bancaria. Proximamente añadiremos otros metodos de pago que te permitan la financiación de tu web.',
@@ -113,12 +112,12 @@ export default function ViewPackBasic(props) {
       <Helmet>
         <html lang="es" />
         <title>Aumenta tu presencia en internet | pack Valencia | Diseño Web | Startfly</title>
-        <meta name="description" content="Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo mas alto. Si te apasiona tu proyecto haz que destaque." ></meta>
+        <meta name="description" content="Al día de hoy cualquiera puede crear una web si se lo propone, pero el pack de diseño web Valencia es ir a lo más alto. Si te apasiona tu proyecto haz que destaque." ></meta>
         <meta name="keywords" content="pack de diseño web valencia, precios de paginas web, precio pagina web, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta>
-        <link rel="canonical" href="https://startfly.es/product/diseño-web-pack-valencia/"></link>
+        <link rel="canonical" href="https://startfly.es/product/pack-valencia"></link>
       </Helmet>
       <section className="product">
         <Container>

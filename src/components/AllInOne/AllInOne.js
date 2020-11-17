@@ -4,7 +4,6 @@ import { map } from "loadsh"
 import "./AllInOne.scss"
 
 export default function AllInOne(props) {
-  const featuresList = []
   const { title, features } = props
   return (
     <section className="all-in-one">

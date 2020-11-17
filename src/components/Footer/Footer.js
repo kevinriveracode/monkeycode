@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { Container, Grid, Image } from "semantic-ui-react"
 import "./Footer.scss"
 

@@ -1,7 +1,5 @@
 import React from "react"
-import { Container, Grid, Image, Button } from "semantic-ui-react"
-import TextLoop from "react-text-loop"
-
+import { Container, Grid, Image } from "semantic-ui-react"
 import "./MainBanner.scss"
 
 export default function MainBanner(props) {
@@ -35,7 +33,7 @@ export default function MainBanner(props) {
                 Si estás buscando una empresa de desarrollo web de primer nivel, 
                 para diseñar y construir una página web única, totalmente funcional, 
                 fácil de usar y que genere ingresos, entonces somos la solución. 
-                Éste es el lugar perfecto para ti!
+                ¡Éste es el lugar perfecto para ti!
               </p>
             </div>
           </Grid.Column>

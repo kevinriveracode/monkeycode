@@ -1,5 +1,5 @@
 import React from "react"
-import { Container, Grid, Header, Button, Image } from "semantic-ui-react"
+import { Container, Grid, Button, Image } from "semantic-ui-react"
 import "./Banner.scss"
 
 export default function Banner(props) {

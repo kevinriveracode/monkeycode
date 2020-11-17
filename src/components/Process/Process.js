@@ -4,7 +4,6 @@ import { map } from "loadsh"
 import "./Process.scss"
 
 export default function Process(props) {
-  const { title, steps } = props
   return (
     <section className="process">
       <Container>

@@ -31,7 +31,6 @@ function Pack(props) {
     button,
     price,
     backgroundColor,
-    link,
   } = props.dataPack
 
   return (

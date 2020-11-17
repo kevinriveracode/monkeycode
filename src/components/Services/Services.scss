@@ -28,16 +28,16 @@
     margin-bottom: 4px;
     color: #008060 ;
     @include upBreakpoint($breakpoint-up-md) {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
   &__description {
     font-family: "Roboto Condensed";
-    font-size: 22px;
+    font-size: 16px;
     font-weight: lighter;
     text-align: center;
     @include upBreakpoint($breakpoint-up-md) {
-      font-size: 16px;
+      font-size: 18px;
     }
   }
   &__button {

@@ -1,5 +1,4 @@
 import React from "react"
-import SEO from "../components/seo"
 import Header from "../components/Header/Header"
 import MainBanner from "../components/MainBanner"
 import Services from "../components/Services"
@@ -55,7 +54,7 @@ export default function IndexPage({ pageContext }) {
         "Todos nuestros proyectos llevan incorporado un plan SEO inicial.",
         "Optimización para móviles y tablets.",
         "Tenemos los mejores precios del mercado en cuanto a diseño web para tu empresa.",
-        "Todas nuestras web son totalmente autoadministrable.",
+        "Todas nuestras webs son totalmente autoadministrables.",
       ],
       buttons: [
         {
@@ -70,8 +69,6 @@ export default function IndexPage({ pageContext }) {
       reverse: true,
     },
   }
-
-  const description = "Diseño web profesional, rápido y seguro para pymes y emprendedores. Wordpress profesional y desarrollos a medida. Te ofrecemos calidad, entregas rápidas y precios competitivos."
 
   return (
     <>

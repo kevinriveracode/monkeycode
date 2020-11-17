@@ -1,5 +1,5 @@
 import React , {useState} from "react"
-import { Container, Grid, Image, Header } from "semantic-ui-react"
+import { Container, Grid, Image} from "semantic-ui-react"
 import "./Header.scss"
 
 export default function HeaderMc(props) {

@@ -1,5 +1,4 @@
 import React from "react"
-import ScrollUpButton from "react-scroll-up-button"
 import Header from "../../components/Header/Header"
 import Banner from "../../components/Banner/Banner"
 import Advantages from "../../components/Advantages/Advantages"
@@ -45,7 +44,7 @@ export default function IndexPage({ pageContext }) {
         {
           title: "Fideliza a los clientes",
           description:
-            "Estudia a tus clientes y crea una estrategia enfocada en fidelizar a nuevos clientes para tu negocio. Anima a tu publico a contactar con tu negocio.",
+            "Estudia a tus clientes y crea una estrategia enfocada en fidelizar a nuevos clientes para tu negocio. Anima a tu público a contactar con tu negocio.",
           url: `${baseUrlImages}fidelizar.svg`,
         },
 
@@ -70,7 +69,7 @@ export default function IndexPage({ pageContext }) {
         {
           title: "Diferenciate de la competencia",
           description:
-            "Una web te permite mayor cercanía, las personas que busquen tus servicios o productos podran ver muy rapidamente que tu ofreces esos servicios.",
+            "Una web te permite mayor cercanía, las personas que busquen tus servicios o productos podrán ver muy rápidamente que tu ofreces esos servicios.",
           url: `${baseUrlImages}competencia.svg`,
         },
       ],
@@ -81,7 +80,7 @@ export default function IndexPage({ pageContext }) {
       },
     },
     features: {
-      title: "¿Que incluimos en nuestras páginas web?",
+      title: "¿Qué incluímos en nuestras páginas web?",
       subtitle:
         "Ya sea que necesitas un sitio web de WordPress, para poner tu negocio en línea, o una página online de ecommerce más completa, nuestro equipo de desarrollo web, te ayudará a hacer realidad tu visión.",
       services: [
@@ -118,7 +117,7 @@ export default function IndexPage({ pageContext }) {
         {
           url: `https://monkeycode.s3.eu-west-3.amazonaws.com/fotos.svg`,
           typeService: "WEB",
-          nameService: "Imagenes profesionales",
+          nameService: "Imágenes profesionales",
           backgroundColor: "#00471a",
         },
       ],
@@ -242,7 +241,7 @@ export default function IndexPage({ pageContext }) {
       title: "¿TIENES DUDAS?",
       subtitle: "Contacta con nosotros como prefieras",
       call: {
-        title: "Déjanos tú telefono y te llamamos:",
+        title: "Déjanos tu telefono y te llamamos:",
         privacity: "He leído y acepto la politica de privacidad",
         button: {
           name: "TE LLAMAMOS",
@@ -254,7 +253,7 @@ export default function IndexPage({ pageContext }) {
           "También puedes enviarnos un correo o monkeycode@gmail.com, o utilizar este formulario de contacto. Estamos a tu disposición para cualquier pregunta o duda que puedas tener.",
         privacity: "He leído y acepto la politica de privacidad",
         button: {
-          name: "ENVIANOS TU CONSULTA",
+          name: "ENVÍANOS TU CONSULTA",
           link: "#",
         },
       },

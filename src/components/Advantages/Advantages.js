@@ -4,7 +4,7 @@ import { map } from "loadsh"
 import "./Advantages.scss"
 
 export default function Advantages(props) {
-  const { title, subtitle, advantages, footerTitle, footerButton } = props
+  const { title, subtitle, advantages, footerTitle } = props
 
   return (
     <section className="advantages">

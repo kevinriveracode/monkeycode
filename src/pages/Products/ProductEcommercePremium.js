@@ -6,7 +6,7 @@ import Footer from "../../components/Footer"
 import {Helmet} from "react-helmet";
 import "./ProductWeb.scss"
 const stripePromise = loadStripe(
-  "pk_test_51HWHRmHTnDUNNyj1WnUWdywxldZ5REcniBlDGqD85nuoyU9p327p9IC31lqVB9QuP1sfm7H4eYRrW1mAryfS5OzJ00cwgqIs7v"
+  "pk_live_51HWHRmHTnDUNNyj1AMjBKSM5dSVzzXVqMoGPQ5JkhVY6luR6DXYc6FUYWGlyFSm8vOKSnPii1xwAguvMLwgJbfzH00MGNxrO7o"
 )
 
 export default function ViewPackBasic(props) {
@@ -34,7 +34,7 @@ export default function ViewPackBasic(props) {
     const stripe = await stripePromise;
     const url = "http://localhost:3000/buy-pack-venecia";
     const urlprod = "https://stagging-startfly.herokuapp.com/buy-pack-venecia";
-    const response = await fetch(infoPage.urlCheckout, {
+    const response = await fetch(urlprod, {
       method:'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -82,7 +82,7 @@ export default function ViewPackBasic(props) {
   const faqs = [
     {
       answer: 'Una vez completes el proceso de compra, récibiras acceso a un formulario en el recogeremos información sobre tu proyecto y en base a eso empezaremos la construcción de tu sitio.',
-      question: 'Te interesa que diseñemos tu web ¿Qué pasos debes seguir?'
+      question: 'Te interesa que diseñemos tu web. ¿Qué pasos debes seguir?'
     },
     {
       answer: 'Podrás pagar tus pedidos de diseño web tanto con targeta como con transferencia bancaria. Proximamente añadiremos otros metodos de pago que te permitan la financiación de tu web.',

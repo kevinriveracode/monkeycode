@@ -1,5 +1,5 @@
 import React from "react";
-import {Container, Grid ,Image } from "semantic-ui-react";
+import {Container, Grid } from "semantic-ui-react";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import './purchase.scss';

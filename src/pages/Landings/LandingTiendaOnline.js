@@ -5,7 +5,6 @@ import Banner from "../../components/Banner/Banner"
 import Advantages from "../../components/Advantages/Advantages"
 import ServiceFeatures from "../../components/ServiceFeatures/ServiceFeatures"
 import Examples from "../../components/Examples/Examples"
-import SeoMessage from "../../components/SeoMessage/SeoMessage"
 import PackContainer from "../../components/PackContainer/PackContainer"
 import AllInOne from "../../components/AllInOne/"
 import FormContact from "../../components/FormContact/"
@@ -39,7 +38,7 @@ export default function IndexPage({ pageContext }) {
         {
           title: "Amplía tu mercado, de local a global",
           description:
-            "Tener una tienda online permite que tu mercado vaya más alla de tu localidad. Podrás acceder a ella desde cualquier punto del planeta.",
+            "Tener una tienda online permite que tu mercado vaya más allá de tu localidad. Podrás acceder a ella desde cualquier punto del planeta.",
           url: `${baseUrlImages}mundo.svg`,
         },
         {
@@ -52,7 +51,7 @@ export default function IndexPage({ pageContext }) {
         {
           title: "Tu competencia ya está en la red",
           description:
-            "Si entras en la red podrás hacer competencia directa a tus similares en la red, sin embargo, si no decides entrar tu competencia seguirá por delante de tu negocio.",
+            "Si entras en la red podrás hacer competencia directa a tus similares en la red, sin embargo, si no decides entrar, tu competencia seguirá por delante de tu negocio.",
           url: `${baseUrlImages}crecimiento.svg`,
         },
         {
@@ -64,13 +63,13 @@ export default function IndexPage({ pageContext }) {
         {
           title: "Menores costes",
           description:
-            "Las tiendas tradicionales soportan costes fijos altos. Pagar local, agua, luz, agua, etc. A diferencia de ello, una tienda online tiene un coste mucho menor.¿Qué precio tiene la compra del dominio y almacenamiento?,¿Y la creación de una plataforma que haga de tienda? Sin duda, el coste es mucho más bajo.",
+            "Las tiendas tradicionales soportan costes fijos altos. Pagar local, agua, luz, agua, etc. A diferencia de ello, una tienda online tiene un coste mucho menor. ¿Qué precio tiene la compra del dominio y almacenamiento?, ¿y la creación de una plataforma que haga de tienda? Sin duda, el coste es mucho más bajo.",
           url: `${baseUrlImages}info.svg`,
         },
         {
           title: "Diferenciate de la competencia",
           description:
-            "Una web te permite mayor cercanía, las personas que busquen tus servicios o productos podran ver muy rapidamente que tu ofreces esos servicios y obtendras un mayor rango de venta.",
+            "Una web te permite mayor cercanía, las personas que busquen tus servicios o productos podrán ver muy rápidamente que tu ofreces esos servicios y obtendras un mayor rango de venta.",
           url: `${baseUrlImages}competencia.svg`,
         },
       ],
@@ -81,7 +80,7 @@ export default function IndexPage({ pageContext }) {
       },
     },
     features: {
-      title: "¿Que incluimos en nuestras tiendas online?",
+      title: "¿Qué incluímos en nuestras tiendas online?",
       subtitle:
         "Equipamos nuestras tiendas con todo lo que necesitas para comenzar a vender online",
       services: [
@@ -238,7 +237,7 @@ export default function IndexPage({ pageContext }) {
       title: "¿TIENES DUDAS?",
       subtitle: "Contacta con nosotros como prefieras",
       call: {
-        title: "Déjanos tú telefono y te llamamos:",
+        title: "Déjanos tu telefono y te llamamos:",
         privacity: "He leído y acepto la politica de privacidad",
         button: {
           name: "TE LLAMAMOS",
@@ -250,7 +249,7 @@ export default function IndexPage({ pageContext }) {
           "También puedes enviarnos un correo o monkeycode@gmail.com, o utilizar este formulario de contacto. Estamos a tu disposición para cualquier pregunta o duda que puedas tener.",
         privacity: "He leído y acepto la politica de privacidad",
         button: {
-          name: "ENVIANOS TU CONSULTA",
+          name: "ENVÍANOS TU CONSULTA",
           link: "#",
         },
       },

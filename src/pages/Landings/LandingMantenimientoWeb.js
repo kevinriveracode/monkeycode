@@ -1,6 +1,5 @@
 import React from "react"
 import {Helmet} from "react-helmet"
-import SEO from "../../components/seo"
 import Header from "../../components/Header/Header"
 import Banner from "../../components/Banner/Banner"
 import TopButton from "../../components/TopButton"
@@ -8,12 +7,11 @@ import Footer from "../../components/Footer"
 import FormContact from "../../components/FormContact/";
 
 export default function IndexPage({ pageContext }) {
-  const baseUrlImages = "https://d1r0i6dbql3qta.cloudfront.net/"
   const infoContactForm = {
       title: "¿TIENES DUDAS?",
       subtitle: "Contacta con nosotros como prefieras",
       call: {
-        title: "Déjanos tú telefono y te llamamos:",
+        title: "Déjanos tu telefono y te llamamos:",
         privacity: "He leído y acepto la politica de privacidad",
         button: {
           name: "TE LLAMAMOS",
@@ -25,7 +23,7 @@ export default function IndexPage({ pageContext }) {
           "También puedes enviarnos un correo o monkeycode@gmail.com, o utilizar este formulario de contacto. Estamos a tu disposición para cualquier pregunta o duda que puedas tener.",
         privacity: "He leído y acepto la politica de privacidad",
         button: {
-          name: "ENVIANOS TU CONSULTA",
+          name: "ENVÍANOS TU CONSULTA",
           link: "#",
         },
       },

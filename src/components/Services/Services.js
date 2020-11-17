@@ -27,7 +27,7 @@ export default function Services(props) {
       image: "https://monkeycode.s3.eu-west-3.amazonaws.com/web-shop.svg",
       title: "MANTENIMIENTO WEB",
       description:
-        "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún no tienes uno, entonces nuestro equipo está aquí para ayudarte, Escríbenos.",
+        "Si tu sitio web se ve un poco anticuado, se está quedando atrás de la competencia o si aún no tienes uno, entonces nuestro equipo está aquí para ayudarte. Escríbenos.",
       button: {
         title: "Escríbenos",
         link: "/mantenimiento-web",

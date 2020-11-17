@@ -6,7 +6,7 @@ import Footer from "../../components/Footer"
 import {Helmet} from "react-helmet"
 import "./ProductWeb.scss"
 const stripePromise = loadStripe(
-  "pk_test_51HWHRmHTnDUNNyj1WnUWdywxldZ5REcniBlDGqD85nuoyU9p327p9IC31lqVB9QuP1sfm7H4eYRrW1mAryfS5OzJ00cwgqIs7v"
+  "pk_live_51HWHRmHTnDUNNyj1AMjBKSM5dSVzzXVqMoGPQ5JkhVY6luR6DXYc6FUYWGlyFSm8vOKSnPii1xwAguvMLwgJbfzH00MGNxrO7o"
 )
 
 export default function ViewPackBasic(props) {
@@ -18,7 +18,7 @@ export default function ViewPackBasic(props) {
     title: "PACK DE DISEÑO WEB IBIZA",
     price: "500 €",
     description:
-      "Diseñamos y desarrollamos un web que sea líder en tu sector. Te ofrecemos una potente herramienta que te permitirá reforzar la imagen de tu empresa y que te ayude a captar nuevos clientes, contaras con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles. Una web que tu mismo podrás gestionar fácilmente para crear nuevo contenido, editar secciones y mucho más, gracias a que usamos Wordpress para nuestros desarrollos.",
+      "Diseñamos y desarrollamos un web que sea líder en tu sector. Te ofrecemos una potente herramienta que te permitirá reforzar la imagen de tu empresa y que te ayude a captar nuevos clientes, contarás con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles. Una web que tú mismo podrás gestionar fácilmente para crear nuevo contenido, editar secciones y mucho más, gracias a que usamos Wordpress para nuestros desarrollos.",
     urlCheckout: "http://localhost:8000/buy-pack-ibiza",
   }
   useEffect(() => {
@@ -83,7 +83,7 @@ export default function ViewPackBasic(props) {
   const faqs = [
     {
       answer: 'Una vez completes el proceso de compra, récibiras acceso a un formulario en el recogeremos información sobre tu proyecto y en base a eso empezaremos la construcción de tu sitio.',
-      question: 'Te interesa que diseñemos tu web ¿Qué pasos debes seguir?'
+      question: 'Te interesa que diseñemos tu web. ¿Qué pasos debes seguir?'
     },
     {
       answer: 'Podrás pagar tus pedidos de diseño web tanto con targeta como con transferencia bancaria. Proximamente añadiremos otros metodos de pago que te permitan la financiación de tu web.',
@@ -113,7 +113,7 @@ export default function ViewPackBasic(props) {
       <Helmet>
         <html lang="es" />
         <title>Aumenta tu presencia en internet | pack Ibiza | Tienda online| Startfly</title>
-        <meta name="description" content="Diseñamos y desarrollamos un web que sea líder en tu sector. Contaras con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles."></meta>
+        <meta name="description" content="Diseñamos y desarrollamos un web que sea líder en tu sector. Contarás con un diseño único y espectacular, con textos que impacten y que sea adaptable a dispositivos móviles."></meta>
         <meta name="keywords" content="pack de diseño web milan, precios de paginas web, precio pagina web, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
