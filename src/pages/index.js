@@ -76,7 +76,7 @@ export default function IndexPage({ pageContext }) {
         <html lang="es" />
         <title>Diseño web valencia | Agencia de diseño de páginas web</title>
         <meta name="description" content="¿Necesitas una pagina web única y profesional que te genere ingresos? En Startfly te ofrecemos un diseño de páginas web desde 300€ y tiendas online desde 500€. Animate noo tengas miedo de experimentar!" ></meta>
-        <meta name="keywords" content="diseño web valencia,diseño web,diseño de paginas web,diseño de paginas web valencia,diseño de tienda online,diseño de paginas web,agencia de diseño de paginas web,agencia de diseño web,diseño de webs,paginas web valencia" />
+        <meta name="keywords" content="diseño web valencia,diseño web,diseño de paginas web,startfly,diseño de paginas web valencia,diseño de tienda online,diseño de paginas web,agencia de diseño de paginas web,agencia de diseño web,diseño de webs,paginas web valencia" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta> 

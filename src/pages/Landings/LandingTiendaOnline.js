@@ -17,7 +17,7 @@ export default function IndexPage({ pageContext }) {
     titlePage: "Diseño web rápido, original y seguro | MonkeyCode",
     backgroundImage: "https://monkeycode.s3.eu-west-3.amazonaws.com/bannweb.jpg",
     banner: {
-      title: "DISEÑAMOS TU TIENDA ONLINE PROFESIONAL",
+      title: "DISEÑO DE TIENDAS ONLINE",
       subtitle:
         "Céntrate exclusivamente en vender tu producto o servicio. Nosotros nos encargamos de crear tu tienda online y dejarla lista para vender.",
       buttonPrimary: {
@@ -259,9 +259,9 @@ export default function IndexPage({ pageContext }) {
     <>
       <Helmet>
         <html lang="es" />
-        <title>Diseño Web Valencia | Agencia de diseño web y ecommerce </title>
+        <title>Diseño tienda online | Diseño Ecommerce Valencia</title>
         <meta name="description" content="StartFly es una empresa de diseñadores profesionales de páginas web con muchas experiencia. Diseñamos y desarrollamos tu página web a un precio incomparable." ></meta>
-        <meta name="keywords" content="diseño web valencia, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
+        <meta name="keywords" content="diseño tienda online,diseño de tiendas online, diseño web tienda online,ecommerce valencia, diseño de tiendas online en valencia, diseño ecommerce,creacion de tiendas online,web tienda online" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
         <meta property="og:locale" content="es_ES"></meta>
