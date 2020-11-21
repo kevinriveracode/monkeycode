@@ -15,7 +15,7 @@ export default function IndexPage({ pageContext }) {
             title: "¿TIENES DUDAS?",
             subtitle: "Contacta con nosotros como prefieras",
             call: {
-              title: "Déjanos tú telefono y te llamamos:",
+              title: "Déjanos tu telefono y te llamamos:",
               privacity: "He leído y acepto la politica de privacidad",
               button: {
                 name: "TE LLAMAMOS",
@@ -27,7 +27,7 @@ export default function IndexPage({ pageContext }) {
                 "También puedes enviarnos un correo o monkeycode@gmail.com, o utilizar este formulario de contacto. Estamos a tu disposición para cualquier pregunta o duda que puedas tener.",
               privacity: "He leído y acepto la politica de privacidad",
               button: {
-                name: "ENVIANOS TU CONSULTA",
+                name: "ENVÍANOS TU CONSULTA",
                 link: "#",
               },
             },

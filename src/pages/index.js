@@ -14,8 +14,8 @@ export default function IndexPage({ pageContext }) {
  
   const indexPage = {
     infoEcommerce: {
-      title: "Diseño Tienda Online Profesional",
-      subtitle: "¿Quieres Vender Online?",
+      title: "Diseño de tiendas online",
+      subtitle: "Comienza a vender en internet",
       description:
         "Te ofrecemos la posibilidad de vender en línea, las 24 horas del día, los 7 días de la semana, con una experiencia de usuario encantadora que no encontrarás en ningún otro lugar.",
       advantages: [
@@ -46,7 +46,7 @@ export default function IndexPage({ pageContext }) {
       author: "KEVIN RIVERA - SEO STARTFLY",
     },
     infoWeb: {
-      title: "Diseño Web Profesional",
+      title: "Diseño de páginas web",
       subtitle: "Desarrollamos tu presencia en internet",
       description:
         "Con el máximo esfuerzo y atención a los detalles, creamos y diseñamos sitios online, aplicaciones web y otros servicios relacionados, que responden con precisión a tus expectativas y satisfacen las necesidades específicas de tu empresa.",
@@ -74,30 +74,12 @@ export default function IndexPage({ pageContext }) {
     <>
       <Helmet>
         <html lang="es" />
-        <title>Diseño Web Valencia | Agencia de diseño web y ecommerce </title>
-        <meta name="description" content="StartFly es una empresa de diseñadores profesionales de páginas web con muchas experiencia. Diseñamos y desarrollamos tu página web a un precio incomparable." ></meta>
-        <meta name="keywords" content="diseño web valencia, diseño web, diseño paginas web, paginas web valencia, diseño de paginas web valencia, diseño y creacion web, diseño paginas web valencia, agencia diseño web, desarrollo web valencia, creadores de paginas web en valencia, empresas paginas web valencia, desarrollo de paginas web valencia, diseño y desarrollo web valencia, agencia de diseño de paginas web, agencia de diseño web, empresas de diseño web valencia, crear web valencia, diseño web paginas web, diseño creacion paginas web, diseño web web, creacion paginas web, contratar diseñador web, paginas de diseño online" />
+        <title>Diseño web valencia | Agencia de diseño de páginas web</title>
+        <meta name="description" content="¿Necesitas una pagina web única y profesional que te genere ingresos? En Startfly te ofrecemos un diseño de páginas web desde 300€ y tiendas online desde 500€. Animate noo tengas miedo de experimentar!" ></meta>
+        <meta name="keywords" content="diseño web valencia,diseño web,diseño de paginas web,diseño de paginas web valencia,diseño de tienda online,diseño de paginas web,agencia de diseño de paginas web,agencia de diseño web,diseño de webs,paginas web valencia" />
         <meta name="robots" content="index"/>
         <meta property="og:site_name" content="Startfly"></meta>
-        <meta property="og:locale" content="es_ES"></meta>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: `{
-          "@context": "https://schema.org",
-          "@type": "Agencia Web",
-          "name": "Startfly",
-          "review": {
-            "@type": "Review",
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": "5",
-              "bestRating": "5"
-            },
-            "author": {
-              "@type": "Person",
-              "name": "Jorge Lopez"
-            }
-          },
-        }`}}>
-        </script>
+        <meta property="og:locale" content="es_ES"></meta> 
         <link rel="canonical" href="https://startfly.es/"></link>
       </Helmet>
       <Header />
@@ -108,10 +90,10 @@ export default function IndexPage({ pageContext }) {
       <Process />
       <Buy />
       <SeoMessage
-        title={"CONTRATA NUESTROS SERVICIOS Y AUMENTA LAS CONVERSIONES"}
-        description={"En StartFly nos especializamos en diseñar marcas reconocidas y desarrollar sitios web que cumplan con los estándares W3C, siendo compatibles con los dispositivos más recientes. Además contamos con un grupo de diseñadores y desarrolladores web profesionales, dedicados a crear sitios web potentes, efectivos y atractivos."}
-        quote={"Una buena presencia online, repercutirá en un aumento de la conversión de tus clientes, un aumento de la facturación y un mayor público."}
-        author={"KEVIN RIVERA - SEO STARTFLY"}
+        title={"SOBRE STARTFLY AGENCIA DE DISEÑO WEB VALENCIA"}
+        description={"Startfly es un equipo de jóvenes diseñadores Web, en nuestra agencia estamos especializados en el diseño de páginas web. En Startfly te ayudamos a emprender tu negocio online con la máxima calidad al precio más bajo. Realizamos el servicio de Web Low Cost en el que puedes elegir entre varias opciones de tarifas acorde a la magnitud de tu proyecto."}
+        quote={"¿Necesitas una web o crear una web personalizada a tu marca?. Si necesitas algo especial, Startfly te ofrece servicios personalizados para la creación, desarrollo, programación y mantenimiento de tu web."}
+        author={"Agencia de diseño de páginas web"}
       />
       <Footer />
       <TopButton />

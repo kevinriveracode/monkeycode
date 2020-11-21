@@ -26,9 +26,7 @@ export default function MainBanner(props) {
             className="main-banner__page-info"
           >
             <div>
-              <h1 className="main-banner__title">
-                DISEÑO WEB ORIGINAL, RÁPIDO Y SEGURO
-              </h1>
+              <h1 className="main-banner__title">DISEÑO DE PÁGINAS WEB</h1>
               <p className="main-banner__description">
                 Si estás buscando una empresa de desarrollo web de primer nivel, 
                 para diseñar y construir una página web única, totalmente funcional, 
